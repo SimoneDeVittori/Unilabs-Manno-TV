@@ -1,10 +1,10 @@
 {
   "weather": {
     "current": {
-      "time": 1791550200000,
+      "time": 1791550800000,
       "icon": 1,
       "iconV2": 1,
-      "temperature": 20.9
+      "temperature": 21.0
     },
     "forecast": [
       {
@@ -48,7 +48,7 @@
         "precipitationMax": 0.0
       }
     ],
-    "updatedAt": "2026-10-09T13:04:50.658917+00:00"
+    "updatedAt": "2026-10-09T13:10:26.705812+00:00"
   },
   "weatherError": false,
   "newsError": false,
@@ -152,7 +152,7 @@
       }
     ],
     "total": 60,
-    "updatedAt": "2026-10-09T13:04:50.658917+00:00",
+    "updatedAt": "2026-10-09T13:10:26.705812+00:00",
     "source": "Viasuisse via RSI"
   },
   "trafficError": false,
@@ -1306,7 +1306,7 @@
       }
     ],
     "model": "202610091300",
-    "updatedAt": "2026-10-09T13:04:50.806753+00:00"
+    "updatedAt": "2026-10-09T13:10:26.794068+00:00"
   },
   "weekError": false,
   "news": {
@@ -1315,7 +1315,7 @@
         "title": "Teatro di Locarno in difficoltà: chiesti più fondi agli enti pubblici",
         "description": "Nel corso dell'assemblea di giovedì sera è stata evocata anche la possibile interruzione dell'attività",
         "link": "https://www.tio.ch/ticino/attualita/1955827/teatro-assemblea-locarno-enti-difficolta-fondi",
-        "date": "Fri, 09 Oct 2026 14:59:17 +0200",
+        "date": "Fri, 09 Oct 2026 15:00:05 +0200",
         "category": "LOCARNO",
         "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onqr.jpg?v=1"
       },
@@ -1328,7 +1328,7 @@
         "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onqf.jpg"
       }
     ],
-    "updatedAt": "2026-10-09T13:04:50.658917+00:00",
+    "updatedAt": "2026-10-09T13:10:26.705812+00:00",
     "scope": "ticino",
     "provider": "tio"
   }
