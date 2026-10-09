@@ -48,11 +48,17 @@
         "precipitationMax": 0.0
       }
     ],
-    "updatedAt": "2026-10-09T10:42:02.156324+00:00"
+    "updatedAt": "2026-10-09T10:43:12.231257+00:00"
   },
   "weatherError": false,
   "news": {
     "items": [
+      {
+        "title": "Attacchi nelle scuole polacche: convocata riunione di emergenza",
+        "link": "https://www.rsi.ch/s/4147919",
+        "date": "Fri, 09 Oct 2026 10:39:45 GMT",
+        "category": "News"
+      },
       {
         "title": "Battaglia legale, la SNL contesta la concorrenza sleale al Cantone",
         "link": "https://www.rsi.ch/s/4147916",
@@ -70,15 +76,9 @@
         "link": "https://www.rsi.ch/s/4147727",
         "date": "Fri, 09 Oct 2026 09:03:46 GMT",
         "category": "News"
-      },
-      {
-        "title": "Francia: 3’000 insegnanti nelle scuole più critiche",
-        "link": "https://www.rsi.ch/s/4147619",
-        "date": "Fri, 09 Oct 2026 08:48:29 GMT",
-        "category": "News"
       }
     ],
-    "updatedAt": "2026-10-09T10:42:02.156324+00:00"
+    "updatedAt": "2026-10-09T10:43:12.231257+00:00"
   },
   "newsError": false
 }
