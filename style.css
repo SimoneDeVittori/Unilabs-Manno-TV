@@ -54,3 +54,5 @@ header{display:grid;grid-template-columns:1fr 1fr 1fr;position:relative;min-heig
 .weather.card::before,.news.card::before,.traffic.card::before{display:none}.weather.card,.news.card,.traffic.card{background:linear-gradient(#fff,#fff) padding-box,linear-gradient(to right,#e7531b 0%,#e7531b calc(100% - 160px),var(--tab-color) calc(100% - 104px),var(--tab-color) calc(100% - 38px),#e7531b 100%) border-box;border-radius:21.12px}
 
 .weather.card{background:#fff;border-top-color:#e7531b}.weather-heading h1{padding-top:0}.weather-heading .section-label{align-self:auto;margin-top:0}.right-column{gap:42.24px;grid-template-rows:500px minmax(0,1fr)}
+
+.weather.card,.news.card,.traffic.card{border-top-width:8px}.tio-logo,.tcs-logo{top:-8px}
