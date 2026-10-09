@@ -48,12 +48,20 @@
         "precipitationMax": 0.0
       }
     ],
-    "updatedAt": "2026-10-09T14:08:22.037534+00:00"
+    "updatedAt": "2026-10-09T14:13:05.089663+00:00"
   },
   "weatherError": false,
   "newsError": false,
   "traffic": {
     "items": [
+      {
+        "id": "Viasuisser_FAVM/658482_TIC-Viasuisse/1",
+        "text": "A2 - Chiasso direzione S. Gottardo tra Quinto e Area di dosaggio Airolo traffico bloccato per 4 km, traffico congestionato, ritardi fino a 40 minuti - La corsia CUPRA è aperta",
+        "road": "A2",
+        "category": 12,
+        "changedAt": "2026-10-09T16:09:45+02:00",
+        "priority": 0
+      },
       {
         "id": "Viasuisser_FAVM/658581_TIC-Viasuisse/1",
         "text": "H13 - El Stradún - Via Locarno tra Sementina e Gudo in entrambe le direzioni chiusa, smottamenti",
@@ -141,18 +149,10 @@
         "category": 12,
         "changedAt": "2026-10-09T14:35:09+02:00",
         "priority": 0
-      },
-      {
-        "id": "Viasuisser_Viasuisse/2511170_TIC-Viasuisse/1",
-        "text": "Lugano, Riva Vincenzo Vela a Riva Giocondo Albertolli - tra rotatoria e Piazza dell'Indipendenza colonna, traffico congestionato",
-        "road": "TI",
-        "category": 12,
-        "changedAt": "2026-10-09T14:27:24+02:00",
-        "priority": 0
       }
     ],
     "total": 65,
-    "updatedAt": "2026-10-09T14:08:22.037534+00:00",
+    "updatedAt": "2026-10-09T14:13:05.089663+00:00",
     "source": "Viasuisse via RSI"
   },
   "trafficError": false,
@@ -1306,7 +1306,7 @@
       }
     ],
     "model": "202610091400",
-    "updatedAt": "2026-10-09T14:08:22.132152+00:00"
+    "updatedAt": "2026-10-09T14:13:05.135141+00:00"
   },
   "weekError": false,
   "news": {
@@ -1328,7 +1328,7 @@
         "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onrf.jpg?v=1"
       }
     ],
-    "updatedAt": "2026-10-09T14:08:22.037534+00:00",
+    "updatedAt": "2026-10-09T14:13:05.089663+00:00",
     "scope": "ticino",
     "provider": "tio"
   }
