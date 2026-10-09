@@ -1,7 +1,7 @@
 {
   "weather": {
     "current": {
-      "time": 1791553800000,
+      "time": 1791555000000,
       "icon": 1,
       "iconV2": 1,
       "temperature": 21.8
@@ -48,12 +48,28 @@
         "precipitationMax": 0.0
       }
     ],
-    "updatedAt": "2026-10-09T14:16:05.036431+00:00"
+    "updatedAt": "2026-10-09T14:21:55.611919+00:00"
   },
   "weatherError": false,
   "newsError": false,
   "traffic": {
     "items": [
+      {
+        "id": "Viasuisser_Viasuisse/2511235_TIC-Viasuisse/1",
+        "text": "401 - Lugano, Via Besso a Via Romeo Manzoni tra Via Bioggio e Piazzale di Besso colonna, traffico congestionato",
+        "road": "401",
+        "category": 12,
+        "changedAt": "2026-10-09T16:18:38+02:00",
+        "priority": 0
+      },
+      {
+        "id": "Viasuisser_FAVM/658536_TIC-Viasuisse/1",
+        "text": "A2 - S. Gottardo direzione Chiasso tra Rivera e galleria Tunnel Grancia colonna, traffico congestionato",
+        "road": "A2",
+        "category": 12,
+        "changedAt": "2026-10-09T16:16:05+02:00",
+        "priority": 0
+      },
       {
         "id": "Viasuisser_FAVM/658482_TIC-Viasuisse/1",
         "text": "A2 - Chiasso direzione S. Gottardo tra Quinto e Area di dosaggio Airolo traffico bloccato per 4 km, traffico congestionato, ritardi fino a 40 minuti - La corsia CUPRA è aperta",
@@ -85,14 +101,6 @@
         "category": 12,
         "changedAt": "2026-10-09T15:50:38+02:00",
         "priority": 0
-      },
-      {
-        "id": "Viasuisser_FAVM/658570_TIC-Viasuisse/1",
-        "text": "A2 - Chiasso direzione S. Gottardo tra Mendrisio e la galleria San Nicolao traffico fortemente rallentato, traffico congestionato",
-        "road": "A2",
-        "category": 13,
-        "changedAt": "2026-10-09T15:50:12+02:00",
-        "priority": 1
       },
       {
         "id": "Viasuisser_Viasuisse/2511194_TIC-Viasuisse/1",
@@ -127,14 +135,6 @@
         "priority": 0
       },
       {
-        "id": "Viasuisser_FAVM/658536_TIC-Viasuisse/1",
-        "text": "A2 - S. Gottardo direzione Chiasso tra  Lugano Nord e galleria Tunnel Grancia traffico fortemente rallentato, traffico congestionato",
-        "road": "A2",
-        "category": 13,
-        "changedAt": "2026-10-09T14:51:30+02:00",
-        "priority": 1
-      },
-      {
         "id": "Viasuisser_Viasuisse/2511171_TIC-Viasuisse/1",
         "text": "398 - direzione Ponte Tresa tra Gravesano e frontiera Ponte Tresa traffico fortemente rallentato, traffico congestionato",
         "road": "398",
@@ -152,7 +152,7 @@
       }
     ],
     "total": 65,
-    "updatedAt": "2026-10-09T14:16:05.036431+00:00",
+    "updatedAt": "2026-10-09T14:21:55.611919+00:00",
     "source": "Viasuisse via RSI"
   },
   "trafficError": false,
@@ -1306,11 +1306,19 @@
       }
     ],
     "model": "202610091400",
-    "updatedAt": "2026-10-09T14:16:05.156616+00:00"
+    "updatedAt": "2026-10-09T14:21:55.634193+00:00"
   },
   "weekError": false,
   "news": {
     "items": [
+      {
+        "title": "Caso Pronzini, lo scherno dopo il ricorso al TF: «Le priorità... Alla fine ci sarà il giudizio di Dio»",
+        "description": "I sette municipali in carica nella scorsa legislatura impugnano il proscioglimento del deputato MPS. Il collega Pino Sergi attacca: «La deriva politica e morale è ormai completa». Henrik Bang, intanto, replica sul valore del rispetto, anche nei confronti dei politici.",
+        "link": "https://www.tio.ch/ticino/politica/1955843/caso-pronzini-lo-scherno-dopo-il-ricorso-al-tf-le-priorita-alla-fine-ci-sara-il-giudizio-di-dio",
+        "date": "Fri, 09 Oct 2026 16:18:58 +0200",
+        "category": "BELLINZONA",
+        "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onrl.jpg?v=1"
+      },
       {
         "title": "Sei ballerini ticinesi sulle note dei grandi successi K-pop",
         "description": "Hanno tra i 18 e i 20 anni e debutteranno il 13 ottobre alla Geneva Arena con K-POP FEVER. Il 1° novembre lo spettacolo farà tappa anche a Lugano.",
@@ -1318,17 +1326,9 @@
         "date": "Fri, 09 Oct 2026 16:12:38 +0200",
         "category": "GINEVRA",
         "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onrk.jpg?v=2"
-      },
-      {
-        "title": "Antincendio, bocciato il ricorso: Cantone e Comuni cercano soluzioni",
-        "description": "Al centro del confronto le preoccupazioni degli enti locali per la mole di lavoro, le difficoltà nell'applicazione del regolamento e la scadenza del 2027.",
-        "link": "https://www.tio.ch/ticino/attualita/1955836/antincendio-bocciato-il-ricorso-cantone-e-comuni-cercano-soluzioni",
-        "date": "Fri, 09 Oct 2026 15:59:47 +0200",
-        "category": "CANTONE",
-        "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onrg.jpg?v=1"
       }
     ],
-    "updatedAt": "2026-10-09T14:16:05.036431+00:00",
+    "updatedAt": "2026-10-09T14:21:55.611919+00:00",
     "scope": "ticino",
     "provider": "tio"
   }
