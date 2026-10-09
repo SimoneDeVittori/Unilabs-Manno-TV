@@ -1,10 +1,10 @@
 {
   "weather": {
     "current": {
-      "time": 1791569400000,
+      "time": 1791579600000,
       "icon": 101,
       "iconV2": 101,
-      "temperature": 15.8
+      "temperature": 14.3
     },
     "forecast": [
       {
@@ -25,7 +25,7 @@
         "temperatureMin": 13,
         "precipitation": 0.0,
         "precipitationMin": 0.0,
-        "precipitationMax": 0.5
+        "precipitationMax": 0.3
       },
       {
         "dayDate": "2026-10-11",
@@ -35,7 +35,7 @@
         "temperatureMin": 10,
         "precipitation": 0.0,
         "precipitationMin": 0.0,
-        "precipitationMax": 0.1
+        "precipitationMax": 0.0
       },
       {
         "dayDate": "2026-10-12",
@@ -48,44 +48,12 @@
         "precipitationMax": 0.1
       }
     ],
-    "updatedAt": "2026-10-09T18:23:50.160991+00:00"
+    "updatedAt": "2026-10-09T21:15:26.614798+00:00"
   },
   "weatherError": false,
   "newsError": false,
   "traffic": {
     "items": [
-      {
-        "id": "Viasuisser_FAVM/658482_TIC-Viasuisse/1",
-        "text": "A2 - Chiasso direzione S. Gottardo tra Quinto e Area di dosaggio Airolo traffico bloccato per 2 km, traffico congestionato, ritardi fino a 20 minuti - La corsia CUPRA è aperta",
-        "road": "A2",
-        "category": 12,
-        "changedAt": "2026-10-09T19:25:43+02:00",
-        "priority": 0
-      },
-      {
-        "id": "Viasuisser_FAVM/658571_TIC-Viasuisse/1",
-        "text": "H2 - direzione Chiasso tra Camorino in Comelina e Cadenazzo colonna, traffico congestionato",
-        "road": "H2",
-        "category": 12,
-        "changedAt": "2026-10-09T18:41:34+02:00",
-        "priority": 0
-      },
-      {
-        "id": "Viasuisser_FAVM/658634_TIC-Viasuisse/1",
-        "text": "406 - Cadenazzo direzione Riazzino tra Cadenazzo e Contone colonna, traffico congestionato",
-        "road": "406",
-        "category": 12,
-        "changedAt": "2026-10-09T17:30:18+02:00",
-        "priority": 0
-      },
-      {
-        "id": "Viasuisser_FAVM/658485_TIC-Viasuisse/1",
-        "text": "A2 - Chiasso direzione S. Gottardo a Airolo chiuso raccordo autostradale in entrata",
-        "road": "A2",
-        "category": 11,
-        "changedAt": "2026-10-09T10:57:18+02:00",
-        "priority": 3
-      },
       {
         "id": "Viasuisser_FAVM/620496_TIC-Viasuisse/1",
         "text": "2 - Göschenen - Airolo tra Göschenen e Airolo in entrambe le direzioni problemi di traffico, lavori stradali durante il giorno per 0.1 km, limite temporaneo di larghezza di 3.50 m, fino a 18.12.2026, lun - ven tra 07:00 e 17:00 - ID112048",
@@ -135,6 +103,14 @@
         "priority": 5
       },
       {
+        "id": "Viasuisser_Viasuisse/2508869_TIC-Viasuisse/1",
+        "text": "Sant'Antonino, Via Stazione - a Sant'Antonino in entrambe le direzioni chiusa, lavori stradali, fino a domani 05:30",
+        "road": "TI",
+        "category": 11,
+        "changedAt": "2026-09-30T13:44:15+02:00",
+        "priority": 3
+      },
+      {
         "id": "Viasuisser_Viasuisse/2508715_TIC-Viasuisse/1",
         "text": "Locarno, Via Rovedo - a Locarno problemi di traffico, nuova gestione del traffico, circolazione a senso unico, seguire deviazione locale, fino a 26.02.2027",
         "road": "TI",
@@ -149,10 +125,34 @@
         "category": 31,
         "changedAt": "2026-09-27T10:35:09+02:00",
         "priority": 5
+      },
+      {
+        "id": "Viasuisser_Viasuisse/2507395_TIC-Viasuisse/1",
+        "text": "attraversamento Loco, Al Palazz a Alla Chiesa - in entrambe le direzioni chiusa, lavori stradali, fino a domani, lun - sab È prevista un'apertura al traffico ogni notte dalle 22.00 alle 22.30",
+        "road": "TI",
+        "category": 11,
+        "changedAt": "2026-09-24T10:07:22+02:00",
+        "priority": 3
+      },
+      {
+        "id": "Viasuisser_FAVM/654593_TIC-Viasuisse/1",
+        "text": "A2 - Chiasso direzione S. Gottardo tra  Lugano Nord e Rivera problemi di traffico, lavori stradali durante la notte per 3.1 km, nuova gestione del traffico, carreggiata ridotta a una corsia, limite temporaneo di larghezza di 3.50 m, fino a martedì, tra 21:30 e 04:00 - ID117704",
+        "road": "A2",
+        "category": 32,
+        "changedAt": "2026-09-22T11:58:11+02:00",
+        "priority": 6
+      },
+      {
+        "id": "Viasuisser_FAVM/654420_TIC-Viasuisse/1",
+        "text": "A2 - Chiasso direzione S. Gottardo tra Faido e Quinto problemi di traffico, lavori stradali per 2.7 km, corsie strette, carreggiata ridotta a due corsie, limite temporaneo di larghezza di 7.75 m, fino a 20.11.2026 05:00 - ID117662",
+        "road": "A2",
+        "category": 31,
+        "changedAt": "2026-09-21T17:02:59+02:00",
+        "priority": 5
       }
     ],
-    "total": 51,
-    "updatedAt": "2026-10-09T18:23:50.160991+00:00",
+    "total": 48,
+    "updatedAt": "2026-10-09T21:15:26.614798+00:00",
     "source": "Viasuisse via RSI"
   },
   "trafficError": false,
@@ -160,7 +160,7 @@
     "days": [
       {
         "dayDate": "2026-10-09",
-        "temperatureMin": 13,
+        "temperatureMin": 14,
         "temperatureMax": 22,
         "iconDay": 29,
         "precipitation": 0.1
@@ -176,7 +176,7 @@
         "dayDate": "2026-10-11",
         "temperatureMin": 10,
         "temperatureMax": 20,
-        "iconDay": 1,
+        "iconDay": 3,
         "precipitation": 0.0
       },
       {
@@ -188,21 +188,21 @@
       },
       {
         "dayDate": "2026-10-13",
-        "temperatureMin": 10,
-        "temperatureMax": 19,
-        "iconDay": 3,
-        "precipitation": 0.0
-      },
-      {
-        "dayDate": "2026-10-14",
-        "temperatureMin": 10,
+        "temperatureMin": 11,
         "temperatureMax": 19,
         "iconDay": 2,
         "precipitation": 0.0
       },
       {
+        "dayDate": "2026-10-14",
+        "temperatureMin": 10,
+        "temperatureMax": 20,
+        "iconDay": 1,
+        "precipitation": 0.0
+      },
+      {
         "dayDate": "2026-10-15",
-        "temperatureMin": 11,
+        "temperatureMin": 12,
         "temperatureMax": 19,
         "iconDay": 2,
         "precipitation": 0.0
@@ -1305,12 +1305,20 @@
         "amount": 0.0
       }
     ],
-    "model": "202610091800",
-    "updatedAt": "2026-10-09T18:23:50.188097+00:00"
+    "model": "202610092100",
+    "updatedAt": "2026-10-09T21:15:26.648989+00:00"
   },
   "weekError": false,
   "news": {
     "items": [
+      {
+        "title": "Turisti di Varese morti sotto una frana in Valtellina, tre condanne",
+        "description": "Confermate pene sospese per gli imputati e decisi risarcimenti alle famiglie delle vittime della tragedia del 2020 a Chiareggio.",
+        "link": "https://www.tio.ch/ticino/cronaca/1955904/anni-tre-varese-condanne-frana",
+        "date": "Fri, 09 Oct 2026 22:35:44 +0200",
+        "category": "CONFINE",
+        "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onup.jpg?v=1"
+      },
       {
         "title": "Caso Gobbi, due agenti a rischio licenziamento",
         "description": "I poliziotti sono indagati per violazione del segreto d’ufficio. Sentiti dal procuratore generale anche i granconsiglieri Pronzini e Dadò, che negano di aver ricevuto informazioni riservate.",
@@ -1318,17 +1326,9 @@
         "date": "Fri, 09 Oct 2026 19:09:14 +0200",
         "category": "CANTONE",
         "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onts.jpg?v=1"
-      },
-      {
-        "title": "Misurando il ghiacciaio, o quel che ne resta",
-        "description": "Gli esperti del cantone al lavoro sul ghiacciaio di Valleggia (Val Bedretto) e i primi dati grezzi estremamente preoccupanti.",
-        "link": "https://www.tio.ch/ticino/attualita/1955845/misurando-il-ghiacciaio-o-quel-che-ne-resta",
-        "date": "Fri, 09 Oct 2026 18:33:16 +0200",
-        "category": "VAL BEDRETTO",
-        "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onrn.jpg?v=1"
       }
     ],
-    "updatedAt": "2026-10-09T18:23:50.160991+00:00",
+    "updatedAt": "2026-10-09T21:15:26.614798+00:00",
     "scope": "ticino",
     "provider": "tio"
   }
