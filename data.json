@@ -1,10 +1,10 @@
 {
   "weather": {
     "current": {
-      "time": 1791547200000,
-      "icon": 1,
-      "iconV2": 1,
-      "temperature": 20.1
+      "time": 1791549000000,
+      "icon": 2,
+      "iconV2": 2,
+      "temperature": 20.5
     },
     "forecast": [
       {
@@ -48,12 +48,36 @@
         "precipitationMax": 0.0
       }
     ],
-    "updatedAt": "2026-10-09T12:13:08.427489+00:00"
+    "updatedAt": "2026-10-09T12:40:15.790269+00:00"
   },
   "weatherError": false,
   "newsError": false,
   "traffic": {
     "items": [
+      {
+        "id": "Viasuisser_FAVM/658534_TIC-Viasuisse/1",
+        "text": "A24 - Mendrisio direzione Stabio tra Genestrerio e 394, Stabio colonna, traffico congestionato",
+        "road": "A24",
+        "category": 12,
+        "changedAt": "2026-10-09T14:35:09+02:00",
+        "priority": 0
+      },
+      {
+        "id": "Viasuisser_Viasuisse/2511171_TIC-Viasuisse/1",
+        "text": "398 - direzione Ponte Tresa tra Gravesano e Bioggio traffico fortemente rallentato, traffico congestionato",
+        "road": "398",
+        "category": 13,
+        "changedAt": "2026-10-09T14:28:28+02:00",
+        "priority": 1
+      },
+      {
+        "id": "Viasuisser_Viasuisse/2511170_TIC-Viasuisse/1",
+        "text": "Lugano, Riva Vincenzo Vela a Riva Giocondo Albertolli - tra rotatoria e Piazza dell'Indipendenza colonna, traffico congestionato",
+        "road": "TI",
+        "category": 12,
+        "changedAt": "2026-10-09T14:27:24+02:00",
+        "priority": 0
+      },
       {
         "id": "Viasuisser_FAVM/658521_TIC-Viasuisse/1",
         "text": "A2 - S. Gottardo direzione Chiasso tra Chiasso Centro e frontiera Chiasso Brogeda colonna, traffico congestionato",
@@ -61,14 +85,6 @@
         "category": 12,
         "changedAt": "2026-10-09T13:59:09+02:00",
         "priority": 0
-      },
-      {
-        "id": "Viasuisser_FAVM/658520_TIC-Viasuisse/1",
-        "text": "A2 - Chiasso direzione S. Gottardo tra Mendrisio e Melide/Bissone traffico fortemente rallentato, traffico congestionato",
-        "road": "A2",
-        "category": 13,
-        "changedAt": "2026-10-09T13:57:36+02:00",
-        "priority": 1
       },
       {
         "id": "Viasuisser_FAVM/658482_TIC-Viasuisse/1",
@@ -133,26 +149,10 @@
         "category": 31,
         "changedAt": "2026-10-03T13:25:16+02:00",
         "priority": 5
-      },
-      {
-        "id": "Viasuisser_Viasuisse/2509742_TIC-Viasuisse/1",
-        "text": "Cassarate, Via Pico - a Cassarate in entrambe le direzioni problemi di traffico, lavori stradali, corsie strette, fino a oggi 17:00",
-        "road": "TI",
-        "category": 31,
-        "changedAt": "2026-10-03T12:37:03+02:00",
-        "priority": 5
-      },
-      {
-        "id": "Viasuisser_Viasuisse/2509479_TIC-Viasuisse/1",
-        "text": "Via Cà Gilard - tra Vigana e Paiardi in entrambe le direzioni chiusa, lavori stradali, fino a oggi, tra 08:30 e 11:30 e tra 13:30 e 16:00",
-        "road": "TI",
-        "category": 11,
-        "changedAt": "2026-10-02T10:13:32+02:00",
-        "priority": 3
       }
     ],
-    "total": 58,
-    "updatedAt": "2026-10-09T12:13:08.427489+00:00",
+    "total": 60,
+    "updatedAt": "2026-10-09T12:40:15.790269+00:00",
     "source": "Viasuisse via RSI"
   },
   "trafficError": false,
@@ -1306,29 +1306,30 @@
       }
     ],
     "model": "202610091200",
-    "updatedAt": "2026-10-09T12:13:08.653492+00:00"
+    "updatedAt": "2026-10-09T12:40:15.795106+00:00"
   },
   "weekError": false,
   "news": {
     "items": [
       {
-        "title": "Battaglia legale, la SNL contesta la concorrenza sleale al Cantone",
-        "description": "Trasporto in battello sul Verbano, la Società Navigazione del Lago di Lugano accusa il Consiglio di Stato di voler favorire le FART - La petizione inoltrata al Tribunale d’appello",
-        "link": "https://www.rsi.ch/s/4147916",
-        "date": "Fri, 09 Oct 2026 10:22:00 GMT",
-        "category": "Ticino",
-        "image": "https://cleaver.cue.rsi.ch/public/info/ticino-grigioni-e-insubria/4147946-khno1a-Battello-sul-Verbano-Lago-Maggiore.jpg/alternates/r16x9_1300/4147946-khno1a-Battello-sul-Verbano-Lago-Maggiore.jpg"
+        "title": "Lombardia e Ticino insieme per affrontare le emergenze transfrontaliere",
+        "description": "Il programma congiunto «Extramuro 2026» intende rafforzare il coordinamento operativo tra operatori italiani e svizzeri nelle situazioni di crisi.",
+        "link": "https://www.tio.ch/ticino/attualita/1955815/procedure-ticino-collaborazione-protezione-svizzera",
+        "date": "Fri, 09 Oct 2026 14:32:18 +0200",
+        "category": "CONFINE",
+        "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onqf.jpg"
       },
       {
-        "title": "Traffico di cocaina, arrestato 21enne albanese",
-        "description": "Il fermo del giovane su un’auto a Massagno, la successiva perquisizione nel suo appartamento ha permesso di trovare 140 grammi di stupefacente",
-        "link": "https://www.rsi.ch/s/4147685",
-        "date": "Fri, 09 Oct 2026 08:45:46 GMT",
-        "category": "Ticino",
-        "image": "https://cleaver.cue.rsi.ch/public/info/ticino-grigioni-e-insubria/4147688-qh22qt-Operazione-antidroga-nel-Luganese.jpg/alternates/r16x9_1300/4147688-qh22qt-Operazione-antidroga-nel-Luganese.jpg"
+        "title": "Il Parco del Piano di Magadino esce dai suoi confini",
+        "description": "Al Centro Commerciale Coop di Tenero la prima tappa della mostra itinerante",
+        "link": "https://www.tio.ch/ticino/attualita/1955805/mostra-parco-magadino-piano-tenero-confini",
+        "date": "Fri, 09 Oct 2026 14:09:12 +0200",
+        "category": "TENERO-CONTRA",
+        "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onq5.jpg"
       }
     ],
-    "updatedAt": "2026-10-09T12:13:08.427489+00:00",
-    "scope": "ticino"
+    "updatedAt": "2026-10-09T12:40:15.790269+00:00",
+    "scope": "ticino",
+    "provider": "tio"
   }
 }

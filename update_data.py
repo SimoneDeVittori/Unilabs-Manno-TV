@@ -27,27 +27,37 @@ try:
 except Exception as exc:
     print('Meteo source unavailable:',type(exc).__name__)
     result['weatherError'] = True
-# The RSI regional feed also contains Grisons and Insubria: require an explicit Ticino reference.
-TICINO_TERMS = r"\b(?:ticino|ticines[ei]|lugano|luganese|bellinzona|bellinzonese|locarno|locarnese|mendrisio|mendrisiotto|chiasso|massagno|manno|ascona|losone|minusio|muralto|biasca|airolo|quinto|faido|leventina|riviera|blenio|acquarossa|serravalle|vallemaggia|maggia|lavizzara|cevio|bignasco|bosco gurin|centovalli|onsernone|verzasca|tenero|gordola|cugnasco|gerra|gambarogno|magadino|viganello|breganzona|pregassona|paradiso|canobbio|porza|comano|cureglia|cadempino|lamone|gravesano|bedano|torricella|taverne|capriasca|tesserete|savosa|vezia|agano|bioggio|cademario|novaggio|malcantone|alto malcantone|caslano|magliaso|pura|ponte tresa|tresa|monteceneri|mezzovico|rivera|sant'antonino|cadenazzo|arbedo|castione|lumino|stabio|vacallo|balerna|novazzano|coldrerio|morbio|breggia|riva san vitale|capolago|brusino|melano|maroggia|bissone|arogno|rovio|ceresio)\b"
-if result.get('news',{}).get('scope') != 'ticino': result.pop('news',None)
+# Official Ticinonline feed dedicated to Ticino.
+from html.parser import HTMLParser
+class ArticleMeta(HTMLParser):
+    def __init__(self): super().__init__(); self.description=''
+    def handle_starttag(self,tag,attrs):
+        values=dict(attrs)
+        if tag=='meta' and values.get('property')=='og:description': self.description=values.get('content','')
 def plain(value):
     return ' '.join(html.unescape(re.sub(r'<[^>]+>',' ',value or '')).split())
+if result.get('news',{}).get('provider') != 'tio': result.pop('news',None)
 try:
-    root = ET.fromstring(fetch('https://www.rsi.ch/info/ticino-grigioni-e-insubria/?f=rss'))
+    root = ET.fromstring(fetch('https://media.tio.ch/files/domains/tio.ch/rss/rss_ticino.xml'))
     items=[]
     for i in root.findall('./channel/item'):
-        title=plain(i.findtext('title',''));description=plain(i.findtext('description',''))
-        if not re.search(TICINO_TERMS,title+' '+description,re.I): continue
-        link=i.findtext('link','')
-        if not title or not link.startswith('https://www.rsi.ch/'): continue
-        thumbnail=i.find('{http://search.yahoo.com/mrss/}thumbnail')
-        items.append({'title':title,'description':description,'link':link,'date':i.findtext('pubDate',''),'category':'Ticino','image':thumbnail.get('url','') if thumbnail is not None else ''})
+        title=plain(i.findtext('title',''));link=i.findtext('link','')
+        if not title or not link.startswith('https://www.tio.ch/ticino/'): continue
+        picture=i.find('{http://search.yahoo.com/mrss/}content')
+        items.append({'title':title,'description':plain(i.findtext('description','')),'link':link,'date':i.findtext('pubDate',''),'category':plain(i.findtext('category','')) or 'Ticino','image':picture.get('url','') if picture is not None else ''})
     items.sort(key=lambda i:parsedate_to_datetime(i['date']).timestamp(),reverse=True)
+    items=items[:2]
     assert items
-    result['news'] = {'items':items[:2], 'updatedAt':now,'scope':'ticino'}
+    for item in items:
+        if not item['description']:
+            try:
+                parser=ArticleMeta();parser.feed(fetch(item['link']).decode('utf-8'))
+                item['description']=plain(parser.description)
+            except Exception as exc: print('Tio subtitle unavailable:',type(exc).__name__)
+    result['news'] = {'items':items, 'updatedAt':now,'scope':'ticino','provider':'tio'}
     result['newsError'] = False
 except Exception as exc:
-    print('RSI source unavailable:',type(exc).__name__)
+    print('Ticinonline source unavailable:',type(exc).__name__)
     result['newsError'] = True
 
 # Canton boundary from swisstopo; filter locally because the public feed also returns events outside the requested map bounds.
