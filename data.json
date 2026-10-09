@@ -1,10 +1,10 @@
 {
   "weather": {
     "current": {
-      "time": 1791541200000,
+      "time": 1791541800000,
       "icon": 3,
       "iconV2": 3,
-      "temperature": 18.9
+      "temperature": 19.1
     },
     "forecast": [
       {
@@ -48,7 +48,7 @@
         "precipitationMax": 0.0
       }
     ],
-    "updatedAt": "2026-10-09T10:35:04.928488+00:00"
+    "updatedAt": "2026-10-09T10:42:02.156324+00:00"
   },
   "weatherError": false,
   "news": {
@@ -78,7 +78,7 @@
         "category": "News"
       }
     ],
-    "updatedAt": "2026-10-09T10:35:04.928488+00:00"
+    "updatedAt": "2026-10-09T10:42:02.156324+00:00"
   },
   "newsError": false
 }
