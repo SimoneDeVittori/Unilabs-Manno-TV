@@ -48,7 +48,7 @@
         "precipitationMax": 0.1
       }
     ],
-    "updatedAt": "2026-10-09T21:33:31.333028+00:00"
+    "updatedAt": "2026-10-09T21:37:21.925074+00:00"
   },
   "weatherError": false,
   "newsError": false,
@@ -57,6 +57,7 @@
       {
         "id": "Viasuisser_FAVM/620496_TIC-Viasuisse/1",
         "text": "2 - Göschenen - Airolo tra Göschenen e Airolo in entrambe le direzioni problemi di traffico, lavori stradali durante il giorno per 0.1 km, limite temporaneo di larghezza di 3.50 m, fino a 18.12.2026, lun - ven tra 07:00 e 17:00 - ID112048",
+        "location": "2 - Göschenen - Airolo",
         "road": "2",
         "category": 31,
         "changedAt": "2026-10-07T07:31:34+02:00",
@@ -65,6 +66,7 @@
       {
         "id": "Viasuisser_Viasuisse/2509766_TIC-Viasuisse/1",
         "text": "Villa Luganese, Ra Stráda De Marèll - fine della strada in entrambe le direzioni problemi di traffico, lavori stradali, corsie strette, fino a 16.10.2026 16:00",
+        "location": "Villa Luganese, Ra Stráda De Marèll - fine della strada in entrambe le direzioni problemi di traffico, lavori stradali, corsie strette, fino a 16.10.2026 16:00",
         "road": "TI",
         "category": 31,
         "changedAt": "2026-10-03T14:17:33+02:00",
@@ -73,6 +75,7 @@
       {
         "id": "Viasuisser_Viasuisse/2509765_TIC-Viasuisse/1",
         "text": "Pregassona, Via Terzerina - a Pregassona in entrambe le direzioni problemi di traffico, lavori stradali, corsie strette, fino a 23.10.2026 17:00",
+        "location": "Pregassona, Via Terzerina - a Pregassona in entrambe le direzioni problemi di traffico, lavori stradali, corsie strette, fino a 23.10.2026 17:00",
         "road": "TI",
         "category": 31,
         "changedAt": "2026-10-03T14:15:28+02:00",
@@ -81,6 +84,7 @@
       {
         "id": "Viasuisser_Viasuisse/2509762_TIC-Viasuisse/1",
         "text": "Piandera Paese, Strada Bassa a Via Cantonale - tra fine della strada e uscita di località in entrambe le direzioni problemi di traffico, lavori stradali, corsie strette, fino a 16.10.2026 17:00",
+        "location": "Piandera Paese, Strada Bassa a Via Cantonale - tra fine della strada e uscita di località in entrambe le direzioni problemi di traffico, lavori stradali, corsie strette, fino a 16.10.2026 17:00",
         "road": "TI",
         "category": 31,
         "changedAt": "2026-10-03T14:12:08+02:00",
@@ -89,6 +93,7 @@
       {
         "id": "Viasuisser_Viasuisse/2509750_TIC-Viasuisse/1",
         "text": "Lugano, Viale Stefano Franscini a Via Serafino Balestra - a Lugano problemi di traffico, lavori stradali, corsie strette, fino a 31.10.2026 07:15",
+        "location": "Lugano, Viale Stefano Franscini a Via Serafino Balestra - a Lugano problemi di traffico, lavori stradali, corsie strette, fino a 31.10.2026 07:15",
         "road": "TI",
         "category": 31,
         "changedAt": "2026-10-03T13:25:16+02:00",
@@ -97,6 +102,7 @@
       {
         "id": "Viasuisser_FAVM/626453_TIC-Viasuisse/1",
         "text": "H2 - Göschenen - Airolo tra Ospizio San Gottardo e Motto Bartola in entrambe le direzioni problemi di traffico, lavori stradali, corsie strette, limite temporaneo di larghezza di 3.30 m, fino a 27.11.2026 17:00 - ID112879",
+        "location": "H2 - Göschenen - Airolo",
         "road": "H2",
         "category": 31,
         "changedAt": "2026-09-30T17:01:21+02:00",
@@ -105,6 +111,7 @@
       {
         "id": "Viasuisser_Viasuisse/2508869_TIC-Viasuisse/1",
         "text": "Sant'Antonino, Via Stazione - a Sant'Antonino in entrambe le direzioni chiusa, lavori stradali, fino a domani 05:30",
+        "location": "Sant'Antonino, Via Stazione - a Sant'Antonino in entrambe le direzioni chiusa, lavori stradali, fino a domani 05:30",
         "road": "TI",
         "category": 11,
         "changedAt": "2026-09-30T13:44:15+02:00",
@@ -113,6 +120,7 @@
       {
         "id": "Viasuisser_Viasuisse/2508715_TIC-Viasuisse/1",
         "text": "Locarno, Via Rovedo - a Locarno problemi di traffico, nuova gestione del traffico, circolazione a senso unico, seguire deviazione locale, fino a 26.02.2027",
+        "location": "Locarno, Via Rovedo - a Locarno problemi di traffico, nuova gestione del traffico, circolazione a senso unico, seguire deviazione locale, fino a 26.02.2027",
         "road": "TI",
         "category": 31,
         "changedAt": "2026-09-29T20:11:47+02:00",
@@ -121,6 +129,7 @@
       {
         "id": "Viasuisser_Viasuisse/2508008_TIC-Viasuisse/1",
         "text": "Via Nodivra - a Carona lavori stradali, corsie strette, fino a 18.12.2026 17:00",
+        "location": "Via Nodivra - a Carona lavori stradali, corsie strette, fino a 18.12.2026 17:00",
         "road": "TI",
         "category": 31,
         "changedAt": "2026-09-27T10:35:09+02:00",
@@ -129,6 +138,7 @@
       {
         "id": "Viasuisser_Viasuisse/2507395_TIC-Viasuisse/1",
         "text": "attraversamento Loco, Al Palazz a Alla Chiesa - in entrambe le direzioni chiusa, lavori stradali, fino a domani, lun - sab È prevista un'apertura al traffico ogni notte dalle 22.00 alle 22.30",
+        "location": "attraversamento Loco, Al Palazz a Alla Chiesa - in entrambe le direzioni chiusa, lavori stradali, fino a domani, lun - sab",
         "road": "TI",
         "category": 11,
         "changedAt": "2026-09-24T10:07:22+02:00",
@@ -137,6 +147,7 @@
       {
         "id": "Viasuisser_FAVM/654593_TIC-Viasuisse/1",
         "text": "A2 - Chiasso direzione S. Gottardo tra  Lugano Nord e Rivera problemi di traffico, lavori stradali durante la notte per 3.1 km, nuova gestione del traffico, carreggiata ridotta a una corsia, limite temporaneo di larghezza di 3.50 m, fino a martedì, tra 21:30 e 04:00 - ID117704",
+        "location": "A2 - Chiasso direzione S. Gottardo",
         "road": "A2",
         "category": 32,
         "changedAt": "2026-09-22T11:58:11+02:00",
@@ -145,6 +156,7 @@
       {
         "id": "Viasuisser_FAVM/654420_TIC-Viasuisse/1",
         "text": "A2 - Chiasso direzione S. Gottardo tra Faido e Quinto problemi di traffico, lavori stradali per 2.7 km, corsie strette, carreggiata ridotta a due corsie, limite temporaneo di larghezza di 7.75 m, fino a 20.11.2026 05:00 - ID117662",
+        "location": "A2 - Chiasso direzione S. Gottardo",
         "road": "A2",
         "category": 31,
         "changedAt": "2026-09-21T17:02:59+02:00",
@@ -152,7 +164,7 @@
       }
     ],
     "total": 48,
-    "updatedAt": "2026-10-09T21:33:31.333028+00:00",
+    "updatedAt": "2026-10-09T21:37:21.925074+00:00",
     "source": "Viasuisse via RSI"
   },
   "trafficError": false,
@@ -1306,11 +1318,19 @@
       }
     ],
     "model": "202610092100",
-    "updatedAt": "2026-10-09T21:33:31.381629+00:00"
+    "updatedAt": "2026-10-09T21:37:21.942310+00:00"
   },
   "weekError": false,
   "news": {
     "items": [
+      {
+        "title": "È stato il settembre più caldo di sempre a sud delle Alpi",
+        "description": "Specialmente i primi dieci giorni del mese sono stati da primato, afferma MeteoSvizzera",
+        "link": "https://www.tio.ch/ticino/attualita/1955620/settembre-mm-caldo-mese-stato-alpi-sud",
+        "date": "Fri, 09 Oct 2026 23:33:18 +0200",
+        "category": "CANTONE",
+        "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onem.jpg"
+      },
       {
         "title": "Turisti di Varese morti sotto una frana in Valtellina, tre condanne",
         "description": "Confermate pene sospese per gli imputati e decisi risarcimenti alle famiglie delle vittime della tragedia del 2020 a Chiareggio.",
@@ -1326,17 +1346,9 @@
         "date": "Fri, 09 Oct 2026 19:09:14 +0200",
         "category": "CANTONE",
         "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onts.jpg?v=1"
-      },
-      {
-        "title": "Misurando il ghiacciaio, o quel che ne resta",
-        "description": "Gli esperti del cantone al lavoro sul ghiacciaio di Valleggia (Val Bedretto) e i primi dati grezzi estremamente preoccupanti.",
-        "link": "https://www.tio.ch/ticino/attualita/1955845/misurando-il-ghiacciaio-o-quel-che-ne-resta",
-        "date": "Fri, 09 Oct 2026 18:33:16 +0200",
-        "category": "VAL BEDRETTO",
-        "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onrn.jpg?v=1"
       }
     ],
-    "updatedAt": "2026-10-09T21:33:31.333028+00:00",
+    "updatedAt": "2026-10-09T21:37:21.925074+00:00",
     "scope": "ticino",
     "provider": "tio"
   }
