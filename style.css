@@ -20,3 +20,5 @@ header{display:grid;grid-template-columns:1fr 1fr 1fr;position:relative;min-heig
 .tio-logo{width:86px;height:62px;object-fit:contain}.screen{transition:opacity 1.2s cubic-bezier(.4,0,.2,1),visibility 1.2s}.screen.active{z-index:1}.progress{z-index:2}
 
 .creator-logo{position:absolute;left:50%;bottom:8px;transform:translateX(-50%);width:128px;height:64px;object-fit:contain;pointer-events:none}
+
+.webcam-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px;flex:1;min-height:0}.webcam-card{border-top:8.64px solid #e7531b;padding:30px 24px;min-height:0}.webcam-card .section-label{font-size:30px}.webcam-view{font-size:23px;color:#687580;margin:14px 0 24px;min-height:56px;line-height:1.25}.webcam-frame{flex:1;min-height:0;background:#15191e;border-radius:12px;overflow:hidden}.webcam-frame iframe{width:100%;height:100%;border:0;display:block}.webcam-link{font-size:18px;color:#737f88;margin-top:22px}.webcam-source{display:flex;justify-content:space-between;font-size:18px;color:#6c7984;padding-top:20px}.webcam-screen footer{padding-top:20px}
