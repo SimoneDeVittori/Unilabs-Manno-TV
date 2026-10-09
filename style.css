@@ -56,3 +56,5 @@ header{display:grid;grid-template-columns:1fr 1fr 1fr;position:relative;min-heig
 .weather.card{background:#fff;border-top-color:#e7531b}.weather-heading h1{padding-top:0}.weather-heading .section-label{align-self:auto;margin-top:0}.right-column{gap:42.24px;grid-template-rows:500px minmax(0,1fr)}
 
 .weather.card,.news.card,.traffic.card{border-top-width:8px}.tio-logo,.tcs-logo{top:-8px}
+
+.tio-logo,.tcs-logo{height:78px;border-radius:0 0 17px 17px;padding:15px 9px}
