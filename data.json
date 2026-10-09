@@ -48,7 +48,7 @@
         "precipitationMax": 0.0
       }
     ],
-    "updatedAt": "2026-10-09T11:19:25.862416+00:00"
+    "updatedAt": "2026-10-09T11:21:41.085295+00:00"
   },
   "weatherError": false,
   "news": {
@@ -68,7 +68,7 @@
         "image": "https://cleaver.cue.rsi.ch/public/incoming/4147943-98h5fg-keystone-highres-729604585.jpg/alternates/r16x9_1300/4147943-98h5fg-keystone-highres-729604585.jpg"
       }
     ],
-    "updatedAt": "2026-10-09T11:19:25.862416+00:00"
+    "updatedAt": "2026-10-09T11:21:41.085295+00:00"
   },
   "newsError": false,
   "traffic": {
@@ -171,7 +171,7 @@
       }
     ],
     "total": 56,
-    "updatedAt": "2026-10-09T11:19:25.862416+00:00",
+    "updatedAt": "2026-10-09T11:21:41.085295+00:00",
     "source": "Viasuisse via RSI"
   },
   "trafficError": false
