@@ -34,3 +34,5 @@ header{display:grid;grid-template-columns:1fr 1fr 1fr;position:relative;min-heig
 .right-column{grid-template-rows:510px minmax(0,1fr)}.news-photo{width:104px;height:104px}.traffic-item p{font-size:23px;line-height:1.25}
 
 .dashboard{background:#efefef}.traffic-list{gap:16px}.traffic-item{padding:0;border-bottom:0}
+
+.traffic-item p{font-size:21px}.traffic-item time{color:#de4d18}.traffic-location{font-weight:700}

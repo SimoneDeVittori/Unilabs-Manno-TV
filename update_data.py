@@ -101,7 +101,7 @@ try:
         road=re.match(r'^(A\d+|H\d+|\d+)\b', info.get('RoadNo') or e.get('Name',''))
         updated=traffic_time(info.get('LastUpdated'))
         priority={12:0,13:1,14:2,11:3,21:4,31:5,32:6}[category]
-        filtered.append({'id':e['Id'],'text':text,'road':road.group(1) if road else 'TI','category':category,'changedAt':updated.isoformat() if updated else None,'priority':priority})
+        filtered.append({'id':e['Id'],'text':text,'location':e.get('Name','').strip(),'road':road.group(1) if road else 'TI','category':category,'changedAt':updated.isoformat() if updated else None,'priority':priority})
     filtered.sort(key=lambda e:(-(datetime.fromisoformat(e['changedAt']).timestamp() if e['changedAt'] else 0),e['priority']))
     seen=set();items=[]
     for e in filtered:
