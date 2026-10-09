@@ -6,7 +6,7 @@ const fmtTime=(value:any)=>new Date(value).toLocaleTimeString('it-CH',{hour:'2-d
 export default function Home(){
  const [now,setNow]=useState<Date|null>(null);const [page,setPage]=useState(0);const [data,setData]=useState<any>({});const [failed,setFailed]=useState(false);const [controls,setControls]=useState(false);
  useEffect(()=>{const resize=()=>document.documentElement.style.setProperty('--tv-scale',String(Math.min(window.innerWidth/1920,window.innerHeight/1080)));resize();window.addEventListener('resize',resize);setNow(new Date());const clock=setInterval(()=>setNow(new Date()),1000);let alive=true;async function refresh(){try{const r=await fetch('./data.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error();const d=await r.json();if(alive){setData((old:any)=>({...d,weather:d.weather??old.weather,news:d.news??old.news}));setFailed(false);}}catch{if(alive)setFailed(true);}}refresh();const poll=setInterval(refresh,180000);const visibility=()=>{if(!document.hidden)refresh();};document.addEventListener('visibilitychange',visibility);return()=>{window.removeEventListener('resize',resize);alive=false;clearInterval(clock);clearInterval(poll);document.removeEventListener('visibilitychange',visibility);};},[]);
- useEffect(()=>{const rotation=setTimeout(()=>setPage(p=>(p+1)%3),page===2?10000:20000);return()=>clearTimeout(rotation);},[page]);
+ useEffect(()=>{const rotation=setTimeout(()=>setPage(p=>(p+1)%3),page===0?25000:page===2?10000:20000);return()=>clearTimeout(rotation);},[page]);
  useEffect(()=>{if(!controls)return;const t=setTimeout(()=>setControls(false),3500);return()=>clearTimeout(t);},[controls]);
  const week=data.week;
  const rainWindow=(day:string)=>{
