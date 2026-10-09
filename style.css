@@ -64,3 +64,5 @@ footer{position:relative;justify-content:center;min-height:50px}.creator-logo{le
 .creator-logo{top:calc(50% + 13.5px);bottom:auto;transform:translateY(-50%)}.tio-logo,.tcs-logo{height:66px;padding:9px;border-radius:0 0 15px 15px}
 
 .weather.card,.news.card,.traffic.card{border-top-width:14px}.tio-logo,.tcs-logo{top:-14px}.creator-copyright{position:absolute;left:0;top:calc(50% + 13.5px);transform:translateY(-50%);font-size:19.2px;color:#6c7984;white-space:nowrap}
+
+.tcs-logo{padding:2px}
