@@ -78,3 +78,6 @@ footer{position:relative;justify-content:center;min-height:50px}.creator-logo{le
 .swiss-map-card .map-heading{flex-shrink:0;margin-bottom:32px}.national-map{overflow:hidden}
 
 .map-weather-icon{color:#c96035}.map-city-name{font-family:Arial,Helvetica,sans-serif;fill:#242a31}.map-city-temp{font-family:Arial,Helvetica,sans-serif;font-size:22px}
+
+.swiss-map-screen header{min-height:108px;margin-bottom:16px}.swiss-map-card .map-heading{margin-bottom:12px}
+
