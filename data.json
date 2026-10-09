@@ -1,7 +1,7 @@
 {
   "weather": {
     "current": {
-      "time": 1791555000000,
+      "time": 1791558000000,
       "icon": 1,
       "iconV2": 1,
       "temperature": 21.8
@@ -22,7 +22,7 @@
         "iconDay": 3,
         "iconDayV2": 3,
         "temperatureMax": 19,
-        "temperatureMin": 11,
+        "temperatureMin": 12,
         "precipitation": 0.0,
         "precipitationMin": 0.0,
         "precipitationMax": 0.6
@@ -48,12 +48,60 @@
         "precipitationMax": 0.0
       }
     ],
-    "updatedAt": "2026-10-09T14:21:55.611919+00:00"
+    "updatedAt": "2026-10-09T15:12:05.862409+00:00"
   },
   "weatherError": false,
   "newsError": false,
   "traffic": {
     "items": [
+      {
+        "id": "Viasuisser_Viasuisse/2511259_TIC-Viasuisse/1",
+        "text": "Via al Ticino, Sementina direzione Giubiasco - tra Via Locarno in Sementina e Giubiasco colonna, traffico congestionato",
+        "road": "TI",
+        "category": 12,
+        "changedAt": "2026-10-09T16:45:01+02:00",
+        "priority": 0
+      },
+      {
+        "id": "Viasuisser_Viasuisse/2511256_TIC-Viasuisse/1",
+        "text": "H2 - Via Monte Ceneri, Chiasso direzione Bellinzona tra Monte Ceneri in Cadenazzo e Cadenazzo colonna, traffico congestionato",
+        "road": "H2",
+        "category": 12,
+        "changedAt": "2026-10-09T16:43:25+02:00",
+        "priority": 0
+      },
+      {
+        "id": "Viasuisser_Viasuisse/2511251_TIC-Viasuisse/1",
+        "text": "H13 - Via Birreria direzione Via Cantonale tra Monte Carasso e Sementina colonna, traffico congestionato",
+        "road": "H13",
+        "category": 12,
+        "changedAt": "2026-10-09T16:34:41+02:00",
+        "priority": 0
+      },
+      {
+        "id": "Viasuisser_Viasuisse/2511250_TIC-Viasuisse/1",
+        "text": "H13 - Cadenazzo - Via Moyar tra Cadenazzo e Gudo in entrambe le direzioni colonna, traffico congestionato",
+        "road": "H13",
+        "category": 12,
+        "changedAt": "2026-10-09T16:33:27+02:00",
+        "priority": 0
+      },
+      {
+        "id": "Viasuisser_Viasuisse/2511238_TIC-Viasuisse/1",
+        "text": "399 - Lugano, Viale Cassarate tra Via Serafino Balestra e Viale Carlo Cattaneo colonna, traffico congestionato",
+        "road": "399",
+        "category": 12,
+        "changedAt": "2026-10-09T16:22:04+02:00",
+        "priority": 0
+      },
+      {
+        "id": "Viasuisser_Viasuisse/2511236_TIC-Viasuisse/1",
+        "text": "Via Ponte Tresa direzione Via Silvio Calloni - tra Sorengo e Loreto in Lugano colonna, traffico congestionato",
+        "road": "TI",
+        "category": 12,
+        "changedAt": "2026-10-09T16:21:03+02:00",
+        "priority": 0
+      },
       {
         "id": "Viasuisser_Viasuisse/2511235_TIC-Viasuisse/1",
         "text": "401 - Lugano, Via Besso a Via Romeo Manzoni tra Via Bioggio e Piazzale di Besso colonna, traffico congestionato",
@@ -101,58 +149,10 @@
         "category": 12,
         "changedAt": "2026-10-09T15:50:38+02:00",
         "priority": 0
-      },
-      {
-        "id": "Viasuisser_Viasuisse/2511194_TIC-Viasuisse/1",
-        "text": "H2 - tra Massagno e Sorengo in Lugano colonna, traffico congestionato",
-        "road": "H2",
-        "category": 12,
-        "changedAt": "2026-10-09T15:44:57+02:00",
-        "priority": 0
-      },
-      {
-        "id": "Viasuisser_FAVM/658521_TIC-Viasuisse/1",
-        "text": "A2 - S. Gottardo direzione Chiasso tra Chiasso e frontiera Chiasso Brogeda colonna, traffico congestionato",
-        "road": "A2",
-        "category": 12,
-        "changedAt": "2026-10-09T15:39:39+02:00",
-        "priority": 0
-      },
-      {
-        "id": "Viasuisser_Viasuisse/2511200_TIC-Viasuisse/1",
-        "text": "Lugano, Viale Carlo Cattaneo a Piazza Castello - tra Viale Cassarate e Piazza dell'Indipendenza colonna, traffico congestionato",
-        "road": "TI",
-        "category": 12,
-        "changedAt": "2026-10-09T15:28:33+02:00",
-        "priority": 0
-      },
-      {
-        "id": "Viasuisser_Viasuisse/2511199_TIC-Viasuisse/1",
-        "text": "Lugano, Corso Elvezia a Riva Giocondo Albertolli - tra Via Serafino Balestra e Corso Elvezia colonna, traffico congestionato",
-        "road": "TI",
-        "category": 12,
-        "changedAt": "2026-10-09T15:28:06+02:00",
-        "priority": 0
-      },
-      {
-        "id": "Viasuisser_Viasuisse/2511171_TIC-Viasuisse/1",
-        "text": "398 - direzione Ponte Tresa tra Gravesano e frontiera Ponte Tresa traffico fortemente rallentato, traffico congestionato",
-        "road": "398",
-        "category": 13,
-        "changedAt": "2026-10-09T14:44:51+02:00",
-        "priority": 1
-      },
-      {
-        "id": "Viasuisser_FAVM/658534_TIC-Viasuisse/1",
-        "text": "A24 - Mendrisio direzione Stabio tra Genestrerio e 394, Stabio colonna, traffico congestionato",
-        "road": "A24",
-        "category": 12,
-        "changedAt": "2026-10-09T14:35:09+02:00",
-        "priority": 0
       }
     ],
-    "total": 65,
-    "updatedAt": "2026-10-09T14:21:55.611919+00:00",
+    "total": 68,
+    "updatedAt": "2026-10-09T15:12:05.862409+00:00",
     "source": "Viasuisse via RSI"
   },
   "trafficError": false,
@@ -1305,30 +1305,30 @@
         "amount": 0.0
       }
     ],
-    "model": "202610091400",
-    "updatedAt": "2026-10-09T14:21:55.634193+00:00"
+    "model": "202610091500",
+    "updatedAt": "2026-10-09T15:12:05.902946+00:00"
   },
   "weekError": false,
   "news": {
     "items": [
       {
-        "title": "Caso Pronzini, lo scherno dopo il ricorso al TF: «Le priorità... Alla fine ci sarà il giudizio di Dio»",
-        "description": "I sette municipali in carica nella scorsa legislatura impugnano il proscioglimento del deputato MPS. Il collega Pino Sergi attacca: «La deriva politica e morale è ormai completa». Henrik Bang, intanto, replica sul valore del rispetto, anche nei confronti dei politici.",
-        "link": "https://www.tio.ch/ticino/politica/1955843/caso-pronzini-lo-scherno-dopo-il-ricorso-al-tf-le-priorita-alla-fine-ci-sara-il-giudizio-di-dio",
-        "date": "Fri, 09 Oct 2026 16:18:58 +0200",
-        "category": "BELLINZONA",
-        "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onrl.jpg?v=1"
+        "title": "Meglio andarci piano, soprattutto da queste parti",
+        "description": "I radar della settimana per il periodo compreso fra il 12 e il 18 ottobre, secondo la lista diffusa dalla Polizia cantonale.",
+        "link": "https://www.tio.ch/ticino/attualita/1955856/meglio-andarci-piano-soprattutto-da-queste-parti",
+        "date": "Fri, 09 Oct 2026 17:08:11 +0200",
+        "category": "CANTONE",
+        "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1ons1.jpg?v=1"
       },
       {
-        "title": "Sei ballerini ticinesi sulle note dei grandi successi K-pop",
-        "description": "Hanno tra i 18 e i 20 anni e debutteranno il 13 ottobre alla Geneva Arena con K-POP FEVER. Il 1° novembre lo spettacolo farà tappa anche a Lugano.",
-        "link": "https://www.tio.ch/ticino/attualita/1955839/k-pop-successi-ticinesi-note-fever",
-        "date": "Fri, 09 Oct 2026 16:12:38 +0200",
-        "category": "GINEVRA",
-        "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onrk.jpg?v=2"
+        "title": "Il Ticino in prima linea nella gestione delle emergenze transfrontaliere",
+        "description": "La collaborazione transfrontaliera punta a una risposta coordinata e tempestiva in caso di emergenze condivise.",
+        "link": "https://www.tio.ch/ticino/attualita/1955858/protezione-emergenze-collaborazione-ticino-gestione",
+        "date": "Fri, 09 Oct 2026 16:46:57 +0200",
+        "category": "CANTONE/CONFINE",
+        "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1ons4.jpg?v=1"
       }
     ],
-    "updatedAt": "2026-10-09T14:21:55.611919+00:00",
+    "updatedAt": "2026-10-09T15:12:05.862409+00:00",
     "scope": "ticino",
     "provider": "tio"
   }
