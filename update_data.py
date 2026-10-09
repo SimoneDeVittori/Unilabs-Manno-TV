@@ -114,6 +114,21 @@ except Exception as exc:
     print('Viasuisse source unavailable:',type(exc).__name__)
     result['trafficError']=True
 
+# National forecast, using the same versioned product as MeteoSwiss forecast-map.
+try:
+    versions=json.loads(fetch('https://www.meteosvizzera.admin.ch/product/output/versions.json'))
+    version=versions['forecast-map-v2']
+    cities=json.loads(fetch(f'https://www.meteosvizzera.admin.ch/product/output/forecast-map-v2/version__{version}/it/chmap_current.json'))
+    selected={'100300','120100','195000','300400','400100','600300','690000','700000','800100','900000'}
+    cities=[c for c in cities if str(c['location_id']) in selected]
+    if len(cities)!=len(selected):
+        raise ValueError('Incomplete national forecast')
+    result['swissWeather']={'cities':cities,'updatedAt':now,'version':version}
+    result['swissWeatherError']=False
+except Exception as exc:
+    print('Swiss forecast map unavailable:',type(exc).__name__)
+    result['swissWeatherError']=True
+
 OUTPUT.write_text(json.dumps(result, ensure_ascii=False, indent=2))
 if not result.get('news') or not result.get('weather'):
     raise SystemExit('Initial data incomplete; retry the workflow.')

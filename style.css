@@ -66,3 +66,5 @@ footer{position:relative;justify-content:center;min-height:50px}.creator-logo{le
 .weather.card,.news.card,.traffic.card{border-top-width:8px}.tio-logo,.tcs-logo{top:-8px}.creator-copyright{position:absolute;left:0;top:calc(50% + 13.5px);transform:translateY(-50%);font-size:19.2px;color:#6c7984;white-space:nowrap}
 
 .tcs-logo{padding:2px}
+
+.swiss-map-card{flex:1;min-height:0;position:relative;border-top:8px solid #e7531b;padding:26px 38px 22px}.map-heading{display:flex;align-items:center;justify-content:space-between}.map-heading h2{font-size:34px;margin:8px 0 0;font-weight:600;letter-spacing:-.03em}.map-legend{font-size:22px;color:#737f88}.national-map{display:block;width:100%;flex:1;min-height:0;overflow:visible}.map-city-name{font-size:19px;font-weight:600;fill:#26313a}.map-city-temp{font-size:23px;font-weight:600;font-variant-numeric:tabular-nums}.swiss-map-card .source{padding-top:0;flex-shrink:0}.map-unavailable{position:absolute;left:0;right:0;top:50%;text-align:center;color:#737f88;font-size:28px}
