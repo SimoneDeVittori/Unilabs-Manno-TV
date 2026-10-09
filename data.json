@@ -1,10 +1,10 @@
 {
   "weather": {
     "current": {
-      "time": 1791561600000,
-      "icon": 1,
-      "iconV2": 1,
-      "temperature": 20.7
+      "time": 1791569400000,
+      "icon": 101,
+      "iconV2": 101,
+      "temperature": 15.8
     },
     "forecast": [
       {
@@ -22,68 +22,52 @@
         "iconDay": 3,
         "iconDayV2": 3,
         "temperatureMax": 19,
-        "temperatureMin": 12,
+        "temperatureMin": 13,
         "precipitation": 0.0,
         "precipitationMin": 0.0,
-        "precipitationMax": 0.6
+        "precipitationMax": 0.5
       },
       {
         "dayDate": "2026-10-11",
-        "iconDay": 26,
-        "iconDayV2": 26,
+        "iconDay": 1,
+        "iconDayV2": 1,
         "temperatureMax": 20,
         "temperatureMin": 10,
         "precipitation": 0.0,
         "precipitationMin": 0.0,
-        "precipitationMax": 0.0
+        "precipitationMax": 0.1
       },
       {
         "dayDate": "2026-10-12",
         "iconDay": 1,
         "iconDayV2": 1,
-        "temperatureMax": 20,
-        "temperatureMin": 11,
+        "temperatureMax": 19,
+        "temperatureMin": 10,
         "precipitation": 0.0,
         "precipitationMin": 0.0,
-        "precipitationMax": 0.0
+        "precipitationMax": 0.1
       }
     ],
-    "updatedAt": "2026-10-09T16:11:43.355737+00:00"
+    "updatedAt": "2026-10-09T18:23:50.160991+00:00"
   },
   "weatherError": false,
   "newsError": false,
   "traffic": {
     "items": [
       {
-        "id": "Viasuisser_Viasuisse/2511171_TIC-Viasuisse/1",
-        "text": "398 - Lamone direzione Ponte Tresa tra Agno e frontiera Ponte Tresa traffico fortemente rallentato, traffico congestionato",
-        "road": "398",
-        "category": 13,
-        "changedAt": "2026-10-09T17:45:18+02:00",
-        "priority": 1
-      },
-      {
-        "id": "Viasuisser_FAVM/658639_TIC-Viasuisse/1",
-        "text": "A13 - Ascona direzione Aeroporto di Locarno tra Tenero-Contra e rotatoria Aeroporto di Locarno colonna, traffico congestionato",
-        "road": "A13",
-        "category": 12,
-        "changedAt": "2026-10-09T17:43:26+02:00",
-        "priority": 0
-      },
-      {
         "id": "Viasuisser_FAVM/658482_TIC-Viasuisse/1",
-        "text": "A2 - Chiasso direzione S. Gottardo tra Quinto e Area di dosaggio Airolo traffico bloccato per 3 km, traffico congestionato, ritardi fino a 30 minuti - La corsia CUPRA è aperta",
+        "text": "A2 - Chiasso direzione S. Gottardo tra Quinto e Area di dosaggio Airolo traffico bloccato per 2 km, traffico congestionato, ritardi fino a 20 minuti - La corsia CUPRA è aperta",
         "road": "A2",
         "category": 12,
-        "changedAt": "2026-10-09T17:41:41+02:00",
+        "changedAt": "2026-10-09T19:25:43+02:00",
         "priority": 0
       },
       {
-        "id": "Viasuisser_FAVM/658521_TIC-Viasuisse/1",
-        "text": "A2 - S. Gottardo direzione Chiasso tra l'area di servizio di Coldrerio e frontiera Chiasso Brogeda colonna, traffico congestionato",
-        "road": "A2",
+        "id": "Viasuisser_FAVM/658571_TIC-Viasuisse/1",
+        "text": "H2 - direzione Chiasso tra Camorino in Comelina e Cadenazzo colonna, traffico congestionato",
+        "road": "H2",
         "category": 12,
-        "changedAt": "2026-10-09T17:36:07+02:00",
+        "changedAt": "2026-10-09T18:41:34+02:00",
         "priority": 0
       },
       {
@@ -95,64 +79,80 @@
         "priority": 0
       },
       {
-        "id": "Viasuisser_Viasuisse/2511282_TIC-Viasuisse/1",
-        "text": "Via Paradiso direzione Via Sorengo - tra Sorengo e Piazzale di Besso in Lugano colonna, traffico congestionato",
-        "road": "TI",
-        "category": 12,
-        "changedAt": "2026-10-09T17:20:13+02:00",
-        "priority": 0
+        "id": "Viasuisser_FAVM/658485_TIC-Viasuisse/1",
+        "text": "A2 - Chiasso direzione S. Gottardo a Airolo chiuso raccordo autostradale in entrata",
+        "road": "A2",
+        "category": 11,
+        "changedAt": "2026-10-09T10:57:18+02:00",
+        "priority": 3
       },
       {
-        "id": "Viasuisser_Viasuisse/2511259_TIC-Viasuisse/1",
-        "text": "Via al Ticino, Sementina direzione Giubiasco - tra Via Locarno in Sementina e Giubiasco colonna, traffico congestionato",
-        "road": "TI",
-        "category": 12,
-        "changedAt": "2026-10-09T16:45:01+02:00",
-        "priority": 0
+        "id": "Viasuisser_FAVM/620496_TIC-Viasuisse/1",
+        "text": "2 - Göschenen - Airolo tra Göschenen e Airolo in entrambe le direzioni problemi di traffico, lavori stradali durante il giorno per 0.1 km, limite temporaneo di larghezza di 3.50 m, fino a 18.12.2026, lun - ven tra 07:00 e 17:00 - ID112048",
+        "road": "2",
+        "category": 31,
+        "changedAt": "2026-10-07T07:31:34+02:00",
+        "priority": 5
       },
       {
-        "id": "Viasuisser_Viasuisse/2511256_TIC-Viasuisse/1",
-        "text": "H2 - Via Monte Ceneri, Chiasso direzione Bellinzona tra Monte Ceneri in Cadenazzo e Cadenazzo colonna, traffico congestionato",
+        "id": "Viasuisser_Viasuisse/2509766_TIC-Viasuisse/1",
+        "text": "Villa Luganese, Ra Stráda De Marèll - fine della strada in entrambe le direzioni problemi di traffico, lavori stradali, corsie strette, fino a 16.10.2026 16:00",
+        "road": "TI",
+        "category": 31,
+        "changedAt": "2026-10-03T14:17:33+02:00",
+        "priority": 5
+      },
+      {
+        "id": "Viasuisser_Viasuisse/2509765_TIC-Viasuisse/1",
+        "text": "Pregassona, Via Terzerina - a Pregassona in entrambe le direzioni problemi di traffico, lavori stradali, corsie strette, fino a 23.10.2026 17:00",
+        "road": "TI",
+        "category": 31,
+        "changedAt": "2026-10-03T14:15:28+02:00",
+        "priority": 5
+      },
+      {
+        "id": "Viasuisser_Viasuisse/2509762_TIC-Viasuisse/1",
+        "text": "Piandera Paese, Strada Bassa a Via Cantonale - tra fine della strada e uscita di località in entrambe le direzioni problemi di traffico, lavori stradali, corsie strette, fino a 16.10.2026 17:00",
+        "road": "TI",
+        "category": 31,
+        "changedAt": "2026-10-03T14:12:08+02:00",
+        "priority": 5
+      },
+      {
+        "id": "Viasuisser_Viasuisse/2509750_TIC-Viasuisse/1",
+        "text": "Lugano, Viale Stefano Franscini a Via Serafino Balestra - a Lugano problemi di traffico, lavori stradali, corsie strette, fino a 31.10.2026 07:15",
+        "road": "TI",
+        "category": 31,
+        "changedAt": "2026-10-03T13:25:16+02:00",
+        "priority": 5
+      },
+      {
+        "id": "Viasuisser_FAVM/626453_TIC-Viasuisse/1",
+        "text": "H2 - Göschenen - Airolo tra Ospizio San Gottardo e Motto Bartola in entrambe le direzioni problemi di traffico, lavori stradali, corsie strette, limite temporaneo di larghezza di 3.30 m, fino a 27.11.2026 17:00 - ID112879",
         "road": "H2",
-        "category": 12,
-        "changedAt": "2026-10-09T16:43:25+02:00",
-        "priority": 0
+        "category": 31,
+        "changedAt": "2026-09-30T17:01:21+02:00",
+        "priority": 5
       },
       {
-        "id": "Viasuisser_Viasuisse/2511250_TIC-Viasuisse/1",
-        "text": "H13 - Cadenazzo - Via Moyar tra Cadenazzo e Gudo in entrambe le direzioni colonna, traffico congestionato",
-        "road": "H13",
-        "category": 12,
-        "changedAt": "2026-10-09T16:33:27+02:00",
-        "priority": 0
-      },
-      {
-        "id": "Viasuisser_Viasuisse/2511238_TIC-Viasuisse/1",
-        "text": "399 - Lugano, Viale Cassarate tra Via Serafino Balestra e Viale Carlo Cattaneo colonna, traffico congestionato",
-        "road": "399",
-        "category": 12,
-        "changedAt": "2026-10-09T16:22:04+02:00",
-        "priority": 0
-      },
-      {
-        "id": "Viasuisser_Viasuisse/2511236_TIC-Viasuisse/1",
-        "text": "Via Ponte Tresa direzione Via Silvio Calloni - tra Sorengo e Loreto in Lugano colonna, traffico congestionato",
+        "id": "Viasuisser_Viasuisse/2508715_TIC-Viasuisse/1",
+        "text": "Locarno, Via Rovedo - a Locarno problemi di traffico, nuova gestione del traffico, circolazione a senso unico, seguire deviazione locale, fino a 26.02.2027",
         "road": "TI",
-        "category": 12,
-        "changedAt": "2026-10-09T16:21:03+02:00",
-        "priority": 0
+        "category": 31,
+        "changedAt": "2026-09-29T20:11:47+02:00",
+        "priority": 5
       },
       {
-        "id": "Viasuisser_Viasuisse/2511235_TIC-Viasuisse/1",
-        "text": "401 - Lugano, Via Besso a Via Romeo Manzoni tra Via Bioggio e Piazzale di Besso colonna, traffico congestionato",
-        "road": "401",
-        "category": 12,
-        "changedAt": "2026-10-09T16:18:38+02:00",
-        "priority": 0
+        "id": "Viasuisser_Viasuisse/2508008_TIC-Viasuisse/1",
+        "text": "Via Nodivra - a Carona lavori stradali, corsie strette, fino a 18.12.2026 17:00",
+        "road": "TI",
+        "category": 31,
+        "changedAt": "2026-09-27T10:35:09+02:00",
+        "priority": 5
       }
     ],
-    "total": 69,
-    "updatedAt": "2026-10-09T16:11:43.355737+00:00",
+    "total": 51,
+    "updatedAt": "2026-10-09T18:23:50.160991+00:00",
     "source": "Viasuisse via RSI"
   },
   "trafficError": false,
@@ -160,7 +160,7 @@
     "days": [
       {
         "dayDate": "2026-10-09",
-        "temperatureMin": 14,
+        "temperatureMin": 13,
         "temperatureMax": 22,
         "iconDay": 29,
         "precipitation": 0.1
@@ -176,21 +176,21 @@
         "dayDate": "2026-10-11",
         "temperatureMin": 10,
         "temperatureMax": 20,
-        "iconDay": 26,
+        "iconDay": 1,
         "precipitation": 0.0
       },
       {
         "dayDate": "2026-10-12",
-        "temperatureMin": 11,
-        "temperatureMax": 20,
+        "temperatureMin": 10,
+        "temperatureMax": 19,
         "iconDay": 1,
         "precipitation": 0.0
       },
       {
         "dayDate": "2026-10-13",
-        "temperatureMin": 11,
+        "temperatureMin": 10,
         "temperatureMax": 19,
-        "iconDay": 2,
+        "iconDay": 3,
         "precipitation": 0.0
       },
       {
@@ -1305,30 +1305,30 @@
         "amount": 0.0
       }
     ],
-    "model": "202610091500",
-    "updatedAt": "2026-10-09T16:11:43.384021+00:00"
+    "model": "202610091800",
+    "updatedAt": "2026-10-09T18:23:50.188097+00:00"
   },
   "weekError": false,
   "news": {
     "items": [
       {
-        "title": "Caslano, traffico paralizzato: incidente coinvolge un motociclista",
-        "description": "La viabilità locale subisce pesanti rallentamenti dopo un sinistro registrato in prima serata.",
-        "link": "https://www.tio.ch/ticino/attualita/1955875/caslano-traffico-incidente-motociclista-ponte",
-        "date": "Fri, 09 Oct 2026 18:07:24 +0200",
-        "category": "CASLANO",
-        "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1ont4.jpg?v=3"
+        "title": "Caso Gobbi, due agenti a rischio licenziamento",
+        "description": "I poliziotti sono indagati per violazione del segreto d’ufficio. Sentiti dal procuratore generale anche i granconsiglieri Pronzini e Dadò, che negano di aver ricevuto informazioni riservate.",
+        "link": "https://www.tio.ch/ticino/attualita/1955886/gobbi-caso-agenti-dado-pronzini-due-licenziamento",
+        "date": "Fri, 09 Oct 2026 19:09:14 +0200",
+        "category": "CANTONE",
+        "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onts.jpg?v=1"
       },
       {
-        "title": "Lavori notturni sul ponte del Cassarate: possibili disagi al traffico",
-        "description": "Le operazioni si svolgeranno tra martedì 13 e giovedì 15 ottobre.",
-        "link": "https://www.tio.ch/ticino/attualita/1955870/via-lavori-disagi-ponte-cassarate",
-        "date": "Fri, 09 Oct 2026 17:50:18 +0200",
-        "category": "LUGANO",
-        "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onst.jpg?v=1"
+        "title": "Misurando il ghiacciaio, o quel che ne resta",
+        "description": "Gli esperti del cantone al lavoro sul ghiacciaio di Valleggia (Val Bedretto) e i primi dati grezzi estremamente preoccupanti.",
+        "link": "https://www.tio.ch/ticino/attualita/1955845/misurando-il-ghiacciaio-o-quel-che-ne-resta",
+        "date": "Fri, 09 Oct 2026 18:33:16 +0200",
+        "category": "VAL BEDRETTO",
+        "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onrn.jpg?v=1"
       }
     ],
-    "updatedAt": "2026-10-09T16:11:43.355737+00:00",
+    "updatedAt": "2026-10-09T18:23:50.160991+00:00",
     "scope": "ticino",
     "provider": "tio"
   }
