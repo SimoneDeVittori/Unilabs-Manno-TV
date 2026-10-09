@@ -19,4 +19,4 @@ header{display:grid;grid-template-columns:1fr 1fr 1fr;position:relative;min-heig
 
 .tio-logo{width:86px;height:62px;object-fit:contain}.screen{transition:opacity 1.2s cubic-bezier(.4,0,.2,1),visibility 1.2s}.screen.active{z-index:1}.progress{z-index:2}
 
-.creator-logo{position:absolute;left:50%;bottom:8px;transform:translateX(-50%);width:128px;height:64px;background-color:currentColor;-webkit-mask:url("./simdev3d-logo.png") center/contain no-repeat;mask:url("./simdev3d-logo.png") center/contain no-repeat;pointer-events:none}
+.creator-logo{position:absolute;left:50%;bottom:8px;transform:translateX(-50%);width:128px;height:64px;object-fit:contain;pointer-events:none}
