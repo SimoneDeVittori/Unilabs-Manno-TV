@@ -50,3 +50,5 @@ header{display:grid;grid-template-columns:1fr 1fr 1fr;position:relative;min-heig
 .weather.card,.news.card,.traffic.card{border-top-color:transparent}.weather.card{--tab-color:#ff0000}.news.card{--tab-color:#a80000}.traffic.card{--tab-color:#ffed00}.weather.card::before,.news.card::before,.traffic.card::before{content:"";position:absolute;left:0;right:0;top:-8.64px;height:8.64px;border-radius:21.12px 21.12px 0 0;background:linear-gradient(to right,#e7531b 0%,#e7531b calc(100% - 160px),var(--tab-color) calc(100% - 104px),var(--tab-color) calc(100% - 38px),#e7531b 100%)}.tio-logo,.tcs-logo,.meteoswiss-logo{top:-8.64px;z-index:1;box-shadow:none;background:var(--tab-color)}
 
 .weather.card{--tab-color:#f7f7f7}.meteoswiss-logo{padding:0;object-fit:cover;object-position:center}
+
+.weather.card::before,.news.card::before,.traffic.card::before{display:none}.weather.card,.news.card,.traffic.card{background:linear-gradient(#fff,#fff) padding-box,linear-gradient(to right,#e7531b 0%,#e7531b calc(100% - 160px),var(--tab-color) calc(100% - 104px),var(--tab-color) calc(100% - 38px),#e7531b 100%) border-box;border-radius:21.12px}
