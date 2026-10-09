@@ -48,7 +48,7 @@
         "precipitationMax": 0.2
       }
     ],
-    "updatedAt": "2026-10-09T22:31:28.026369+00:00"
+    "updatedAt": "2026-10-09T22:32:49.172537+00:00"
   },
   "weatherError": false,
   "newsError": false,
@@ -164,7 +164,7 @@
       }
     ],
     "total": 48,
-    "updatedAt": "2026-10-09T22:31:28.026369+00:00",
+    "updatedAt": "2026-10-09T22:32:49.172537+00:00",
     "source": "TCS · Viasuisse"
   },
   "trafficError": false,
@@ -1318,7 +1318,7 @@
       }
     ],
     "model": "202610092200",
-    "updatedAt": "2026-10-09T22:31:28.057797+00:00"
+    "updatedAt": "2026-10-09T22:32:49.202695+00:00"
   },
   "weekError": false,
   "news": {
@@ -1348,8 +1348,815 @@
         "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onts.jpg?v=1"
       }
     ],
-    "updatedAt": "2026-10-09T22:31:28.026369+00:00",
+    "updatedAt": "2026-10-09T22:32:49.172537+00:00",
     "scope": "ticino",
     "provider": "tio"
-  }
+  },
+  "swissWeather": {
+    "cities": [
+      {
+        "warnRegionIds": [
+          225
+        ],
+        "altitude": 486,
+        "city_name": "Lausanne",
+        "location_name": "Losanna",
+        "location_path": "/previsioni-locali/losanna/1003.html",
+        "coord_x": "2538100",
+        "displayPriority": 3,
+        "coord_y": "1152444",
+        "location_id": "100300",
+        "location_type": "city",
+        "timestamp": 1791583807,
+        "forecasts": [
+          {
+            "date": "10 ottobre 2026",
+            "date_iso": "2026-10-10",
+            "weather_description": "symbol_id_17",
+            "temp_high": 16,
+            "weekday": "Heute",
+            "temp_low": 12,
+            "weather_symbol_id": 17
+          },
+          {
+            "date": "11 ottobre 2026",
+            "date_iso": "2026-10-11",
+            "weather_description": "symbol_id_3",
+            "temp_high": 15,
+            "weekday": "domenica",
+            "temp_low": 9,
+            "weather_symbol_id": 3
+          },
+          {
+            "date": "12 ottobre 2026",
+            "date_iso": "2026-10-12",
+            "weather_description": "symbol_id_1",
+            "temp_high": 16,
+            "weekday": "lunedì",
+            "temp_low": 8,
+            "weather_symbol_id": 1
+          },
+          {
+            "date": "13 ottobre 2026",
+            "date_iso": "2026-10-13",
+            "weather_description": "symbol_id_1",
+            "temp_high": 17,
+            "weekday": "martedì",
+            "temp_low": 9,
+            "weather_symbol_id": 1
+          },
+          {
+            "date": "14 ottobre 2026",
+            "date_iso": "2026-10-14",
+            "weather_description": "symbol_id_1",
+            "temp_high": 19,
+            "weekday": "mercoledì",
+            "temp_low": 11,
+            "weather_symbol_id": 1
+          },
+          {
+            "date": "15 ottobre 2026",
+            "date_iso": "2026-10-15",
+            "weather_description": "symbol_id_2",
+            "temp_high": 18,
+            "weekday": "giovedì",
+            "temp_low": 12,
+            "weather_symbol_id": 2
+          },
+          {
+            "date": "16 ottobre 2026",
+            "date_iso": "2026-10-16",
+            "weather_description": "symbol_id_2",
+            "temp_high": 18,
+            "weekday": "venerdì",
+            "temp_low": 12,
+            "weather_symbol_id": 2
+          }
+        ]
+      },
+      {
+        "warnRegionIds": [
+          222
+        ],
+        "altitude": 383,
+        "city_name": "Genève",
+        "location_name": "Ginevra",
+        "location_path": "/previsioni-locali/ginevra/1201.html",
+        "coord_x": "2500069",
+        "displayPriority": 1,
+        "coord_y": "1118423",
+        "location_id": "120100",
+        "location_type": "city",
+        "timestamp": 1791583807,
+        "forecasts": [
+          {
+            "date": "10 ottobre 2026",
+            "date_iso": "2026-10-10",
+            "weather_description": "symbol_id_9",
+            "temp_high": 17,
+            "weekday": "Heute",
+            "temp_low": 11,
+            "weather_symbol_id": 9
+          },
+          {
+            "date": "11 ottobre 2026",
+            "date_iso": "2026-10-11",
+            "weather_description": "symbol_id_3",
+            "temp_high": 15,
+            "weekday": "domenica",
+            "temp_low": 8,
+            "weather_symbol_id": 3
+          },
+          {
+            "date": "12 ottobre 2026",
+            "date_iso": "2026-10-12",
+            "weather_description": "symbol_id_1",
+            "temp_high": 16,
+            "weekday": "lunedì",
+            "temp_low": 6,
+            "weather_symbol_id": 1
+          },
+          {
+            "date": "13 ottobre 2026",
+            "date_iso": "2026-10-13",
+            "weather_description": "symbol_id_1",
+            "temp_high": 18,
+            "weekday": "martedì",
+            "temp_low": 6,
+            "weather_symbol_id": 1
+          },
+          {
+            "date": "14 ottobre 2026",
+            "date_iso": "2026-10-14",
+            "weather_description": "symbol_id_2",
+            "temp_high": 19,
+            "weekday": "mercoledì",
+            "temp_low": 8,
+            "weather_symbol_id": 2
+          },
+          {
+            "date": "15 ottobre 2026",
+            "date_iso": "2026-10-15",
+            "weather_description": "symbol_id_2",
+            "temp_high": 19,
+            "weekday": "giovedì",
+            "temp_low": 10,
+            "weather_symbol_id": 2
+          },
+          {
+            "date": "16 ottobre 2026",
+            "date_iso": "2026-10-16",
+            "weather_description": "symbol_id_2",
+            "temp_high": 18,
+            "weekday": "venerdì",
+            "temp_low": 9,
+            "weather_symbol_id": 2
+          }
+        ]
+      },
+      {
+        "warnRegionIds": [
+          236
+        ],
+        "altitude": 504,
+        "city_name": "Sion",
+        "location_name": "Sion",
+        "location_path": "/previsioni-locali/sion/1950.html",
+        "coord_x": "2593845",
+        "displayPriority": 18,
+        "coord_y": "1119910",
+        "location_id": "195000",
+        "location_type": "city",
+        "timestamp": 1791583807,
+        "forecasts": [
+          {
+            "date": "10 ottobre 2026",
+            "date_iso": "2026-10-10",
+            "weather_description": "symbol_id_9",
+            "temp_high": 16,
+            "weekday": "Heute",
+            "temp_low": 8,
+            "weather_symbol_id": 9
+          },
+          {
+            "date": "11 ottobre 2026",
+            "date_iso": "2026-10-11",
+            "weather_description": "symbol_id_2",
+            "temp_high": 16,
+            "weekday": "domenica",
+            "temp_low": 6,
+            "weather_symbol_id": 2
+          },
+          {
+            "date": "12 ottobre 2026",
+            "date_iso": "2026-10-12",
+            "weather_description": "symbol_id_1",
+            "temp_high": 17,
+            "weekday": "lunedì",
+            "temp_low": 4,
+            "weather_symbol_id": 1
+          },
+          {
+            "date": "13 ottobre 2026",
+            "date_iso": "2026-10-13",
+            "weather_description": "symbol_id_1",
+            "temp_high": 18,
+            "weekday": "martedì",
+            "temp_low": 4,
+            "weather_symbol_id": 1
+          },
+          {
+            "date": "14 ottobre 2026",
+            "date_iso": "2026-10-14",
+            "weather_description": "symbol_id_1",
+            "temp_high": 20,
+            "weekday": "mercoledì",
+            "temp_low": 7,
+            "weather_symbol_id": 1
+          },
+          {
+            "date": "15 ottobre 2026",
+            "date_iso": "2026-10-15",
+            "weather_description": "symbol_id_1",
+            "temp_high": 19,
+            "weekday": "giovedì",
+            "temp_low": 7,
+            "weather_symbol_id": 1
+          },
+          {
+            "date": "16 ottobre 2026",
+            "date_iso": "2026-10-16",
+            "weather_description": "symbol_id_1",
+            "temp_high": 19,
+            "weekday": "venerdì",
+            "temp_low": 7,
+            "weather_symbol_id": 1
+          }
+        ]
+      },
+      {
+        "warnRegionIds": [
+          107
+        ],
+        "altitude": 537,
+        "city_name": "Bern",
+        "location_name": "Berna",
+        "location_path": "/previsioni-locali/berna/3004.html",
+        "coord_x": "2600777",
+        "displayPriority": 4,
+        "coord_y": "1202399",
+        "location_id": "300400",
+        "location_type": "city",
+        "timestamp": 1791583807,
+        "forecasts": [
+          {
+            "date": "10 ottobre 2026",
+            "date_iso": "2026-10-10",
+            "weather_description": "symbol_id_17",
+            "temp_high": 15,
+            "weekday": "Heute",
+            "temp_low": 9,
+            "weather_symbol_id": 17
+          },
+          {
+            "date": "11 ottobre 2026",
+            "date_iso": "2026-10-11",
+            "weather_description": "symbol_id_3",
+            "temp_high": 15,
+            "weekday": "domenica",
+            "temp_low": 6,
+            "weather_symbol_id": 3
+          },
+          {
+            "date": "12 ottobre 2026",
+            "date_iso": "2026-10-12",
+            "weather_description": "symbol_id_1",
+            "temp_high": 15,
+            "weekday": "lunedì",
+            "temp_low": 3,
+            "weather_symbol_id": 1
+          },
+          {
+            "date": "13 ottobre 2026",
+            "date_iso": "2026-10-13",
+            "weather_description": "symbol_id_1",
+            "temp_high": 17,
+            "weekday": "martedì",
+            "temp_low": 3,
+            "weather_symbol_id": 1
+          },
+          {
+            "date": "14 ottobre 2026",
+            "date_iso": "2026-10-14",
+            "weather_description": "symbol_id_1",
+            "temp_high": 18,
+            "weekday": "mercoledì",
+            "temp_low": 7,
+            "weather_symbol_id": 1
+          },
+          {
+            "date": "15 ottobre 2026",
+            "date_iso": "2026-10-15",
+            "weather_description": "symbol_id_2",
+            "temp_high": 18,
+            "weekday": "giovedì",
+            "temp_low": 8,
+            "weather_symbol_id": 2
+          },
+          {
+            "date": "16 ottobre 2026",
+            "date_iso": "2026-10-16",
+            "weather_description": "symbol_id_2",
+            "temp_high": 17,
+            "weekday": "venerdì",
+            "temp_low": 8,
+            "weather_symbol_id": 2
+          }
+        ]
+      },
+      {
+        "warnRegionIds": [
+          101
+        ],
+        "altitude": 255,
+        "city_name": "Basel",
+        "location_name": "Basilea",
+        "location_path": "/previsioni-locali/basilea/4001.html",
+        "coord_x": "2611290",
+        "displayPriority": 2,
+        "coord_y": "1267348",
+        "location_id": "400100",
+        "location_type": "city",
+        "timestamp": 1791583807,
+        "forecasts": [
+          {
+            "date": "10 ottobre 2026",
+            "date_iso": "2026-10-10",
+            "weather_description": "symbol_id_9",
+            "temp_high": 17,
+            "weekday": "Heute",
+            "temp_low": 11,
+            "weather_symbol_id": 9
+          },
+          {
+            "date": "11 ottobre 2026",
+            "date_iso": "2026-10-11",
+            "weather_description": "symbol_id_3",
+            "temp_high": 16,
+            "weekday": "domenica",
+            "temp_low": 7,
+            "weather_symbol_id": 3
+          },
+          {
+            "date": "12 ottobre 2026",
+            "date_iso": "2026-10-12",
+            "weather_description": "symbol_id_1",
+            "temp_high": 17,
+            "weekday": "lunedì",
+            "temp_low": 5,
+            "weather_symbol_id": 1
+          },
+          {
+            "date": "13 ottobre 2026",
+            "date_iso": "2026-10-13",
+            "weather_description": "symbol_id_1",
+            "temp_high": 19,
+            "weekday": "martedì",
+            "temp_low": 6,
+            "weather_symbol_id": 1
+          },
+          {
+            "date": "14 ottobre 2026",
+            "date_iso": "2026-10-14",
+            "weather_description": "symbol_id_2",
+            "temp_high": 20,
+            "weekday": "mercoledì",
+            "temp_low": 9,
+            "weather_symbol_id": 2
+          },
+          {
+            "date": "15 ottobre 2026",
+            "date_iso": "2026-10-15",
+            "weather_description": "symbol_id_1",
+            "temp_high": 20,
+            "weekday": "giovedì",
+            "temp_low": 10,
+            "weather_symbol_id": 1
+          },
+          {
+            "date": "16 ottobre 2026",
+            "date_iso": "2026-10-16",
+            "weather_description": "symbol_id_2",
+            "temp_high": 20,
+            "weekday": "venerdì",
+            "temp_low": 11,
+            "weather_symbol_id": 2
+          }
+        ]
+      },
+      {
+        "warnRegionIds": [
+          135
+        ],
+        "altitude": 439,
+        "city_name": "Luzern",
+        "location_name": "Lucerna",
+        "location_path": "/previsioni-locali/lucerna/6003.html",
+        "coord_x": "2665525",
+        "displayPriority": 6,
+        "coord_y": "1211120",
+        "location_id": "600300",
+        "location_type": "city",
+        "timestamp": 1791583807,
+        "forecasts": [
+          {
+            "date": "10 ottobre 2026",
+            "date_iso": "2026-10-10",
+            "weather_description": "symbol_id_33",
+            "temp_high": 15,
+            "weekday": "Heute",
+            "temp_low": 11,
+            "weather_symbol_id": 33
+          },
+          {
+            "date": "11 ottobre 2026",
+            "date_iso": "2026-10-11",
+            "weather_description": "symbol_id_3",
+            "temp_high": 15,
+            "weekday": "domenica",
+            "temp_low": 8,
+            "weather_symbol_id": 3
+          },
+          {
+            "date": "12 ottobre 2026",
+            "date_iso": "2026-10-12",
+            "weather_description": "symbol_id_2",
+            "temp_high": 15,
+            "weekday": "lunedì",
+            "temp_low": 6,
+            "weather_symbol_id": 2
+          },
+          {
+            "date": "13 ottobre 2026",
+            "date_iso": "2026-10-13",
+            "weather_description": "symbol_id_1",
+            "temp_high": 17,
+            "weekday": "martedì",
+            "temp_low": 6,
+            "weather_symbol_id": 1
+          },
+          {
+            "date": "14 ottobre 2026",
+            "date_iso": "2026-10-14",
+            "weather_description": "symbol_id_1",
+            "temp_high": 18,
+            "weekday": "mercoledì",
+            "temp_low": 9,
+            "weather_symbol_id": 1
+          },
+          {
+            "date": "15 ottobre 2026",
+            "date_iso": "2026-10-15",
+            "weather_description": "symbol_id_2",
+            "temp_high": 18,
+            "weekday": "giovedì",
+            "temp_low": 10,
+            "weather_symbol_id": 2
+          },
+          {
+            "date": "16 ottobre 2026",
+            "date_iso": "2026-10-16",
+            "weather_description": "symbol_id_2",
+            "temp_high": 18,
+            "weekday": "venerdì",
+            "temp_low": 10,
+            "weather_symbol_id": 2
+          }
+        ]
+      },
+      {
+        "warnRegionIds": [
+          310
+        ],
+        "altitude": 278,
+        "city_name": "Lugano",
+        "location_name": "Lugano",
+        "location_path": "/previsioni-locali/lugano/6900.html",
+        "coord_x": "2717304",
+        "displayPriority": 8,
+        "coord_y": "1096327",
+        "location_id": "690000",
+        "location_type": "city",
+        "timestamp": 1791583807,
+        "forecasts": [
+          {
+            "date": "10 ottobre 2026",
+            "date_iso": "2026-10-10",
+            "weather_description": "symbol_id_3",
+            "temp_high": 20,
+            "weekday": "Heute",
+            "temp_low": 13,
+            "weather_symbol_id": 3
+          },
+          {
+            "date": "11 ottobre 2026",
+            "date_iso": "2026-10-11",
+            "weather_description": "symbol_id_3",
+            "temp_high": 20,
+            "weekday": "domenica",
+            "temp_low": 11,
+            "weather_symbol_id": 3
+          },
+          {
+            "date": "12 ottobre 2026",
+            "date_iso": "2026-10-12",
+            "weather_description": "symbol_id_1",
+            "temp_high": 19,
+            "weekday": "lunedì",
+            "temp_low": 11,
+            "weather_symbol_id": 1
+          },
+          {
+            "date": "13 ottobre 2026",
+            "date_iso": "2026-10-13",
+            "weather_description": "symbol_id_2",
+            "temp_high": 19,
+            "weekday": "martedì",
+            "temp_low": 12,
+            "weather_symbol_id": 2
+          },
+          {
+            "date": "14 ottobre 2026",
+            "date_iso": "2026-10-14",
+            "weather_description": "symbol_id_2",
+            "temp_high": 20,
+            "weekday": "mercoledì",
+            "temp_low": 11,
+            "weather_symbol_id": 2
+          },
+          {
+            "date": "15 ottobre 2026",
+            "date_iso": "2026-10-15",
+            "weather_description": "symbol_id_2",
+            "temp_high": 19,
+            "weekday": "giovedì",
+            "temp_low": 12,
+            "weather_symbol_id": 2
+          },
+          {
+            "date": "16 ottobre 2026",
+            "date_iso": "2026-10-16",
+            "weather_description": "symbol_id_2",
+            "temp_high": 19,
+            "weekday": "venerdì",
+            "temp_low": 12,
+            "weather_symbol_id": 2
+          }
+        ]
+      },
+      {
+        "warnRegionIds": [
+          179
+        ],
+        "altitude": 581,
+        "city_name": "Chur",
+        "location_name": "Coira",
+        "location_path": "/previsioni-locali/coira/7000.html",
+        "coord_x": "2759180",
+        "displayPriority": 16,
+        "coord_y": "1191534",
+        "location_id": "700000",
+        "location_type": "city",
+        "timestamp": 1791583807,
+        "forecasts": [
+          {
+            "date": "10 ottobre 2026",
+            "date_iso": "2026-10-10",
+            "weather_description": "symbol_id_17",
+            "temp_high": 15,
+            "weekday": "Heute",
+            "temp_low": 10,
+            "weather_symbol_id": 17
+          },
+          {
+            "date": "11 ottobre 2026",
+            "date_iso": "2026-10-11",
+            "weather_description": "symbol_id_3",
+            "temp_high": 14,
+            "weekday": "domenica",
+            "temp_low": 8,
+            "weather_symbol_id": 3
+          },
+          {
+            "date": "12 ottobre 2026",
+            "date_iso": "2026-10-12",
+            "weather_description": "symbol_id_1",
+            "temp_high": 15,
+            "weekday": "lunedì",
+            "temp_low": 6,
+            "weather_symbol_id": 1
+          },
+          {
+            "date": "13 ottobre 2026",
+            "date_iso": "2026-10-13",
+            "weather_description": "symbol_id_1",
+            "temp_high": 17,
+            "weekday": "martedì",
+            "temp_low": 6,
+            "weather_symbol_id": 1
+          },
+          {
+            "date": "14 ottobre 2026",
+            "date_iso": "2026-10-14",
+            "weather_description": "symbol_id_1",
+            "temp_high": 19,
+            "weekday": "mercoledì",
+            "temp_low": 7,
+            "weather_symbol_id": 1
+          },
+          {
+            "date": "15 ottobre 2026",
+            "date_iso": "2026-10-15",
+            "weather_description": "symbol_id_1",
+            "temp_high": 19,
+            "weekday": "giovedì",
+            "temp_low": 8,
+            "weather_symbol_id": 1
+          },
+          {
+            "date": "16 ottobre 2026",
+            "date_iso": "2026-10-16",
+            "weather_description": "symbol_id_1",
+            "temp_high": 18,
+            "weekday": "venerdì",
+            "temp_low": 8,
+            "weather_symbol_id": 1
+          }
+        ]
+      },
+      {
+        "warnRegionIds": [
+          143
+        ],
+        "altitude": 409,
+        "city_name": "Zürich",
+        "location_name": "Zurigo",
+        "location_path": "/previsioni-locali/zurigo/8001.html",
+        "coord_x": "2683348",
+        "displayPriority": 0,
+        "coord_y": "1247414",
+        "location_id": "800100",
+        "location_type": "city",
+        "timestamp": 1791583807,
+        "forecasts": [
+          {
+            "date": "10 ottobre 2026",
+            "date_iso": "2026-10-10",
+            "weather_description": "symbol_id_20",
+            "temp_high": 15,
+            "weekday": "Heute",
+            "temp_low": 11,
+            "weather_symbol_id": 20
+          },
+          {
+            "date": "11 ottobre 2026",
+            "date_iso": "2026-10-11",
+            "weather_description": "symbol_id_3",
+            "temp_high": 15,
+            "weekday": "domenica",
+            "temp_low": 9,
+            "weather_symbol_id": 3
+          },
+          {
+            "date": "12 ottobre 2026",
+            "date_iso": "2026-10-12",
+            "weather_description": "symbol_id_1",
+            "temp_high": 15,
+            "weekday": "lunedì",
+            "temp_low": 5,
+            "weather_symbol_id": 1
+          },
+          {
+            "date": "13 ottobre 2026",
+            "date_iso": "2026-10-13",
+            "weather_description": "symbol_id_1",
+            "temp_high": 17,
+            "weekday": "martedì",
+            "temp_low": 5,
+            "weather_symbol_id": 1
+          },
+          {
+            "date": "14 ottobre 2026",
+            "date_iso": "2026-10-14",
+            "weather_description": "symbol_id_2",
+            "temp_high": 19,
+            "weekday": "mercoledì",
+            "temp_low": 9,
+            "weather_symbol_id": 2
+          },
+          {
+            "date": "15 ottobre 2026",
+            "date_iso": "2026-10-15",
+            "weather_description": "symbol_id_27",
+            "temp_high": 18,
+            "weekday": "giovedì",
+            "temp_low": 9,
+            "weather_symbol_id": 27
+          },
+          {
+            "date": "16 ottobre 2026",
+            "date_iso": "2026-10-16",
+            "weather_description": "symbol_id_2",
+            "temp_high": 18,
+            "weekday": "venerdì",
+            "temp_low": 9,
+            "weather_symbol_id": 2
+          }
+        ]
+      },
+      {
+        "warnRegionIds": [
+          167
+        ],
+        "altitude": 671,
+        "city_name": "St. Gallen",
+        "location_name": "San Gallo",
+        "location_path": "/previsioni-locali/san-gallo/9000.html",
+        "coord_x": "2746056",
+        "displayPriority": 7,
+        "coord_y": "1254370",
+        "location_id": "900000",
+        "location_type": "city",
+        "timestamp": 1791583807,
+        "forecasts": [
+          {
+            "date": "10 ottobre 2026",
+            "date_iso": "2026-10-10",
+            "weather_description": "symbol_id_20",
+            "temp_high": 13,
+            "weekday": "Heute",
+            "temp_low": 10,
+            "weather_symbol_id": 20
+          },
+          {
+            "date": "11 ottobre 2026",
+            "date_iso": "2026-10-11",
+            "weather_description": "symbol_id_3",
+            "temp_high": 12,
+            "weekday": "domenica",
+            "temp_low": 6,
+            "weather_symbol_id": 3
+          },
+          {
+            "date": "12 ottobre 2026",
+            "date_iso": "2026-10-12",
+            "weather_description": "symbol_id_1",
+            "temp_high": 12,
+            "weekday": "lunedì",
+            "temp_low": 5,
+            "weather_symbol_id": 1
+          },
+          {
+            "date": "13 ottobre 2026",
+            "date_iso": "2026-10-13",
+            "weather_description": "symbol_id_1",
+            "temp_high": 14,
+            "weekday": "martedì",
+            "temp_low": 4,
+            "weather_symbol_id": 1
+          },
+          {
+            "date": "14 ottobre 2026",
+            "date_iso": "2026-10-14",
+            "weather_description": "symbol_id_2",
+            "temp_high": 16,
+            "weekday": "mercoledì",
+            "temp_low": 8,
+            "weather_symbol_id": 2
+          },
+          {
+            "date": "15 ottobre 2026",
+            "date_iso": "2026-10-15",
+            "weather_description": "symbol_id_2",
+            "temp_high": 16,
+            "weekday": "giovedì",
+            "temp_low": 9,
+            "weather_symbol_id": 2
+          },
+          {
+            "date": "16 ottobre 2026",
+            "date_iso": "2026-10-16",
+            "weather_description": "symbol_id_2",
+            "temp_high": 16,
+            "weekday": "venerdì",
+            "temp_low": 10,
+            "weather_symbol_id": 2
+          }
+        ]
+      }
+    ],
+    "updatedAt": "2026-10-09T22:32:49.172537+00:00",
+    "version": "20261009_2210"
+  },
+  "swissWeatherError": false
 }
