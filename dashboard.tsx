@@ -6,7 +6,7 @@ const fmtTime=(value:any)=>new Date(value).toLocaleTimeString('it-CH',{hour:'2-d
 export default function Home(){
  const [now,setNow]=useState<Date|null>(null);const [page,setPage]=useState(0);const [data,setData]=useState<any>({});const [failed,setFailed]=useState(false);const [controls,setControls]=useState(false);
  useEffect(()=>{const resize=()=>document.documentElement.style.setProperty('--tv-scale',String(Math.min(window.innerWidth/1920,window.innerHeight/1080)));resize();window.addEventListener('resize',resize);setNow(new Date());const clock=setInterval(()=>setNow(new Date()),1000);let alive=true;async function refresh(){try{const r=await fetch('./data.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error();const d=await r.json();if(alive){setData((old:any)=>({...d,weather:d.weather??old.weather,news:d.news??old.news}));setFailed(false);}}catch{if(alive)setFailed(true);}}refresh();const poll=setInterval(refresh,180000);const visibility=()=>{if(!document.hidden)refresh();};document.addEventListener('visibilitychange',visibility);return()=>{window.removeEventListener('resize',resize);alive=false;clearInterval(clock);clearInterval(poll);document.removeEventListener('visibilitychange',visibility);};},[]);
- useEffect(()=>{const rotation=setTimeout(()=>setPage(p=>(p+1)%4),page===0?25000:page>=2?10000:20000);return()=>clearTimeout(rotation);},[page]);
+ useEffect(()=>{const rotation=setTimeout(()=>setPage(p=>(p+1)%4),page===0?25000:page===2?7000:page===3?10000:20000);return()=>clearTimeout(rotation);},[page]);
  useEffect(()=>{if(!controls)return;const t=setTimeout(()=>setControls(false),3500);return()=>clearTimeout(t);},[controls]);
  const week=data.week;
  const rainWindow=(day:string)=>{
@@ -29,7 +29,7 @@ export default function Home(){
    <footer><small className="creator-copyright">© SimDev3D</small><span>Unilabs · Centro Galleria 3, via cantonale 4, 6928 Manno</span><div className="page-dots"><i className="selected"/><i/><i/><i/></div></footer><div className="progress" key={page===0?'dashboard':'hidden'}/>
   </section>
   <section className={'plan screen '+(page===1?'active':'')} aria-hidden={page!==1}><img src="./piano.png" alt="Piano dei turni"/><div className="progress" key={page===1?"plan":"plan-hidden"}/></section>
-  <section className={'plan van-screen screen '+(page===2?'active':'')} aria-hidden={page!==2}><img src="./furgone-autunno.png" alt="Servizio Esterno Unilabs in autunno"/><div className="progress" style={{animationDuration:"10s"}} key={page===2?"autumn":"autumn-hidden"}/></section>
+  <section className={'plan van-screen screen '+(page===2?'active':'')} aria-hidden={page!==2}><img src="./furgone-autunno.png" alt="Servizio Esterno Unilabs in autunno"/><div className="progress" style={{animationDuration:"7s"}} key={page===2?"autumn":"autumn-hidden"}/></section>
   <section className={'dashboard swiss-map-screen screen '+(page===3?'active':'')} aria-hidden={page!==3}>
    <header><div><div className="date">{now?now.toLocaleDateString('it-CH',{weekday:'long',day:'numeric',month:'long',year:'numeric',timeZone:'Europe/Zurich'}):'Benvenuti'}</div></div><time className="header-clock">{now?fmtTime(now):'—'}</time><img className="logo" src="./unilabs-logo.png" alt="Unilabs"/></header>
    <article className="swiss-map-card card"><div className="map-heading"><div><div className="section-label">METEO IN SVIZZERA</div><h2>Le previsioni di oggi</h2></div><div className="map-legend">Temperature minime / massime · °C</div></div>
@@ -47,4 +47,5 @@ export default function Home(){
 
 import {createRoot} from "react-dom/client";
 createRoot(document.getElementById("root")!).render(<Home/>);
+
 
