@@ -48,7 +48,7 @@
         "precipitationMax": 0.0
       }
     ],
-    "updatedAt": "2026-10-09T11:50:19.331521+00:00"
+    "updatedAt": "2026-10-09T11:53:19.744440+00:00"
   },
   "weatherError": false,
   "news": {
@@ -68,7 +68,7 @@
         "image": "https://cleaver.cue.rsi.ch/public/info/mondo/4148147-h12i3y-Amici.jpg/alternates/r16x9_1300/4148147-h12i3y-Amici.jpg"
       }
     ],
-    "updatedAt": "2026-10-09T11:50:19.331521+00:00"
+    "updatedAt": "2026-10-09T11:53:19.744440+00:00"
   },
   "newsError": false,
   "traffic": {
@@ -171,7 +171,7 @@
       }
     ],
     "total": 57,
-    "updatedAt": "2026-10-09T11:50:19.331521+00:00",
+    "updatedAt": "2026-10-09T11:53:19.744440+00:00",
     "source": "Viasuisse via RSI"
   },
   "trafficError": false,
@@ -1325,7 +1325,7 @@
       }
     ],
     "model": "202610091100",
-    "updatedAt": "2026-10-09T11:50:19.502765+00:00"
+    "updatedAt": "2026-10-09T11:53:19.774928+00:00"
   },
   "weekError": false
 }
