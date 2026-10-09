@@ -30,3 +30,5 @@ header{display:grid;grid-template-columns:1fr 1fr 1fr;position:relative;min-heig
 .dashboard{background:#e7e7e7}.right-column{grid-template-rows:550px minmax(0,1fr)}.news-photo{width:118px;height:118px;border-radius:14px;object-fit:cover}.news-item{gap:24px}
 
 .dashboard .progress{animation-duration:25s}
+
+.right-column{grid-template-rows:510px minmax(0,1fr)}.news-photo{width:104px;height:104px}.traffic-item p{font-size:23px;line-height:1.25}
