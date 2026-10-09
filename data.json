@@ -11,7 +11,7 @@
         "dayDate": "2026-10-09",
         "iconDay": 29,
         "iconDayV2": 29,
-        "temperatureMax": 21,
+        "temperatureMax": 22,
         "temperatureMin": 14,
         "precipitation": 0.1,
         "precipitationMin": 0.1,
@@ -48,7 +48,7 @@
         "precipitationMax": 0.0
       }
     ],
-    "updatedAt": "2026-10-09T14:13:05.089663+00:00"
+    "updatedAt": "2026-10-09T14:16:05.036431+00:00"
   },
   "weatherError": false,
   "newsError": false,
@@ -152,7 +152,7 @@
       }
     ],
     "total": 65,
-    "updatedAt": "2026-10-09T14:13:05.089663+00:00",
+    "updatedAt": "2026-10-09T14:16:05.036431+00:00",
     "source": "Viasuisse via RSI"
   },
   "trafficError": false,
@@ -1306,11 +1306,19 @@
       }
     ],
     "model": "202610091400",
-    "updatedAt": "2026-10-09T14:13:05.135141+00:00"
+    "updatedAt": "2026-10-09T14:16:05.156616+00:00"
   },
   "weekError": false,
   "news": {
     "items": [
+      {
+        "title": "Sei ballerini ticinesi sulle note dei grandi successi K-pop",
+        "description": "Hanno tra i 18 e i 20 anni e debutteranno il 13 ottobre alla Geneva Arena con K-POP FEVER. Il 1° novembre lo spettacolo farà tappa anche a Lugano.",
+        "link": "https://www.tio.ch/ticino/attualita/1955839/k-pop-successi-ticinesi-note-fever",
+        "date": "Fri, 09 Oct 2026 16:12:38 +0200",
+        "category": "GINEVRA",
+        "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onrk.jpg?v=2"
+      },
       {
         "title": "Antincendio, bocciato il ricorso: Cantone e Comuni cercano soluzioni",
         "description": "Al centro del confronto le preoccupazioni degli enti locali per la mole di lavoro, le difficoltà nell'applicazione del regolamento e la scadenza del 2027.",
@@ -1318,17 +1326,9 @@
         "date": "Fri, 09 Oct 2026 15:59:47 +0200",
         "category": "CANTONE",
         "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onrg.jpg?v=1"
-      },
-      {
-        "title": "All’asta la barca di Bruno Marazzi, il padre dello Stade De Suisse",
-        "description": "L’imbarcazione Boesch appartenuta all’imprenditore sarà battuta all’asta dall’Ufficio fallimenti di Locarno il 16 ottobre.",
-        "link": "https://www.tio.ch/ticino/attualita/1955835/all-asta-la-barca-di-bruno-marazzi-il-padre-dello-stade-de-suisse",
-        "date": "Fri, 09 Oct 2026 15:58:31 +0200",
-        "category": "CANTONE",
-        "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onrf.jpg?v=1"
       }
     ],
-    "updatedAt": "2026-10-09T14:13:05.089663+00:00",
+    "updatedAt": "2026-10-09T14:16:05.036431+00:00",
     "scope": "ticino",
     "provider": "tio"
   }
