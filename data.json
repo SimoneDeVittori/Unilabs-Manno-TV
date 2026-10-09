@@ -1,17 +1,17 @@
 {
   "weather": {
     "current": {
-      "time": 1791541800000,
+      "time": 1791543000000,
       "icon": 3,
       "iconV2": 3,
-      "temperature": 19.1
+      "temperature": 19.4
     },
     "forecast": [
       {
         "dayDate": "2026-10-09",
         "iconDay": 29,
         "iconDayV2": 29,
-        "temperatureMax": 20,
+        "temperatureMax": 21,
         "temperatureMin": 14,
         "precipitation": 0.1,
         "precipitationMin": 0.1,
@@ -48,7 +48,7 @@
         "precipitationMax": 0.0
       }
     ],
-    "updatedAt": "2026-10-09T10:43:12.231257+00:00"
+    "updatedAt": "2026-10-09T11:07:16.702024+00:00"
   },
   "weatherError": false,
   "news": {
@@ -57,28 +57,122 @@
         "title": "Attacchi nelle scuole polacche: convocata riunione di emergenza",
         "link": "https://www.rsi.ch/s/4147919",
         "date": "Fri, 09 Oct 2026 10:39:45 GMT",
-        "category": "News"
+        "category": "News",
+        "image": "https://cleaver.cue.rsi.ch/public/incoming/4147943-98h5fg-keystone-highres-729604585.jpg/alternates/r16x9_1300/4147943-98h5fg-keystone-highres-729604585.jpg"
       },
       {
         "title": "Battaglia legale, la SNL contesta la concorrenza sleale al Cantone",
         "link": "https://www.rsi.ch/s/4147916",
         "date": "Fri, 09 Oct 2026 10:22:00 GMT",
-        "category": "News"
-      },
-      {
-        "title": "Il Nobel per la pace alla giurista sudafricana Navanethem “Navi” Pillay",
-        "link": "https://www.rsi.ch/s/4147742",
-        "date": "Fri, 09 Oct 2026 09:07:56 GMT",
-        "category": "News"
-      },
-      {
-        "title": "Aggredì un bimbo con un’ascia: condannato a 12 anni",
-        "link": "https://www.rsi.ch/s/4147727",
-        "date": "Fri, 09 Oct 2026 09:03:46 GMT",
-        "category": "News"
+        "category": "News",
+        "image": "https://cleaver.cue.rsi.ch/public/info/ticino-grigioni-e-insubria/4147946-khno1a-Battello-sul-Verbano-Lago-Maggiore.jpg/alternates/r16x9_1300/4147946-khno1a-Battello-sul-Verbano-Lago-Maggiore.jpg"
       }
     ],
-    "updatedAt": "2026-10-09T10:43:12.231257+00:00"
+    "updatedAt": "2026-10-09T11:07:16.702024+00:00"
   },
-  "newsError": false
+  "newsError": false,
+  "traffic": {
+    "items": [
+      {
+        "id": "Viasuisser_FAVM/658482_TIC-Viasuisse/1",
+        "text": "A2 - Chiasso direzione S. Gottardo tra Quinto e Area di dosaggio Airolo traffico bloccato per 3 km, traffico congestionato, ritardi fino a 30 minuti - La corsia CUPRA è aperta",
+        "road": "A2",
+        "category": 12,
+        "changedAt": "2026-10-09T13:04:42+02:00",
+        "priority": 0
+      },
+      {
+        "id": "Viasuisser_FAVM/658485_TIC-Viasuisse/1",
+        "text": "A2 - Chiasso direzione S. Gottardo a Airolo chiuso raccordo autostradale in entrata",
+        "road": "A2",
+        "category": 11,
+        "changedAt": "2026-10-09T10:57:18+02:00",
+        "priority": 3
+      },
+      {
+        "id": "Viasuisser_Viasuisse/2509180_TIC-Viasuisse/1",
+        "text": "Indemini - Vira Gambarogno - tra Indemini e Fosano in entrambe le direzioni chiusa, lavori stradali, fino a oggi 16:30",
+        "road": "TI",
+        "category": 11,
+        "changedAt": "2026-10-01T12:30:39+02:00",
+        "priority": 3
+      },
+      {
+        "id": "Viasuisser_Viasuisse/2507395_TIC-Viasuisse/1",
+        "text": "attraversamento Loco, Al Palazz a Alla Chiesa - in entrambe le direzioni chiusa, lavori stradali, fino a domani, lun - sab È prevista un'apertura al traffico ogni notte dalle 22.00 alle 22.30",
+        "road": "TI",
+        "category": 11,
+        "changedAt": "2026-09-24T10:07:22+02:00",
+        "priority": 3
+      },
+      {
+        "id": "Viasuisser_Viasuisse/2504108_TIC-Viasuisse/1",
+        "text": "Cassarate, Piazza Stefano Franscini - a Cassarate in entrambe le direzioni chiusa, lavori stradali, fino a 23.12.2026 16:30",
+        "road": "TI",
+        "category": 11,
+        "changedAt": "2026-09-11T15:18:06+02:00",
+        "priority": 3
+      },
+      {
+        "id": "Viasuisser_Viasuisse/2492095_TIC-Viasuisse/1",
+        "text": "Lugano, Via Nassa - a Lugano chiusa, lavori stradali, fino a 31.12.2026 12:00",
+        "road": "TI",
+        "category": 11,
+        "changedAt": "2026-07-24T23:39:40+02:00",
+        "priority": 3
+      },
+      {
+        "id": "Viasuisser_FAVM/638527_TIC-Viasuisse/1",
+        "text": "A13 - Aeroporto di Locarno - Ascona tra Locarno in Solduno e Locarno in entrambe le direzioni chiuso raccordo autostradale in entrata, lavori stradali per 0.5 km sulla corsia d'emergenza, fino a 20.10.2026 17:00 - ID115024",
+        "road": "A13",
+        "category": 11,
+        "changedAt": "2026-07-10T15:06:05+02:00",
+        "priority": 3
+      },
+      {
+        "id": "Viasuisser_Viasuisse/2483564_TIC-Viasuisse/1",
+        "text": "Pregassona, Via Loco - tra Via Arbostra e Via Stazione in entrambe le direzioni chiusa, lavori stradali, fino a 31.10.2026 16:30",
+        "road": "TI",
+        "category": 11,
+        "changedAt": "2026-06-20T12:58:59+02:00",
+        "priority": 3
+      },
+      {
+        "id": "Viasuisser_Viasuisse/2481585_TIC-Viasuisse/1",
+        "text": "Viganello, Via Albonago - tra 399, Via Ruvigliana e Sentiero Dei Castagni in entrambe le direzioni chiusa, lavori stradali, fino a ca. 01.07.2028",
+        "road": "TI",
+        "category": 11,
+        "changedAt": "2026-06-15T05:08:20+02:00",
+        "priority": 3
+      },
+      {
+        "id": "Viasuisser_Viasuisse/2476442_TIC-Viasuisse/1",
+        "text": "Ruvigliana, Via Tanello - tra Via Massago e fine della strada in entrambe le direzioni chiusa, lavori stradali, fino a 27.11.2026 17:00",
+        "road": "TI",
+        "category": 11,
+        "changedAt": "2026-05-27T09:38:04+02:00",
+        "priority": 3
+      },
+      {
+        "id": "Viasuisser_FAVM/620496_TIC-Viasuisse/1",
+        "text": "2 - Göschenen - Airolo tra Göschenen e Airolo in entrambe le direzioni problemi di traffico, lavori stradali durante il giorno per 0.1 km, limite temporaneo di larghezza di 3.50 m, fino a 18.12.2026, lun - ven tra 07:00 e 17:00 - ID112048",
+        "road": "2",
+        "category": 31,
+        "changedAt": "2026-10-07T07:31:34+02:00",
+        "priority": 5
+      },
+      {
+        "id": "Viasuisser_Viasuisse/2509766_TIC-Viasuisse/1",
+        "text": "Villa Luganese, Ra Stráda De Marèll - fine della strada in entrambe le direzioni problemi di traffico, lavori stradali, corsie strette, fino a 16.10.2026 16:00",
+        "road": "TI",
+        "category": 31,
+        "changedAt": "2026-10-03T14:17:33+02:00",
+        "priority": 5
+      }
+    ],
+    "total": 56,
+    "updatedAt": "2026-10-09T11:07:16.702024+00:00",
+    "source": "Viasuisse via RSI"
+  },
+  "trafficError": false
 }

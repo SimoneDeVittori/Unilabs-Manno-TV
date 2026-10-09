@@ -17,3 +17,6 @@ GitHub Actions recupera i dati ogni 15 minuti. GitHub può ritardare le esecuzio
 
 ## Modificare l'interfaccia
 Il sito pubblicato si trova nella cartella principale. Il sorgente React è `dashboard.tsx`. Per rigenerare app.js: `npm install`, poi `npm run build`.
+
+## Traffico
+Informazioni Viasuisse dal servizio pubblico utilizzato dalla pagina Traffico RSI. Le segnalazioni sono filtrate con il confine cantonale del Ticino, ordinate dando precedenza a code e pericoli, ed escluse se future o scadute. Fonte del confine: swisstopo, swissBOUNDARIES3D, https://www.swisstopo.admin.ch/en/landscape-model-swissboundaries3d.
