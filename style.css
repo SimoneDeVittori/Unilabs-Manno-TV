@@ -12,3 +12,5 @@ header{display:grid;grid-template-columns:1fr 1fr 1fr;position:relative;min-heig
 .weather.card{min-height:0}.week-row{min-height:38px}.week-columns{margin-top:8px}
 
 .news.card,.traffic.card{border-top:8.64px solid #e7531b;padding-top:21.36px}
+
+.right-column{grid-template-rows:430px minmax(0,1fr)}.traffic.card{min-height:0}.traffic-item{min-height:0;padding:6px 0}
