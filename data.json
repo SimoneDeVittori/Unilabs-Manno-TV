@@ -1,10 +1,10 @@
 {
   "weather": {
     "current": {
-      "time": 1791553200000,
+      "time": 1791553800000,
       "icon": 1,
       "iconV2": 1,
-      "temperature": 21.6
+      "temperature": 21.8
     },
     "forecast": [
       {
@@ -48,12 +48,44 @@
         "precipitationMax": 0.0
       }
     ],
-    "updatedAt": "2026-10-09T13:48:20.885990+00:00"
+    "updatedAt": "2026-10-09T14:00:45.830560+00:00"
   },
   "weatherError": false,
   "newsError": false,
   "traffic": {
     "items": [
+      {
+        "id": "Viasuisser_FAVM/658572_TIC-Viasuisse/1",
+        "text": "406 - Riazzino direzione Cadenazzo tra A13, rotatoria Aeroporto di Locarno e Quartino traffico fortemente rallentato, traffico congestionato",
+        "road": "406",
+        "category": 13,
+        "changedAt": "2026-10-09T15:51:29+02:00",
+        "priority": 1
+      },
+      {
+        "id": "Viasuisser_FAVM/658571_TIC-Viasuisse/1",
+        "text": "2 - In Busciurina direzione Chiasso tra Comelina e 406 in Cadenazzo colonna, traffico congestionato",
+        "road": "2",
+        "category": 12,
+        "changedAt": "2026-10-09T15:50:38+02:00",
+        "priority": 0
+      },
+      {
+        "id": "Viasuisser_FAVM/658570_TIC-Viasuisse/1",
+        "text": "A2 - Chiasso direzione S. Gottardo tra Mendrisio e la galleria San Nicolao traffico fortemente rallentato, traffico congestionato",
+        "road": "A2",
+        "category": 13,
+        "changedAt": "2026-10-09T15:50:12+02:00",
+        "priority": 1
+      },
+      {
+        "id": "Viasuisser_Viasuisse/2511194_TIC-Viasuisse/1",
+        "text": "H2 - tra Massagno e Sorengo in Lugano colonna, traffico congestionato",
+        "road": "H2",
+        "category": 12,
+        "changedAt": "2026-10-09T15:44:57+02:00",
+        "priority": 0
+      },
       {
         "id": "Viasuisser_FAVM/658521_TIC-Viasuisse/1",
         "text": "A2 - S. Gottardo direzione Chiasso tra Chiasso e frontiera Chiasso Brogeda colonna, traffico congestionato",
@@ -76,14 +108,6 @@
         "road": "TI",
         "category": 12,
         "changedAt": "2026-10-09T15:28:06+02:00",
-        "priority": 0
-      },
-      {
-        "id": "Viasuisser_Viasuisse/2511194_TIC-Viasuisse/1",
-        "text": "H2 - tra Massagno e Sorengo in Lugano in entrambe le direzioni colonna, traffico congestionato",
-        "road": "H2",
-        "category": 12,
-        "changedAt": "2026-10-09T15:25:07+02:00",
         "priority": 0
       },
       {
@@ -125,34 +149,10 @@
         "category": 12,
         "changedAt": "2026-10-09T13:04:42+02:00",
         "priority": 0
-      },
-      {
-        "id": "Viasuisser_FAVM/658485_TIC-Viasuisse/1",
-        "text": "A2 - Chiasso direzione S. Gottardo a Airolo chiuso raccordo autostradale in entrata",
-        "road": "A2",
-        "category": 11,
-        "changedAt": "2026-10-09T10:57:18+02:00",
-        "priority": 3
-      },
-      {
-        "id": "Viasuisser_FAVM/620496_TIC-Viasuisse/1",
-        "text": "2 - Göschenen - Airolo tra Göschenen e Airolo in entrambe le direzioni problemi di traffico, lavori stradali durante il giorno per 0.1 km, limite temporaneo di larghezza di 3.50 m, fino a 18.12.2026, lun - ven tra 07:00 e 17:00 - ID112048",
-        "road": "2",
-        "category": 31,
-        "changedAt": "2026-10-07T07:31:34+02:00",
-        "priority": 5
-      },
-      {
-        "id": "Viasuisser_Viasuisse/2509766_TIC-Viasuisse/1",
-        "text": "Villa Luganese, Ra Stráda De Marèll - fine della strada in entrambe le direzioni problemi di traffico, lavori stradali, corsie strette, fino a 16.10.2026 16:00",
-        "road": "TI",
-        "category": 31,
-        "changedAt": "2026-10-03T14:17:33+02:00",
-        "priority": 5
       }
     ],
-    "total": 63,
-    "updatedAt": "2026-10-09T13:48:20.885990+00:00",
+    "total": 64,
+    "updatedAt": "2026-10-09T14:00:45.830560+00:00",
     "source": "Viasuisse via RSI"
   },
   "trafficError": false,
@@ -1306,29 +1306,29 @@
       }
     ],
     "model": "202610091300",
-    "updatedAt": "2026-10-09T13:48:20.912337+00:00"
+    "updatedAt": "2026-10-09T14:00:45.906695+00:00"
   },
   "weekError": false,
   "news": {
     "items": [
       {
-        "title": "I giovani musicisti ucraini chiudono classicAscona con un Concerto per la Pace",
-        "description": "Il festival si conclude con un simbolico incontro artistico dedicato alla speranza e al dialogo culturale tra Ucraina ed Europa.",
-        "link": "https://www.tio.ch/ticino/attualita/1955834/orchestra-musicisti-concerto-lyniv-classicascona",
-        "date": "Fri, 09 Oct 2026 15:34:50 +0200",
-        "category": "LOCARNO",
-        "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onr4.jpg?v=1"
+        "title": "Antincendio, bocciato il ricorso: Cantone e Comuni cercano soluzioni",
+        "description": "Al centro del confronto le preoccupazioni degli enti locali per la mole di lavoro, le difficoltà nell'applicazione del regolamento e la scadenza del 2027.",
+        "link": "https://www.tio.ch/ticino/attualita/1955836/antincendio-bocciato-il-ricorso-cantone-e-comuni-cercano-soluzioni",
+        "date": "Fri, 09 Oct 2026 15:59:47 +0200",
+        "category": "CANTONE",
+        "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onrg.jpg?v=1"
       },
       {
-        "title": "Teatro di Locarno in difficoltà: chiesti più fondi agli enti pubblici",
-        "description": "Nel corso dell'assemblea di giovedì sera è stata evocata anche la possibile interruzione dell'attività",
-        "link": "https://www.tio.ch/ticino/attualita/1955827/teatro-assemblea-locarno-enti-difficolta-fondi",
-        "date": "Fri, 09 Oct 2026 15:00:05 +0200",
-        "category": "LOCARNO",
-        "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onqr.jpg?v=1"
+        "title": "All’asta la barca di Bruno Marazzi, il padre dello Stade De Suisse",
+        "description": "L’imbarcazione Boesch appartenuta all’imprenditore sarà battuta all’asta dall’Ufficio fallimenti di Locarno il 16 ottobre.",
+        "link": "https://www.tio.ch/ticino/attualita/1955835/all-asta-la-barca-di-bruno-marazzi-il-padre-dello-stade-de-suisse",
+        "date": "Fri, 09 Oct 2026 15:58:31 +0200",
+        "category": "CANTONE",
+        "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onrf.jpg?v=1"
       }
     ],
-    "updatedAt": "2026-10-09T13:48:20.885990+00:00",
+    "updatedAt": "2026-10-09T14:00:45.830560+00:00",
     "scope": "ticino",
     "provider": "tio"
   }
