@@ -26,3 +26,5 @@ header{display:grid;grid-template-columns:1fr 1fr 1fr;position:relative;min-heig
 .date{font-size:44px;line-height:1.2;white-space:normal;max-width:590px}
 
 .date{font-weight:600;letter-spacing:-.045em;font-variant-numeric:tabular-nums;color:#26313a}
+
+.dashboard{background:#e7e7e7}.right-column{grid-template-rows:550px minmax(0,1fr)}.news-photo{width:118px;height:118px;border-radius:14px;object-fit:cover}.news-item{gap:24px}

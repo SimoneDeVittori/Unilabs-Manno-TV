@@ -46,7 +46,7 @@ try:
         picture=i.find('{http://search.yahoo.com/mrss/}content')
         items.append({'title':title,'description':plain(i.findtext('description','')),'link':link,'date':i.findtext('pubDate',''),'category':plain(i.findtext('category','')) or 'Ticino','image':picture.get('url','') if picture is not None else ''})
     items.sort(key=lambda i:parsedate_to_datetime(i['date']).timestamp(),reverse=True)
-    items=items[:2]
+    items=items[:3]
     assert items
     for item in items:
         if not item['description']:
