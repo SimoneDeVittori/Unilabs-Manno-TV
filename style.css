@@ -81,3 +81,7 @@ footer{position:relative;justify-content:center;min-height:50px}.creator-logo{le
 
 .swiss-map-screen header{min-height:108px;margin-bottom:16px}.swiss-map-card .map-heading{margin-bottom:12px}
 
+
+/* Hide the thin frame embedded in the map image. */
+.national-map>svg{clip-path:inset(4px)}
+
