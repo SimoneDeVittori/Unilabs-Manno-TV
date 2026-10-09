@@ -1,17 +1,17 @@
 {
   "weather": {
     "current": {
-      "time": 1791545400000,
+      "time": 1791546000000,
       "icon": 1,
       "iconV2": 1,
-      "temperature": 19.7
+      "temperature": 19.9
     },
     "forecast": [
       {
         "dayDate": "2026-10-09",
         "iconDay": 29,
         "iconDayV2": 29,
-        "temperatureMax": 21,
+        "temperatureMax": 20,
         "temperatureMin": 14,
         "precipitation": 0.1,
         "precipitationMin": 0.1,
@@ -48,7 +48,7 @@
         "precipitationMax": 0.0
       }
     ],
-    "updatedAt": "2026-10-09T11:47:09.240420+00:00"
+    "updatedAt": "2026-10-09T11:50:19.331521+00:00"
   },
   "weatherError": false,
   "news": {
@@ -68,7 +68,7 @@
         "image": "https://cleaver.cue.rsi.ch/public/info/mondo/4148147-h12i3y-Amici.jpg/alternates/r16x9_1300/4148147-h12i3y-Amici.jpg"
       }
     ],
-    "updatedAt": "2026-10-09T11:47:09.240420+00:00"
+    "updatedAt": "2026-10-09T11:50:19.331521+00:00"
   },
   "newsError": false,
   "traffic": {
@@ -171,7 +171,7 @@
       }
     ],
     "total": 57,
-    "updatedAt": "2026-10-09T11:47:09.240420+00:00",
+    "updatedAt": "2026-10-09T11:50:19.331521+00:00",
     "source": "Viasuisse via RSI"
   },
   "trafficError": false,
@@ -1325,7 +1325,7 @@
       }
     ],
     "model": "202610091100",
-    "updatedAt": "2026-10-09T11:47:09.271566+00:00"
+    "updatedAt": "2026-10-09T11:50:19.502765+00:00"
   },
   "weekError": false
 }
