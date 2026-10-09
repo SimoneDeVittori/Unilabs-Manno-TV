@@ -12,6 +12,13 @@ def fetch(url):
         return response.read()
 result = dict(old)
 try:
+    from weather_week import get_week
+    result['week'] = get_week(old.get('week'))
+    result['weekError'] = False
+except Exception as exc:
+    print('MeteoSwiss weekly source unavailable:',type(exc).__name__)
+    result['weekError'] = True
+try:
     d = json.loads(fetch('https://app-prod-ws.meteoswiss-app.ch/v1/plzDetail?plz=692800'))
     assert isinstance(d['currentWeather']['temperature'], (int, float))
     result['weather'] = {'current':d['currentWeather'], 'forecast':d['forecast'][:4], 'updatedAt':now}
