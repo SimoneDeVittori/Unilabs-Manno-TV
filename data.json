@@ -48,12 +48,20 @@
         "precipitationMax": 0.0
       }
     ],
-    "updatedAt": "2026-10-09T14:04:12.192434+00:00"
+    "updatedAt": "2026-10-09T14:08:22.037534+00:00"
   },
   "weatherError": false,
   "newsError": false,
   "traffic": {
     "items": [
+      {
+        "id": "Viasuisser_FAVM/658581_TIC-Viasuisse/1",
+        "text": "H13 - El Stradún - Via Locarno tra Sementina e Gudo in entrambe le direzioni chiusa, smottamenti",
+        "road": "H13",
+        "category": 11,
+        "changedAt": "2026-10-09T16:05:30+02:00",
+        "priority": 3
+      },
       {
         "id": "Viasuisser_FAVM/658572_TIC-Viasuisse/1",
         "text": "406 - Riazzino direzione Cadenazzo tra A13, rotatoria Aeroporto di Locarno e Quartino traffico fortemente rallentato, traffico congestionato",
@@ -141,18 +149,10 @@
         "category": 12,
         "changedAt": "2026-10-09T14:27:24+02:00",
         "priority": 0
-      },
-      {
-        "id": "Viasuisser_FAVM/658482_TIC-Viasuisse/1",
-        "text": "A2 - Chiasso direzione S. Gottardo tra Quinto e Area di dosaggio Airolo traffico bloccato per 3 km, traffico congestionato, ritardi fino a 30 minuti - La corsia CUPRA è aperta",
-        "road": "A2",
-        "category": 12,
-        "changedAt": "2026-10-09T13:04:42+02:00",
-        "priority": 0
       }
     ],
-    "total": 64,
-    "updatedAt": "2026-10-09T14:04:12.192434+00:00",
+    "total": 65,
+    "updatedAt": "2026-10-09T14:08:22.037534+00:00",
     "source": "Viasuisse via RSI"
   },
   "trafficError": false,
@@ -1306,7 +1306,7 @@
       }
     ],
     "model": "202610091400",
-    "updatedAt": "2026-10-09T14:04:12.209586+00:00"
+    "updatedAt": "2026-10-09T14:08:22.132152+00:00"
   },
   "weekError": false,
   "news": {
@@ -1328,7 +1328,7 @@
         "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onrf.jpg?v=1"
       }
     ],
-    "updatedAt": "2026-10-09T14:04:12.192434+00:00",
+    "updatedAt": "2026-10-09T14:08:22.037534+00:00",
     "scope": "ticino",
     "provider": "tio"
   }
