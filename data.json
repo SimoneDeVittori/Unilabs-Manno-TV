@@ -1,10 +1,10 @@
 {
   "weather": {
     "current": {
-      "time": 1791543000000,
-      "icon": 3,
-      "iconV2": 3,
-      "temperature": 19.4
+      "time": 1791544200000,
+      "icon": 2,
+      "iconV2": 2,
+      "temperature": 19.7
     },
     "forecast": [
       {
@@ -48,27 +48,27 @@
         "precipitationMax": 0.0
       }
     ],
-    "updatedAt": "2026-10-09T11:07:16.702024+00:00"
+    "updatedAt": "2026-10-09T11:25:08.016043+00:00"
   },
   "weatherError": false,
   "news": {
     "items": [
+      {
+        "title": "Schroeder brinda con Putin, Merz è “indignato”",
+        "link": "https://www.rsi.ch/s/4148000",
+        "date": "Fri, 09 Oct 2026 11:10:36 GMT",
+        "category": "News",
+        "image": "https://cleaver.cue.rsi.ch/public/info/mondo/4148147-h12i3y-Amici.jpg/alternates/r16x9_1300/4148147-h12i3y-Amici.jpg"
+      },
       {
         "title": "Attacchi nelle scuole polacche: convocata riunione di emergenza",
         "link": "https://www.rsi.ch/s/4147919",
         "date": "Fri, 09 Oct 2026 10:39:45 GMT",
         "category": "News",
         "image": "https://cleaver.cue.rsi.ch/public/incoming/4147943-98h5fg-keystone-highres-729604585.jpg/alternates/r16x9_1300/4147943-98h5fg-keystone-highres-729604585.jpg"
-      },
-      {
-        "title": "Battaglia legale, la SNL contesta la concorrenza sleale al Cantone",
-        "link": "https://www.rsi.ch/s/4147916",
-        "date": "Fri, 09 Oct 2026 10:22:00 GMT",
-        "category": "News",
-        "image": "https://cleaver.cue.rsi.ch/public/info/ticino-grigioni-e-insubria/4147946-khno1a-Battello-sul-Verbano-Lago-Maggiore.jpg/alternates/r16x9_1300/4147946-khno1a-Battello-sul-Verbano-Lago-Maggiore.jpg"
       }
     ],
-    "updatedAt": "2026-10-09T11:07:16.702024+00:00"
+    "updatedAt": "2026-10-09T11:25:08.016043+00:00"
   },
   "newsError": false,
   "traffic": {
@@ -171,7 +171,7 @@
       }
     ],
     "total": 56,
-    "updatedAt": "2026-10-09T11:07:16.702024+00:00",
+    "updatedAt": "2026-10-09T11:25:08.016043+00:00",
     "source": "Viasuisse via RSI"
   },
   "trafficError": false,
@@ -1325,7 +1325,7 @@
       }
     ],
     "model": "202610091100",
-    "updatedAt": "2026-10-09T11:24:23.408957+00:00"
+    "updatedAt": "2026-10-09T11:25:08.038334+00:00"
   },
   "weekError": false
 }
