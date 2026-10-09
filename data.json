@@ -1,9 +1,9 @@
 {
   "weather": {
     "current": {
-      "time": 1791544200000,
-      "icon": 2,
-      "iconV2": 2,
+      "time": 1791544800000,
+      "icon": 1,
+      "iconV2": 1,
       "temperature": 19.7
     },
     "forecast": [
@@ -48,7 +48,7 @@
         "precipitationMax": 0.0
       }
     ],
-    "updatedAt": "2026-10-09T11:25:08.016043+00:00"
+    "updatedAt": "2026-10-09T11:30:15.902948+00:00"
   },
   "weatherError": false,
   "news": {
@@ -68,7 +68,7 @@
         "image": "https://cleaver.cue.rsi.ch/public/incoming/4147943-98h5fg-keystone-highres-729604585.jpg/alternates/r16x9_1300/4147943-98h5fg-keystone-highres-729604585.jpg"
       }
     ],
-    "updatedAt": "2026-10-09T11:25:08.016043+00:00"
+    "updatedAt": "2026-10-09T11:30:15.902948+00:00"
   },
   "newsError": false,
   "traffic": {
@@ -171,7 +171,7 @@
       }
     ],
     "total": 56,
-    "updatedAt": "2026-10-09T11:25:08.016043+00:00",
+    "updatedAt": "2026-10-09T11:30:15.902948+00:00",
     "source": "Viasuisse via RSI"
   },
   "trafficError": false,
@@ -1325,7 +1325,7 @@
       }
     ],
     "model": "202610091100",
-    "updatedAt": "2026-10-09T11:25:08.038334+00:00"
+    "updatedAt": "2026-10-09T11:30:16.015309+00:00"
   },
   "weekError": false
 }
