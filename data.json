@@ -1,10 +1,10 @@
 {
   "weather": {
     "current": {
-      "time": 1791580200000,
+      "time": 1791580800000,
       "icon": 101,
       "iconV2": 101,
-      "temperature": 14.2
+      "temperature": 14.1
     },
     "forecast": [
       {
@@ -48,7 +48,7 @@
         "precipitationMax": 0.1
       }
     ],
-    "updatedAt": "2026-10-09T21:19:55.773245+00:00"
+    "updatedAt": "2026-10-09T21:27:40.284872+00:00"
   },
   "weatherError": false,
   "newsError": false,
@@ -152,7 +152,7 @@
       }
     ],
     "total": 48,
-    "updatedAt": "2026-10-09T21:19:55.773245+00:00",
+    "updatedAt": "2026-10-09T21:27:40.284872+00:00",
     "source": "Viasuisse via RSI"
   },
   "trafficError": false,
@@ -1306,7 +1306,7 @@
       }
     ],
     "model": "202610092100",
-    "updatedAt": "2026-10-09T21:19:55.803779+00:00"
+    "updatedAt": "2026-10-09T21:27:40.303102+00:00"
   },
   "weekError": false,
   "news": {
@@ -1326,9 +1326,17 @@
         "date": "Fri, 09 Oct 2026 19:09:14 +0200",
         "category": "CANTONE",
         "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onts.jpg?v=1"
+      },
+      {
+        "title": "Misurando il ghiacciaio, o quel che ne resta",
+        "description": "Gli esperti del cantone al lavoro sul ghiacciaio di Valleggia (Val Bedretto) e i primi dati grezzi estremamente preoccupanti.",
+        "link": "https://www.tio.ch/ticino/attualita/1955845/misurando-il-ghiacciaio-o-quel-che-ne-resta",
+        "date": "Fri, 09 Oct 2026 18:33:16 +0200",
+        "category": "VAL BEDRETTO",
+        "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onrn.jpg?v=1"
       }
     ],
-    "updatedAt": "2026-10-09T21:19:55.773245+00:00",
+    "updatedAt": "2026-10-09T21:27:40.284872+00:00",
     "scope": "ticino",
     "provider": "tio"
   }
