@@ -36,3 +36,5 @@ header{display:grid;grid-template-columns:1fr 1fr 1fr;position:relative;min-heig
 .dashboard{background:#efefef}.traffic-list{gap:16px}.traffic-item{padding:0;border-bottom:0}
 
 .traffic-item p{font-size:21px}.traffic-item time{color:#de4d18}.traffic-location{font-weight:700}
+
+.week-day{display:grid;grid-template-columns:1fr 28px;align-items:center;column-gap:4px;font-variant-numeric:tabular-nums}.week-day-number{text-align:right}
