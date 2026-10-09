@@ -1,10 +1,10 @@
 {
   "weather": {
     "current": {
-      "time": 1791546000000,
+      "time": 1791547200000,
       "icon": 1,
       "iconV2": 1,
-      "temperature": 19.9
+      "temperature": 20.1
     },
     "forecast": [
       {
@@ -48,31 +48,28 @@
         "precipitationMax": 0.0
       }
     ],
-    "updatedAt": "2026-10-09T11:53:19.744440+00:00"
+    "updatedAt": "2026-10-09T12:07:58.357177+00:00"
   },
   "weatherError": false,
-  "news": {
-    "items": [
-      {
-        "title": "Austria, in piazza contro il divieto del velo",
-        "link": "https://www.rsi.ch/s/4148171",
-        "date": "Fri, 09 Oct 2026 11:42:30 GMT",
-        "category": "News",
-        "image": "https://cleaver.cue.rsi.ch/public/info/mondo/4148186-sd9ky7-keystone-highres-253443430.jpg/alternates/r16x9_1300/4148186-sd9ky7-keystone-highres-253443430.jpg"
-      },
-      {
-        "title": "Schroeder brinda con Putin, Merz è “indignato”",
-        "link": "https://www.rsi.ch/s/4148000",
-        "date": "Fri, 09 Oct 2026 11:10:36 GMT",
-        "category": "News",
-        "image": "https://cleaver.cue.rsi.ch/public/info/mondo/4148147-h12i3y-Amici.jpg/alternates/r16x9_1300/4148147-h12i3y-Amici.jpg"
-      }
-    ],
-    "updatedAt": "2026-10-09T11:53:19.744440+00:00"
-  },
   "newsError": false,
   "traffic": {
     "items": [
+      {
+        "id": "Viasuisser_FAVM/658521_TIC-Viasuisse/1",
+        "text": "A2 - S. Gottardo direzione Chiasso tra Chiasso Centro e frontiera Chiasso Brogeda colonna, traffico congestionato",
+        "road": "A2",
+        "category": 12,
+        "changedAt": "2026-10-09T13:59:09+02:00",
+        "priority": 0
+      },
+      {
+        "id": "Viasuisser_FAVM/658520_TIC-Viasuisse/1",
+        "text": "A2 - Chiasso direzione S. Gottardo tra Mendrisio e Melide/Bissone traffico fortemente rallentato, traffico congestionato",
+        "road": "A2",
+        "category": 13,
+        "changedAt": "2026-10-09T13:57:36+02:00",
+        "priority": 1
+      },
       {
         "id": "Viasuisser_FAVM/658482_TIC-Viasuisse/1",
         "text": "A2 - Chiasso direzione S. Gottardo tra Quinto e Area di dosaggio Airolo traffico bloccato per 3 km, traffico congestionato, ritardi fino a 30 minuti - La corsia CUPRA è aperta",
@@ -80,14 +77,6 @@
         "category": 12,
         "changedAt": "2026-10-09T13:04:42+02:00",
         "priority": 0
-      },
-      {
-        "id": "Viasuisser_FAVM/658514_TIC-Viasuisse/1",
-        "text": "A2 - Chiasso direzione S. Gottardo la galleria Grancia problemi di traffico, veicolo in avaria, corsia di destra chiusa",
-        "road": "A2",
-        "category": 13,
-        "changedAt": "2026-10-09T13:35:12+02:00",
-        "priority": 1
       },
       {
         "id": "Viasuisser_FAVM/658485_TIC-Viasuisse/1",
@@ -98,80 +87,72 @@
         "priority": 3
       },
       {
+        "id": "Viasuisser_FAVM/620496_TIC-Viasuisse/1",
+        "text": "2 - Göschenen - Airolo tra Göschenen e Airolo in entrambe le direzioni problemi di traffico, lavori stradali durante il giorno per 0.1 km, limite temporaneo di larghezza di 3.50 m, fino a 18.12.2026, lun - ven tra 07:00 e 17:00 - ID112048",
+        "road": "2",
+        "category": 31,
+        "changedAt": "2026-10-07T07:31:34+02:00",
+        "priority": 5
+      },
+      {
+        "id": "Viasuisser_Viasuisse/2509766_TIC-Viasuisse/1",
+        "text": "Villa Luganese, Ra Stráda De Marèll - fine della strada in entrambe le direzioni problemi di traffico, lavori stradali, corsie strette, fino a 16.10.2026 16:00",
+        "road": "TI",
+        "category": 31,
+        "changedAt": "2026-10-03T14:17:33+02:00",
+        "priority": 5
+      },
+      {
+        "id": "Viasuisser_Viasuisse/2509765_TIC-Viasuisse/1",
+        "text": "Pregassona, Via Terzerina - a Pregassona in entrambe le direzioni problemi di traffico, lavori stradali, corsie strette, fino a 23.10.2026 17:00",
+        "road": "TI",
+        "category": 31,
+        "changedAt": "2026-10-03T14:15:28+02:00",
+        "priority": 5
+      },
+      {
+        "id": "Viasuisser_Viasuisse/2509762_TIC-Viasuisse/1",
+        "text": "Piandera Paese, Strada Bassa a Via Cantonale - tra fine della strada e uscita di località in entrambe le direzioni problemi di traffico, lavori stradali, corsie strette, fino a 16.10.2026 17:00",
+        "road": "TI",
+        "category": 31,
+        "changedAt": "2026-10-03T14:12:08+02:00",
+        "priority": 5
+      },
+      {
+        "id": "Viasuisser_Viasuisse/2509753_TIC-Viasuisse/1",
+        "text": "Lugano, Via Guglielmo Marconi - a Lugano problemi di traffico, lavori stradali, corsie strette, fino a oggi 17:00",
+        "road": "TI",
+        "category": 31,
+        "changedAt": "2026-10-03T13:38:02+02:00",
+        "priority": 5
+      },
+      {
+        "id": "Viasuisser_Viasuisse/2509750_TIC-Viasuisse/1",
+        "text": "Lugano, Viale Stefano Franscini a Via Serafino Balestra - a Lugano problemi di traffico, lavori stradali, corsie strette, fino a 31.10.2026 07:15",
+        "road": "TI",
+        "category": 31,
+        "changedAt": "2026-10-03T13:25:16+02:00",
+        "priority": 5
+      },
+      {
+        "id": "Viasuisser_Viasuisse/2509742_TIC-Viasuisse/1",
+        "text": "Cassarate, Via Pico - a Cassarate in entrambe le direzioni problemi di traffico, lavori stradali, corsie strette, fino a oggi 17:00",
+        "road": "TI",
+        "category": 31,
+        "changedAt": "2026-10-03T12:37:03+02:00",
+        "priority": 5
+      },
+      {
         "id": "Viasuisser_Viasuisse/2509479_TIC-Viasuisse/1",
         "text": "Via Cà Gilard - tra Vigana e Paiardi in entrambe le direzioni chiusa, lavori stradali, fino a oggi, tra 08:30 e 11:30 e tra 13:30 e 16:00",
         "road": "TI",
         "category": 11,
         "changedAt": "2026-10-02T10:13:32+02:00",
         "priority": 3
-      },
-      {
-        "id": "Viasuisser_Viasuisse/2509180_TIC-Viasuisse/1",
-        "text": "Indemini - Vira Gambarogno - tra Indemini e Fosano in entrambe le direzioni chiusa, lavori stradali, fino a oggi 16:30",
-        "road": "TI",
-        "category": 11,
-        "changedAt": "2026-10-01T12:30:39+02:00",
-        "priority": 3
-      },
-      {
-        "id": "Viasuisser_Viasuisse/2507395_TIC-Viasuisse/1",
-        "text": "attraversamento Loco, Al Palazz a Alla Chiesa - in entrambe le direzioni chiusa, lavori stradali, fino a domani, lun - sab È prevista un'apertura al traffico ogni notte dalle 22.00 alle 22.30",
-        "road": "TI",
-        "category": 11,
-        "changedAt": "2026-09-24T10:07:22+02:00",
-        "priority": 3
-      },
-      {
-        "id": "Viasuisser_Viasuisse/2504108_TIC-Viasuisse/1",
-        "text": "Cassarate, Piazza Stefano Franscini - a Cassarate in entrambe le direzioni chiusa, lavori stradali, fino a 23.12.2026 16:30",
-        "road": "TI",
-        "category": 11,
-        "changedAt": "2026-09-11T15:18:06+02:00",
-        "priority": 3
-      },
-      {
-        "id": "Viasuisser_Viasuisse/2492095_TIC-Viasuisse/1",
-        "text": "Lugano, Via Nassa - a Lugano chiusa, lavori stradali, fino a 31.12.2026 12:00",
-        "road": "TI",
-        "category": 11,
-        "changedAt": "2026-07-24T23:39:40+02:00",
-        "priority": 3
-      },
-      {
-        "id": "Viasuisser_FAVM/638527_TIC-Viasuisse/1",
-        "text": "A13 - Aeroporto di Locarno - Ascona tra Locarno in Solduno e Locarno in entrambe le direzioni chiuso raccordo autostradale in entrata, lavori stradali per 0.5 km sulla corsia d'emergenza, fino a 20.10.2026 17:00 - ID115024",
-        "road": "A13",
-        "category": 11,
-        "changedAt": "2026-07-10T15:06:05+02:00",
-        "priority": 3
-      },
-      {
-        "id": "Viasuisser_Viasuisse/2483564_TIC-Viasuisse/1",
-        "text": "Pregassona, Via Loco - tra Via Arbostra e Via Stazione in entrambe le direzioni chiusa, lavori stradali, fino a 31.10.2026 16:30",
-        "road": "TI",
-        "category": 11,
-        "changedAt": "2026-06-20T12:58:59+02:00",
-        "priority": 3
-      },
-      {
-        "id": "Viasuisser_Viasuisse/2481585_TIC-Viasuisse/1",
-        "text": "Viganello, Via Albonago - tra 399, Via Ruvigliana e Sentiero Dei Castagni in entrambe le direzioni chiusa, lavori stradali, fino a ca. 01.07.2028",
-        "road": "TI",
-        "category": 11,
-        "changedAt": "2026-06-15T05:08:20+02:00",
-        "priority": 3
-      },
-      {
-        "id": "Viasuisser_Viasuisse/2476442_TIC-Viasuisse/1",
-        "text": "Ruvigliana, Via Tanello - tra Via Massago e fine della strada in entrambe le direzioni chiusa, lavori stradali, fino a 27.11.2026 17:00",
-        "road": "TI",
-        "category": 11,
-        "changedAt": "2026-05-27T09:38:04+02:00",
-        "priority": 3
       }
     ],
-    "total": 57,
-    "updatedAt": "2026-10-09T11:53:19.744440+00:00",
+    "total": 58,
+    "updatedAt": "2026-10-09T12:07:58.357177+00:00",
     "source": "Viasuisse via RSI"
   },
   "trafficError": false,
@@ -1324,8 +1305,30 @@
         "amount": 0.0
       }
     ],
-    "model": "202610091100",
-    "updatedAt": "2026-10-09T11:53:19.774928+00:00"
+    "model": "202610091200",
+    "updatedAt": "2026-10-09T12:07:58.362983+00:00"
   },
-  "weekError": false
+  "weekError": false,
+  "news": {
+    "items": [
+      {
+        "title": "Battaglia legale, la SNL contesta la concorrenza sleale al Cantone",
+        "description": "Trasporto in battello sul Verbano, la Società Navigazione del Lago di Lugano accusa il Consiglio di Stato di voler favorire le FART - La petizione inoltrata al Tribunale d’appello",
+        "link": "https://www.rsi.ch/s/4147916",
+        "date": "Fri, 09 Oct 2026 10:22:00 GMT",
+        "category": "Ticino",
+        "image": "https://cleaver.cue.rsi.ch/public/info/ticino-grigioni-e-insubria/4147946-khno1a-Battello-sul-Verbano-Lago-Maggiore.jpg/alternates/r16x9_1300/4147946-khno1a-Battello-sul-Verbano-Lago-Maggiore.jpg"
+      },
+      {
+        "title": "Traffico di cocaina, arrestato 21enne albanese",
+        "description": "Il fermo del giovane su un’auto a Massagno, la successiva perquisizione nel suo appartamento ha permesso di trovare 140 grammi di stupefacente",
+        "link": "https://www.rsi.ch/s/4147685",
+        "date": "Fri, 09 Oct 2026 08:45:46 GMT",
+        "category": "Ticino",
+        "image": "https://cleaver.cue.rsi.ch/public/info/ticino-grigioni-e-insubria/4147688-qh22qt-Operazione-antidroga-nel-Luganese.jpg/alternates/r16x9_1300/4147688-qh22qt-Operazione-antidroga-nel-Luganese.jpg"
+      }
+    ],
+    "updatedAt": "2026-10-09T12:07:58.357177+00:00",
+    "scope": "ticino"
+  }
 }

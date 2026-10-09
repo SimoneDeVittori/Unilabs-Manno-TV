@@ -1,7 +1,8 @@
 """Fetch official-source weather and RSI RSS for GitHub Pages."""
-import json, os, re, urllib.request, xml.etree.ElementTree as ET
+import json, os, re, html, urllib.request, xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 OUTPUT = Path(__file__).resolve().parent / 'data.json'
 old = json.loads(OUTPUT.read_text()) if OUTPUT.exists() else {}
@@ -26,12 +27,24 @@ try:
 except Exception as exc:
     print('Meteo source unavailable:',type(exc).__name__)
     result['weatherError'] = True
+# The RSI regional feed also contains Grisons and Insubria: require an explicit Ticino reference.
+TICINO_TERMS = r"\b(?:ticino|ticines[ei]|lugano|luganese|bellinzona|bellinzonese|locarno|locarnese|mendrisio|mendrisiotto|chiasso|massagno|manno|ascona|losone|minusio|muralto|biasca|airolo|quinto|faido|leventina|riviera|blenio|acquarossa|serravalle|vallemaggia|maggia|lavizzara|cevio|bignasco|bosco gurin|centovalli|onsernone|verzasca|tenero|gordola|cugnasco|gerra|gambarogno|magadino|viganello|breganzona|pregassona|paradiso|canobbio|porza|comano|cureglia|cadempino|lamone|gravesano|bedano|torricella|taverne|capriasca|tesserete|savosa|vezia|agano|bioggio|cademario|novaggio|malcantone|alto malcantone|caslano|magliaso|pura|ponte tresa|tresa|monteceneri|mezzovico|rivera|sant'antonino|cadenazzo|arbedo|castione|lumino|stabio|vacallo|balerna|novazzano|coldrerio|morbio|breggia|riva san vitale|capolago|brusino|melano|maroggia|bissone|arogno|rovio|ceresio)\b"
+if result.get('news',{}).get('scope') != 'ticino': result.pop('news',None)
+def plain(value):
+    return ' '.join(html.unescape(re.sub(r'<[^>]+>',' ',value or '')).split())
 try:
-    root = ET.fromstring(fetch('https://www.rsi.ch/info/?f=rss'))
-    items = [{'title':i.findtext('title',''), 'link':i.findtext('link',''), 'date':i.findtext('pubDate',''), 'category':i.findtext('category',''), 'image':(i.find('{http://search.yahoo.com/mrss/}thumbnail').get('url','') if i.find('{http://search.yahoo.com/mrss/}thumbnail') is not None else '')} for i in root.findall('./channel/item')]
-    items = [i for i in items if i['title'] and i['link'].startswith('https://www.rsi.ch/')][:2]
+    root = ET.fromstring(fetch('https://www.rsi.ch/info/ticino-grigioni-e-insubria/?f=rss'))
+    items=[]
+    for i in root.findall('./channel/item'):
+        title=plain(i.findtext('title',''));description=plain(i.findtext('description',''))
+        if not re.search(TICINO_TERMS,title+' '+description,re.I): continue
+        link=i.findtext('link','')
+        if not title or not link.startswith('https://www.rsi.ch/'): continue
+        thumbnail=i.find('{http://search.yahoo.com/mrss/}thumbnail')
+        items.append({'title':title,'description':description,'link':link,'date':i.findtext('pubDate',''),'category':'Ticino','image':thumbnail.get('url','') if thumbnail is not None else ''})
+    items.sort(key=lambda i:parsedate_to_datetime(i['date']).timestamp(),reverse=True)
     assert items
-    result['news'] = {'items':items, 'updatedAt':now}
+    result['news'] = {'items':items[:2], 'updatedAt':now,'scope':'ticino'}
     result['newsError'] = False
 except Exception as exc:
     print('RSI source unavailable:',type(exc).__name__)
@@ -79,7 +92,7 @@ try:
         updated=traffic_time(info.get('LastUpdated'))
         priority={12:0,13:1,14:2,11:3,21:4,31:5,32:6}[category]
         filtered.append({'id':e['Id'],'text':text,'road':road.group(1) if road else 'TI','category':category,'changedAt':updated.isoformat() if updated else None,'priority':priority})
-    filtered.sort(key=lambda e:(e['priority'],-(datetime.fromisoformat(e['changedAt']).timestamp() if e['changedAt'] else 0)))
+    filtered.sort(key=lambda e:(-(datetime.fromisoformat(e['changedAt']).timestamp() if e['changedAt'] else 0),e['priority']))
     seen=set();items=[]
     for e in filtered:
         event_key=e['id'].split('_TIC-')[0]
