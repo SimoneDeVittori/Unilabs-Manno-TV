@@ -1,10 +1,10 @@
 {
   "weather": {
     "current": {
-      "time": 1791543000000,
-      "icon": 3,
-      "iconV2": 3,
-      "temperature": 19.4
+      "time": 1791543600000,
+      "icon": 2,
+      "iconV2": 2,
+      "temperature": 19.6
     },
     "forecast": [
       {
@@ -48,7 +48,7 @@
         "precipitationMax": 0.0
       }
     ],
-    "updatedAt": "2026-10-09T11:07:16.702024+00:00"
+    "updatedAt": "2026-10-09T11:11:22.894685+00:00"
   },
   "weatherError": false,
   "news": {
@@ -68,7 +68,7 @@
         "image": "https://cleaver.cue.rsi.ch/public/info/ticino-grigioni-e-insubria/4147946-khno1a-Battello-sul-Verbano-Lago-Maggiore.jpg/alternates/r16x9_1300/4147946-khno1a-Battello-sul-Verbano-Lago-Maggiore.jpg"
       }
     ],
-    "updatedAt": "2026-10-09T11:07:16.702024+00:00"
+    "updatedAt": "2026-10-09T11:11:22.894685+00:00"
   },
   "newsError": false,
   "traffic": {
@@ -171,7 +171,7 @@
       }
     ],
     "total": 56,
-    "updatedAt": "2026-10-09T11:07:16.702024+00:00",
+    "updatedAt": "2026-10-09T11:11:22.894685+00:00",
     "source": "Viasuisse via RSI"
   },
   "trafficError": false
