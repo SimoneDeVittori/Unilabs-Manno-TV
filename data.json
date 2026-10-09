@@ -1,7 +1,7 @@
 {
   "weather": {
     "current": {
-      "time": 1791581400000,
+      "time": 1791582000000,
       "icon": 101,
       "iconV2": 101,
       "temperature": 14.0
@@ -48,7 +48,7 @@
         "precipitationMax": 0.1
       }
     ],
-    "updatedAt": "2026-10-09T21:47:17.126443+00:00"
+    "updatedAt": "2026-10-09T21:54:38.502640+00:00"
   },
   "weatherError": false,
   "newsError": false,
@@ -164,8 +164,8 @@
       }
     ],
     "total": 48,
-    "updatedAt": "2026-10-09T21:47:17.126443+00:00",
-    "source": "Viasuisse via RSI"
+    "updatedAt": "2026-10-09T21:54:38.502640+00:00",
+    "source": "TCS · Viasuisse"
   },
   "trafficError": false,
   "week": {
@@ -1318,7 +1318,7 @@
       }
     ],
     "model": "202610092100",
-    "updatedAt": "2026-10-09T21:47:17.166033+00:00"
+    "updatedAt": "2026-10-09T21:54:38.527072+00:00"
   },
   "weekError": false,
   "news": {
@@ -1348,7 +1348,7 @@
         "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onts.jpg?v=1"
       }
     ],
-    "updatedAt": "2026-10-09T21:47:17.126443+00:00",
+    "updatedAt": "2026-10-09T21:54:38.502640+00:00",
     "scope": "ticino",
     "provider": "tio"
   }
