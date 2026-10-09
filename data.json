@@ -48,7 +48,7 @@
         "precipitationMax": 0.0
       }
     ],
-    "updatedAt": "2026-10-09T11:30:15.902948+00:00"
+    "updatedAt": "2026-10-09T11:31:57.360016+00:00"
   },
   "weatherError": false,
   "news": {
@@ -68,7 +68,7 @@
         "image": "https://cleaver.cue.rsi.ch/public/incoming/4147943-98h5fg-keystone-highres-729604585.jpg/alternates/r16x9_1300/4147943-98h5fg-keystone-highres-729604585.jpg"
       }
     ],
-    "updatedAt": "2026-10-09T11:30:15.902948+00:00"
+    "updatedAt": "2026-10-09T11:31:57.360016+00:00"
   },
   "newsError": false,
   "traffic": {
@@ -87,6 +87,14 @@
         "road": "A2",
         "category": 11,
         "changedAt": "2026-10-09T10:57:18+02:00",
+        "priority": 3
+      },
+      {
+        "id": "Viasuisser_Viasuisse/2509479_TIC-Viasuisse/1",
+        "text": "Via Cà Gilard - tra Vigana e Paiardi in entrambe le direzioni chiusa, lavori stradali, fino a oggi, tra 08:30 e 11:30 e tra 13:30 e 16:00",
+        "road": "TI",
+        "category": 11,
+        "changedAt": "2026-10-02T10:13:32+02:00",
         "priority": 3
       },
       {
@@ -160,18 +168,10 @@
         "category": 31,
         "changedAt": "2026-10-07T07:31:34+02:00",
         "priority": 5
-      },
-      {
-        "id": "Viasuisser_Viasuisse/2509766_TIC-Viasuisse/1",
-        "text": "Villa Luganese, Ra Stráda De Marèll - fine della strada in entrambe le direzioni problemi di traffico, lavori stradali, corsie strette, fino a 16.10.2026 16:00",
-        "road": "TI",
-        "category": 31,
-        "changedAt": "2026-10-03T14:17:33+02:00",
-        "priority": 5
       }
     ],
     "total": 56,
-    "updatedAt": "2026-10-09T11:30:15.902948+00:00",
+    "updatedAt": "2026-10-09T11:31:57.360016+00:00",
     "source": "Viasuisse via RSI"
   },
   "trafficError": false,
@@ -1325,7 +1325,7 @@
       }
     ],
     "model": "202610091100",
-    "updatedAt": "2026-10-09T11:30:16.015309+00:00"
+    "updatedAt": "2026-10-09T11:31:57.386922+00:00"
   },
   "weekError": false
 }
