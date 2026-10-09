@@ -60,3 +60,5 @@ header{display:grid;grid-template-columns:1fr 1fr 1fr;position:relative;min-heig
 .tio-logo,.tcs-logo{height:78px;border-radius:0 0 17px 17px;padding:15px 9px}
 
 footer{position:relative;justify-content:center;min-height:50px}.creator-logo{left:0;bottom:-8px;transform:none}footer>span{position:absolute;left:50%;transform:translateX(-50%);white-space:nowrap}footer .page-dots{position:absolute;right:0;margin-left:0}
+
+.creator-logo{top:calc(50% + 13.5px);bottom:auto;transform:translateY(-50%)}.tio-logo,.tcs-logo{height:66px;padding:9px;border-radius:0 0 15px 15px}
