@@ -20,3 +20,5 @@ header{display:grid;grid-template-columns:1fr 1fr 1fr;position:relative;min-heig
 .tio-logo{width:86px;height:62px;object-fit:contain}.screen{transition:opacity 1.2s cubic-bezier(.4,0,.2,1),visibility 1.2s}.screen.active{z-index:1}.progress{z-index:2}
 
 .creator-logo{position:absolute;left:50%;bottom:8px;transform:translateX(-50%);width:128px;height:64px;object-fit:contain;pointer-events:none}
+
+.weather-heading{display:flex;align-items:center;justify-content:space-between;gap:14px}.weather-heading h1{width:130px;flex-shrink:0;text-align:center;font-size:40px;line-height:1.1;margin:0}.weather-now{margin-top:2px}.weather-now .weather-icon{width:130px;display:flex;justify-content:center;align-items:center}.week-row{grid-template-columns:80px 42px 94px minmax(0,1fr);gap:14px;min-height:58px;padding:8px 0}.week-row>svg{display:block;width:34px;height:34px;justify-self:center;align-self:center}.week-columns{grid-template-columns:136px 94px minmax(0,1fr);gap:14px}.week-day,.week-temperatures{font-size:22px}
