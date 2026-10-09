@@ -48,7 +48,7 @@
         "precipitationMax": 0.1
       }
     ],
-    "updatedAt": "2026-10-09T22:00:23.756242+00:00"
+    "updatedAt": "2026-10-09T22:03:12.476683+00:00"
   },
   "weatherError": false,
   "newsError": false,
@@ -110,7 +110,7 @@
       },
       {
         "id": "Viasuisser_Viasuisse/2508869_TIC-Viasuisse/1",
-        "text": "Sant'Antonino, Via Stazione - a Sant'Antonino in entrambe le direzioni chiusa, lavori stradali, fino a domani 05:30",
+        "text": "Sant'Antonino, Via Stazione - a Sant'Antonino in entrambe le direzioni chiusa, lavori stradali, fino a oggi 05:30",
         "location": "Sant'Antonino, Via Stazione",
         "road": "TI",
         "category": 11,
@@ -137,7 +137,7 @@
       },
       {
         "id": "Viasuisser_Viasuisse/2507395_TIC-Viasuisse/1",
-        "text": "attraversamento Loco, Al Palazz a Alla Chiesa - in entrambe le direzioni chiusa, lavori stradali, fino a domani, lun - sab È prevista un'apertura al traffico ogni notte dalle 22.00 alle 22.30",
+        "text": "attraversamento Loco, Al Palazz a Alla Chiesa - in entrambe le direzioni chiusa, lavori stradali, fino a oggi, lun - sab È prevista un'apertura al traffico ogni notte dalle 22.00 alle 22.30",
         "location": "attraversamento Loco, Al Palazz a Alla Chiesa",
         "road": "TI",
         "category": 11,
@@ -164,7 +164,7 @@
       }
     ],
     "total": 48,
-    "updatedAt": "2026-10-09T22:00:23.756242+00:00",
+    "updatedAt": "2026-10-09T22:03:12.476683+00:00",
     "source": "TCS · Viasuisse"
   },
   "trafficError": false,
@@ -1318,7 +1318,7 @@
       }
     ],
     "model": "202610092100",
-    "updatedAt": "2026-10-09T22:00:23.993769+00:00"
+    "updatedAt": "2026-10-09T22:03:12.502573+00:00"
   },
   "weekError": false,
   "news": {
@@ -1348,7 +1348,7 @@
         "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onts.jpg?v=1"
       }
     ],
-    "updatedAt": "2026-10-09T22:00:23.756242+00:00",
+    "updatedAt": "2026-10-09T22:03:12.476683+00:00",
     "scope": "ticino",
     "provider": "tio"
   }
