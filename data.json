@@ -48,7 +48,7 @@
         "precipitationMax": 0.0
       }
     ],
-    "updatedAt": "2026-10-09T12:58:07.210141+00:00"
+    "updatedAt": "2026-10-09T13:04:50.658917+00:00"
   },
   "weatherError": false,
   "newsError": false,
@@ -151,8 +151,8 @@
         "priority": 5
       }
     ],
-    "total": 61,
-    "updatedAt": "2026-10-09T12:58:07.210141+00:00",
+    "total": 60,
+    "updatedAt": "2026-10-09T13:04:50.658917+00:00",
     "source": "Viasuisse via RSI"
   },
   "trafficError": false,
@@ -161,7 +161,7 @@
       {
         "dayDate": "2026-10-09",
         "temperatureMin": 14,
-        "temperatureMax": 20,
+        "temperatureMax": 21,
         "iconDay": 29,
         "precipitation": 0.1
       },
@@ -1305,12 +1305,20 @@
         "amount": 0.0
       }
     ],
-    "model": "202610091200",
-    "updatedAt": "2026-10-09T12:58:07.285592+00:00"
+    "model": "202610091300",
+    "updatedAt": "2026-10-09T13:04:50.806753+00:00"
   },
   "weekError": false,
   "news": {
     "items": [
+      {
+        "title": "Teatro di Locarno in difficoltà: chiesti più fondi agli enti pubblici",
+        "description": "Nel corso dell'assemblea di giovedì sera è stata evocata anche la possibile interruzione dell'attività",
+        "link": "https://www.tio.ch/ticino/attualita/1955827/teatro-assemblea-locarno-enti-difficolta-fondi",
+        "date": "Fri, 09 Oct 2026 14:59:17 +0200",
+        "category": "LOCARNO",
+        "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onqr.jpg?v=1"
+      },
       {
         "title": "Lombardia e Ticino insieme per affrontare le emergenze transfrontaliere",
         "description": "Il programma congiunto «Extramuro 2026» intende rafforzare il coordinamento operativo tra operatori italiani e svizzeri nelle situazioni di crisi.",
@@ -1318,17 +1326,9 @@
         "date": "Fri, 09 Oct 2026 14:32:18 +0200",
         "category": "CONFINE",
         "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onqf.jpg"
-      },
-      {
-        "title": "Il Parco del Piano di Magadino esce dai suoi confini",
-        "description": "Al Centro Commerciale Coop di Tenero la prima tappa della mostra itinerante",
-        "link": "https://www.tio.ch/ticino/attualita/1955805/mostra-parco-magadino-piano-tenero-confini",
-        "date": "Fri, 09 Oct 2026 14:09:12 +0200",
-        "category": "TENERO-CONTRA",
-        "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onq5.jpg"
       }
     ],
-    "updatedAt": "2026-10-09T12:58:07.210141+00:00",
+    "updatedAt": "2026-10-09T13:04:50.658917+00:00",
     "scope": "ticino",
     "provider": "tio"
   }
