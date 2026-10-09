@@ -13,7 +13,7 @@ Due schermate automatiche: meteo Manno e ultime notizie RSI per 20 secondi, poi 
 Sostituire `piano.png` con la nuova immagine, mantenendo nome e formato PNG. Il push ripubblica il sito. Ricaricare la pagina sulla TV dopo aver sostituito l'immagine.
 
 ## Aggiornamento dati
-GitHub Actions recupera i dati ogni 15 minuti. GitHub può ritardare le esecuzioni programmate. La pagina verifica i nuovi dati ogni 5 minuti, senza fermare la rotazione. Eventuali errori mantengono gli ultimi dati disponibili e mostrano un avviso. Fonti: MeteoSvizzera (Manno 692800) e feed RSS Info di RSI. Nessuna chiave API necessaria. Non vengono riutilizzate le icone proprietarie MeteoSvizzera.
+GitHub Actions recupera i dati ogni 5 minuti. GitHub può ritardare le esecuzioni programmate. La pagina verifica i nuovi dati ogni 3 minuti, senza fermare la rotazione. Eventuali errori mantengono gli ultimi dati disponibili e mostrano un avviso. Fonti: MeteoSvizzera (Manno 692800) e feed RSS Info di RSI. Nessuna chiave API necessaria. Non vengono riutilizzate le icone proprietarie MeteoSvizzera.
 
 ## Modificare l'interfaccia
 Il sito pubblicato si trova nella cartella principale. Il sorgente React è `dashboard.tsx`. Per rigenerare app.js: `npm install`, poi `npm run build`.
