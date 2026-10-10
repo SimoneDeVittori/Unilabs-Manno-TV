@@ -196,3 +196,9 @@ main{position:fixed}
 @media (pointer: coarse) and (max-width: 600px), (pointer: coarse) and (max-height: 600px){
  .phone-navigation button{width:100%;display:block}
 }
+
+/* Overlay follows the plan image in desktop and phone layouts. */
+.work-plan{display:block;width:100%;height:100%;flex-shrink:0}
+@media (pointer: coarse) and (max-width: 600px), (pointer: coarse) and (max-height: 600px){
+ .plan.screen:not(.van-screen) .work-plan{width:100%;height:auto;max-height:calc(100dvh - 65px)}
+}
