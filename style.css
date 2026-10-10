@@ -208,3 +208,8 @@ main{position:fixed}
 
 /* Keep the Unilabs symbol solid white inside the mobile home icon. */
 .phone-home-icon g{mask:none}
+
+/* Same button height for the plan label and the home icon. */
+@media (pointer: coarse) and (max-width: 600px), (pointer: coarse) and (max-height: 600px){
+ .phone-navigation button{height:56px;min-height:56px;display:flex;align-items:center;justify-content:center;padding:10px 18px;line-height:1}
+}
