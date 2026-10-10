@@ -176,3 +176,9 @@ main{position:fixed}
 
 .today-rain-title{color:#319bd0}
 
+
+/* Modern system typography for the date and clock. */
+.date,.header-clock{font-family:"SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.date{font-weight:600;letter-spacing:-.025em}
+.header-clock{font-weight:500;letter-spacing:-.04em;font-variant-numeric:tabular-nums}
+
