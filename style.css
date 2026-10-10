@@ -261,19 +261,6 @@ main{position:fixed}
 .plan:not(.active) .plan-today-highlight{animation-play-state:paused}
 @media (prefers-reduced-motion:reduce){.plan-today-highlight{animation:none;fill-opacity:.22;stroke-opacity:.7}}
 
-/* Pumpkin runs with the tip of the autumn page's seven-second timer. */
-.van-screen .pumpkin-runner{position:absolute;bottom:4px;left:0;width:64px;height:68px;z-index:3;pointer-events:none;transform:translateX(-50%);animation:pumpkin-timer-run 7s linear forwards}
-.pumpkin-runner svg{display:block;overflow:visible}
-.pumpkin-body{animation:pumpkin-bounce .42s ease-in-out infinite}
-.pumpkin-leg-left,.pumpkin-leg-right{transform-box:view-box;animation:pumpkin-stride .42s ease-in-out infinite}
-.pumpkin-leg-left{transform-origin:26px 44px}
-.pumpkin-leg-right{transform-origin:38px 44px;animation-delay:-.21s}
-@keyframes pumpkin-timer-run{from{left:0}to{left:100%}}
-@keyframes pumpkin-bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
-@keyframes pumpkin-stride{0%,100%{transform:rotate(-18deg)}50%{transform:rotate(18deg)}}
-.screen:not(.active) .pumpkin-runner,.screen:not(.active) .pumpkin-runner *{animation-play-state:paused}
-@media (prefers-reduced-motion:reduce){.pumpkin-body,.pumpkin-leg-left,.pumpkin-leg-right{animation:none!important}}
-
 /* Equal upper and lower space centers the home header in its grey band. */
 .dashboard:not(.swiss-map-screen){padding-top:36.68px}
 .dashboard:not(.swiss-map-screen)>header{margin-bottom:36.68px;align-items:center}
@@ -355,13 +342,24 @@ main{position:fixed}
  .weather-now .weather-icon{top:-6px}
 }
 
-/* Desktop home: the news card masks the mascot as it peeks, waves and jumps. */
+
+/* Desktop home mascot, centered between clock and logo, masked by the news card. */
 @media (pointer:fine){
-.dashboard:not(.swiss-map-screen) .right-column{position:relative;isolation:isolate}
-.dashboard:not(.swiss-map-screen) .right-column>.card{z-index:1}
-.dashboard:not(.swiss-map-screen) .right-column::before{content:"";position:absolute;left:10px;top:-128px;width:180px;height:180px;background:url('./mascotte-saluto.png') 0 0/360px 360px no-repeat;pointer-events:none;z-index:0;transform:translateY(190px);will-change:transform}
-.dashboard.active:not(.swiss-map-screen) .right-column::before{animation:mascot-peek 25s ease-in-out both,mascot-greeting 25s steps(1,end) both}
+ .dashboard:not(.swiss-map-screen) .right-column{position:relative;isolation:isolate}
+ .dashboard:not(.swiss-map-screen) .right-column>.card{z-index:1}
+ .dashboard:not(.swiss-map-screen) .right-column::before,.dashboard:not(.swiss-map-screen) .right-column::after{content:"";position:absolute;left:calc(50% - 17px);top:-128px;width:180px;height:180px;background:url('./mascotte-saluto.png') 0 0/360px 360px no-repeat;pointer-events:none;z-index:0;transform:translateY(200px);will-change:transform}
+ .dashboard:not(.swiss-map-screen) .right-column::after{background-position:100% 0;opacity:0}
+ .dashboard.active:not(.swiss-map-screen) .right-column::before{animation:mascot-peek 25s cubic-bezier(.35,0,.2,1) both,mascot-wink 25s steps(1,end) both}
+ .dashboard.active:not(.swiss-map-screen) .right-column::after{animation:mascot-peek 25s cubic-bezier(.35,0,.2,1) both,mascot-wave 25s ease-in-out both}
 }
-@keyframes mascot-peek{0%,8%,42%,100%{transform:translateY(190px)}12%{transform:translateY(-5px)}14%,32%{transform:translateY(0)}34%{transform:translateY(10px) scaleY(.95)}36%{transform:translateY(-14px) rotate(-4deg)}40%{transform:translateY(190px) rotate(5deg)}}
-@keyframes mascot-greeting{0%,14%,18%,22%,26%,34%,100%{background-position:0 0}16%,20%,24%,28%,32%{background-position:100% 0}30%{background-position:0 100%}}
-@media (prefers-reduced-motion:reduce){.dashboard:not(.swiss-map-screen) .right-column::before{content:none;animation:none}}
+@keyframes mascot-peek{0%,8%,42%,100%{transform:translateY(200px)}12%{transform:translateY(-6px)}14%,32%{transform:translateY(0)}34%{transform:translateY(18px) scale(.98,.9)}37%{transform:translateY(-48px) rotate(-7deg) scale(1.02,1.04)}41%{transform:translateY(200px) rotate(7deg)}}
+@keyframes mascot-wink{0%,32%,100%{background-position:0 0}29%{background-position:0 100%}}
+@keyframes mascot-wave{0%,14%,18%,22%,26%,28%,100%{opacity:0}16%,20%,24%{opacity:1}}
+/* The mascot runs exactly with the seven-second van progress tip. */
+.van-screen .mascot-runner{position:absolute;bottom:4px;left:0;width:90px;height:90px;z-index:3;pointer-events:none;transform:translateX(-50%);animation:mascot-timer-run 7s linear forwards}
+.mascot-running-sprite{width:90px;height:90px;background:url('./mascotte-corsa.png') 0 0/180px 180px no-repeat;animation:mascot-run-frames .48s steps(1,end) infinite,mascot-run-bounce .24s ease-in-out infinite}
+@keyframes mascot-timer-run{from{left:0}to{left:100%}}
+@keyframes mascot-run-frames{0%,100%{background-position:0 0}25%{background-position:100% 0}50%{background-position:0 100%}75%{background-position:100% 100%}}
+@keyframes mascot-run-bounce{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-4px) rotate(2deg)}}
+.screen:not(.active) .mascot-runner,.screen:not(.active) .mascot-running-sprite{animation-play-state:paused}
+@media (prefers-reduced-motion:reduce){.dashboard:not(.swiss-map-screen) .right-column::before,.dashboard:not(.swiss-map-screen) .right-column::after{content:none;animation:none}.mascot-running-sprite{animation:none}}
