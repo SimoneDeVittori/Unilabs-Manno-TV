@@ -1,10 +1,10 @@
 {
   "weather": {
     "current": {
-      "time": 1791643800000,
+      "time": 1791646800000,
       "icon": 1,
       "iconV2": 1,
-      "temperature": 19.8
+      "temperature": 19.5
     },
     "forecast": [
       {
@@ -15,7 +15,7 @@
         "temperatureMin": 12,
         "precipitation": 0.3,
         "precipitationMin": 0.3,
-        "precipitationMax": 0.3
+        "precipitationMax": 0.4
       },
       {
         "dayDate": "2026-10-11",
@@ -48,125 +48,10 @@
         "precipitationMax": 0.1
       }
     ],
-    "updatedAt": "2026-10-10T15:08:39.891323+00:00"
+    "updatedAt": "2026-10-10T15:47:31.412286+00:00"
   },
   "weatherError": false,
   "newsError": false,
-  "traffic": {
-    "items": [
-      {
-        "id": "Viasuisser_FAVM/658692_TIC-Viasuisse/1",
-        "text": "406 - Cadenazzo direzione Riazzino tra Cadenazzo e Contone colonna, traffico congestionato",
-        "location": "406 - Cadenazzo direzione Riazzino",
-        "road": "406",
-        "category": 12,
-        "changedAt": "2026-10-10T15:24:27+02:00",
-        "priority": 0
-      },
-      {
-        "id": "Viasuisser_FAVM/658677_TIC-Viasuisse/1",
-        "text": "A2 - Chiasso direzione S. Gottardo tra Quinto e Area di dosaggio Airolo traffico congestionato, traffico bloccato per 4 km, ritardi fino a 40 minuti - la corsia preferenziale CUPRA è aperta",
-        "location": "A2 - Chiasso direzione S. Gottardo",
-        "road": "A2",
-        "category": 12,
-        "changedAt": "2026-10-10T12:41:28+02:00",
-        "priority": 0
-      },
-      {
-        "id": "Viasuisser_FAVM/658676_TIC-Viasuisse/1",
-        "text": "A2 - Chiasso direzione S. Gottardo a Airolo chiuso raccordo autostradale in entrata",
-        "location": "A2 - Chiasso direzione S. Gottardo",
-        "road": "A2",
-        "category": 11,
-        "changedAt": "2026-10-10T10:04:31+02:00",
-        "priority": 3
-      },
-      {
-        "id": "Viasuisser_Viasuisse/2511045_TIC-Viasuisse/1",
-        "text": "Lugano, Via San Gottardo a Via Trevano - a Lugano in entrambe le direzioni problemi di traffico, manifestazione, ritardi fino a 30 minuti, fino a oggi, tra 16:00 e 17:30 e tra 20:00 e 21:30 Stazione FFS - Via San Gottardo - via Tesserete - via Torricelli - via Trevano - Cornaredo",
-        "location": "Lugano, Via San Gottardo a Via Trevano",
-        "road": "TI",
-        "category": 13,
-        "changedAt": "2026-10-09T12:51:08+02:00",
-        "priority": 1
-      },
-      {
-        "id": "Viasuisser_FAVM/620496_TIC-Viasuisse/1",
-        "text": "2 - Göschenen - Airolo tra Göschenen e Airolo in entrambe le direzioni problemi di traffico, lavori stradali durante il giorno per 0.1 km, limite temporaneo di larghezza di 3.50 m, fino a 18.12.2026, lun - ven tra 07:00 e 17:00 - ID112048",
-        "location": "2 - Göschenen - Airolo",
-        "road": "2",
-        "category": 31,
-        "changedAt": "2026-10-07T07:31:34+02:00",
-        "priority": 5
-      },
-      {
-        "id": "Viasuisser_Viasuisse/2509766_TIC-Viasuisse/1",
-        "text": "Villa Luganese, Ra Stráda De Marèll - fine della strada in entrambe le direzioni problemi di traffico, lavori stradali, corsie strette, fino a venerdì 16:00",
-        "location": "Villa Luganese, Ra Stráda De Marèll",
-        "road": "TI",
-        "category": 31,
-        "changedAt": "2026-10-03T14:17:33+02:00",
-        "priority": 5
-      },
-      {
-        "id": "Viasuisser_Viasuisse/2509765_TIC-Viasuisse/1",
-        "text": "Pregassona, Via Terzerina - a Pregassona in entrambe le direzioni problemi di traffico, lavori stradali, corsie strette, fino a 23.10.2026 17:00",
-        "location": "Pregassona, Via Terzerina",
-        "road": "TI",
-        "category": 31,
-        "changedAt": "2026-10-03T14:15:28+02:00",
-        "priority": 5
-      },
-      {
-        "id": "Viasuisser_Viasuisse/2509762_TIC-Viasuisse/1",
-        "text": "Piandera Paese, Strada Bassa a Via Cantonale - tra fine della strada e uscita di località in entrambe le direzioni problemi di traffico, lavori stradali, corsie strette, fino a venerdì 17:00",
-        "location": "Piandera Paese, Strada Bassa a Via Cantonale",
-        "road": "TI",
-        "category": 31,
-        "changedAt": "2026-10-03T14:12:08+02:00",
-        "priority": 5
-      },
-      {
-        "id": "Viasuisser_Viasuisse/2509750_TIC-Viasuisse/1",
-        "text": "Lugano, Viale Stefano Franscini a Via Serafino Balestra - a Lugano problemi di traffico, lavori stradali, corsie strette, fino a 31.10.2026 07:15",
-        "location": "Lugano, Viale Stefano Franscini a Via Serafino Balestra",
-        "road": "TI",
-        "category": 31,
-        "changedAt": "2026-10-03T13:25:16+02:00",
-        "priority": 5
-      },
-      {
-        "id": "Viasuisser_FAVM/626453_TIC-Viasuisse/1",
-        "text": "H2 - Göschenen - Airolo tra Ospizio San Gottardo e Motto Bartola in entrambe le direzioni problemi di traffico, lavori stradali, corsie strette, limite temporaneo di larghezza di 3.30 m, fino a 27.11.2026 17:00 - ID112879",
-        "location": "H2 - Göschenen - Airolo",
-        "road": "H2",
-        "category": 31,
-        "changedAt": "2026-09-30T17:01:21+02:00",
-        "priority": 5
-      },
-      {
-        "id": "Viasuisser_Viasuisse/2508715_TIC-Viasuisse/1",
-        "text": "Locarno, Via Rovedo - a Locarno problemi di traffico, nuova gestione del traffico, circolazione a senso unico, seguire deviazione locale, fino a 26.02.2027",
-        "location": "Locarno, Via Rovedo",
-        "road": "TI",
-        "category": 31,
-        "changedAt": "2026-09-29T20:11:47+02:00",
-        "priority": 5
-      },
-      {
-        "id": "Viasuisser_Viasuisse/2508008_TIC-Viasuisse/1",
-        "text": "Via Nodivra - a Carona lavori stradali, corsie strette, fino a 18.12.2026 17:00",
-        "location": "Via Nodivra",
-        "road": "TI",
-        "category": 31,
-        "changedAt": "2026-09-27T10:35:09+02:00",
-        "priority": 5
-      }
-    ],
-    "total": 50,
-    "updatedAt": "2026-10-10T15:08:39.891323+00:00",
-    "source": "TCS · Viasuisse"
-  },
   "trafficError": false,
   "week": {
     "days": [
@@ -1318,7 +1203,7 @@
       }
     ],
     "model": "202610101500",
-    "updatedAt": "2026-10-10T15:08:39.916969+00:00"
+    "updatedAt": "2026-10-10T15:47:31.507127+00:00"
   },
   "weekError": false,
   "news": {
@@ -1348,7 +1233,7 @@
         "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onwe.jpg?v=1"
       }
     ],
-    "updatedAt": "2026-10-10T15:08:39.891323+00:00",
+    "updatedAt": "2026-10-10T15:47:31.412286+00:00",
     "scope": "ticino",
     "provider": "tio"
   },
@@ -1367,7 +1252,7 @@
         "coord_y": "1152444",
         "location_id": "100300",
         "location_type": "city",
-        "timestamp": 1791643213,
+        "timestamp": 1791646808,
         "forecasts": [
           {
             "date": "10 ottobre 2026",
@@ -1418,7 +1303,7 @@
             "date": "15 ottobre 2026",
             "date_iso": "2026-10-15",
             "weather_description": "symbol_id_2",
-            "temp_high": 18,
+            "temp_high": 19,
             "weekday": "giovedì",
             "temp_low": 12,
             "weather_symbol_id": 2
@@ -1435,11 +1320,11 @@
           {
             "date": "17 ottobre 2026",
             "date_iso": "2026-10-17",
-            "weather_description": "symbol_id_3",
+            "weather_description": "symbol_id_2",
             "temp_high": 15,
             "weekday": "sabato",
             "temp_low": 11,
-            "weather_symbol_id": 3
+            "weather_symbol_id": 2
           }
         ]
       },
@@ -1456,13 +1341,13 @@
         "coord_y": "1118423",
         "location_id": "120100",
         "location_type": "city",
-        "timestamp": 1791643213,
+        "timestamp": 1791646808,
         "forecasts": [
           {
             "date": "10 ottobre 2026",
             "date_iso": "2026-10-10",
             "weather_description": "symbol_id_6",
-            "temp_high": 18,
+            "temp_high": 17,
             "weekday": "Heute",
             "temp_low": 11,
             "weather_symbol_id": 6
@@ -1479,17 +1364,17 @@
           {
             "date": "12 ottobre 2026",
             "date_iso": "2026-10-12",
-            "weather_description": "symbol_id_1",
+            "weather_description": "symbol_id_2",
             "temp_high": 16,
             "weekday": "lunedì",
             "temp_low": 6,
-            "weather_symbol_id": 1
+            "weather_symbol_id": 2
           },
           {
             "date": "13 ottobre 2026",
             "date_iso": "2026-10-13",
             "weather_description": "symbol_id_1",
-            "temp_high": 17,
+            "temp_high": 18,
             "weekday": "martedì",
             "temp_low": 6,
             "weather_symbol_id": 1
@@ -1497,11 +1382,11 @@
           {
             "date": "14 ottobre 2026",
             "date_iso": "2026-10-14",
-            "weather_description": "symbol_id_2",
-            "temp_high": 20,
+            "weather_description": "symbol_id_1",
+            "temp_high": 19,
             "weekday": "mercoledì",
             "temp_low": 9,
-            "weather_symbol_id": 2
+            "weather_symbol_id": 1
           },
           {
             "date": "15 ottobre 2026",
@@ -1545,7 +1430,7 @@
         "coord_y": "1119910",
         "location_id": "195000",
         "location_type": "city",
-        "timestamp": 1791643213,
+        "timestamp": 1791646808,
         "forecasts": [
           {
             "date": "10 ottobre 2026",
@@ -1634,7 +1519,7 @@
         "coord_y": "1202399",
         "location_id": "300400",
         "location_type": "city",
-        "timestamp": 1791643213,
+        "timestamp": 1791646808,
         "forecasts": [
           {
             "date": "10 ottobre 2026",
@@ -1666,29 +1551,29 @@
           {
             "date": "13 ottobre 2026",
             "date_iso": "2026-10-13",
-            "weather_description": "symbol_id_27",
+            "weather_description": "symbol_id_2",
             "temp_high": 17,
             "weekday": "martedì",
             "temp_low": 4,
-            "weather_symbol_id": 27
+            "weather_symbol_id": 2
           },
           {
             "date": "14 ottobre 2026",
             "date_iso": "2026-10-14",
-            "weather_description": "symbol_id_1",
+            "weather_description": "symbol_id_2",
             "temp_high": 19,
             "weekday": "mercoledì",
-            "temp_low": 8,
-            "weather_symbol_id": 1
+            "temp_low": 9,
+            "weather_symbol_id": 2
           },
           {
             "date": "15 ottobre 2026",
             "date_iso": "2026-10-15",
-            "weather_description": "symbol_id_3",
+            "weather_description": "symbol_id_27",
             "temp_high": 18,
             "weekday": "giovedì",
             "temp_low": 8,
-            "weather_symbol_id": 3
+            "weather_symbol_id": 27
           },
           {
             "date": "16 ottobre 2026",
@@ -1723,7 +1608,7 @@
         "coord_y": "1267348",
         "location_id": "400100",
         "location_type": "city",
-        "timestamp": 1791643213,
+        "timestamp": 1791646808,
         "forecasts": [
           {
             "date": "10 ottobre 2026",
@@ -1747,7 +1632,7 @@
             "date": "12 ottobre 2026",
             "date_iso": "2026-10-12",
             "weather_description": "symbol_id_1",
-            "temp_high": 17,
+            "temp_high": 16,
             "weekday": "lunedì",
             "temp_low": 5,
             "weather_symbol_id": 1
@@ -1767,17 +1652,17 @@
             "weather_description": "symbol_id_2",
             "temp_high": 20,
             "weekday": "mercoledì",
-            "temp_low": 11,
+            "temp_low": 10,
             "weather_symbol_id": 2
           },
           {
             "date": "15 ottobre 2026",
             "date_iso": "2026-10-15",
-            "weather_description": "symbol_id_2",
+            "weather_description": "symbol_id_1",
             "temp_high": 20,
             "weekday": "giovedì",
             "temp_low": 11,
-            "weather_symbol_id": 2
+            "weather_symbol_id": 1
           },
           {
             "date": "16 ottobre 2026",
@@ -1812,13 +1697,13 @@
         "coord_y": "1211120",
         "location_id": "600300",
         "location_type": "city",
-        "timestamp": 1791643213,
+        "timestamp": 1791646808,
         "forecasts": [
           {
             "date": "10 ottobre 2026",
             "date_iso": "2026-10-10",
             "weather_description": "symbol_id_17",
-            "temp_high": 16,
+            "temp_high": 15,
             "weekday": "Heute",
             "temp_low": 11,
             "weather_symbol_id": 17
@@ -1856,17 +1741,17 @@
             "weather_description": "symbol_id_2",
             "temp_high": 19,
             "weekday": "mercoledì",
-            "temp_low": 11,
+            "temp_low": 10,
             "weather_symbol_id": 2
           },
           {
             "date": "15 ottobre 2026",
             "date_iso": "2026-10-15",
-            "weather_description": "symbol_id_2",
+            "weather_description": "symbol_id_1",
             "temp_high": 18,
             "weekday": "giovedì",
             "temp_low": 10,
-            "weather_symbol_id": 2
+            "weather_symbol_id": 1
           },
           {
             "date": "16 ottobre 2026",
@@ -1901,7 +1786,7 @@
         "coord_y": "1096327",
         "location_id": "690000",
         "location_type": "city",
-        "timestamp": 1791643213,
+        "timestamp": 1791646808,
         "forecasts": [
           {
             "date": "10 ottobre 2026",
@@ -1990,7 +1875,7 @@
         "coord_y": "1191534",
         "location_id": "700000",
         "location_type": "city",
-        "timestamp": 1791643213,
+        "timestamp": 1791646808,
         "forecasts": [
           {
             "date": "10 ottobre 2026",
@@ -2007,7 +1892,7 @@
             "weather_description": "symbol_id_3",
             "temp_high": 14,
             "weekday": "domenica",
-            "temp_low": 8,
+            "temp_low": 9,
             "weather_symbol_id": 3
           },
           {
@@ -2041,7 +1926,7 @@
             "date": "15 ottobre 2026",
             "date_iso": "2026-10-15",
             "weather_description": "symbol_id_1",
-            "temp_high": 20,
+            "temp_high": 19,
             "weekday": "giovedì",
             "temp_low": 9,
             "weather_symbol_id": 1
@@ -2079,7 +1964,7 @@
         "coord_y": "1247414",
         "location_id": "800100",
         "location_type": "city",
-        "timestamp": 1791643213,
+        "timestamp": 1791646808,
         "forecasts": [
           {
             "date": "10 ottobre 2026",
@@ -2111,11 +1996,11 @@
           {
             "date": "13 ottobre 2026",
             "date_iso": "2026-10-13",
-            "weather_description": "symbol_id_1",
-            "temp_high": 16,
+            "weather_description": "symbol_id_2",
+            "temp_high": 17,
             "weekday": "martedì",
             "temp_low": 6,
-            "weather_symbol_id": 1
+            "weather_symbol_id": 2
           },
           {
             "date": "14 ottobre 2026",
@@ -2123,7 +2008,7 @@
             "weather_description": "symbol_id_2",
             "temp_high": 19,
             "weekday": "mercoledì",
-            "temp_low": 11,
+            "temp_low": 10,
             "weather_symbol_id": 2
           },
           {
@@ -2147,11 +2032,11 @@
           {
             "date": "17 ottobre 2026",
             "date_iso": "2026-10-17",
-            "weather_description": "symbol_id_3",
+            "weather_description": "symbol_id_29",
             "temp_high": 15,
             "weekday": "sabato",
             "temp_low": 9,
-            "weather_symbol_id": 3
+            "weather_symbol_id": 29
           }
         ]
       },
@@ -2168,7 +2053,7 @@
         "coord_y": "1254370",
         "location_id": "900000",
         "location_type": "city",
-        "timestamp": 1791643213,
+        "timestamp": 1791646808,
         "forecasts": [
           {
             "date": "10 ottobre 2026",
@@ -2203,7 +2088,7 @@
             "weather_description": "symbol_id_1",
             "temp_high": 13,
             "weekday": "martedì",
-            "temp_low": 4,
+            "temp_low": 5,
             "weather_symbol_id": 1
           },
           {
@@ -2218,11 +2103,11 @@
           {
             "date": "15 ottobre 2026",
             "date_iso": "2026-10-15",
-            "weather_description": "symbol_id_2",
+            "weather_description": "symbol_id_1",
             "temp_high": 15,
             "weekday": "giovedì",
             "temp_low": 9,
-            "weather_symbol_id": 2
+            "weather_symbol_id": 1
           },
           {
             "date": "16 ottobre 2026",
@@ -2245,8 +2130,123 @@
         ]
       }
     ],
-    "updatedAt": "2026-10-10T15:08:39.891323+00:00",
-    "version": "20261010_1440"
+    "updatedAt": "2026-10-10T15:47:31.412286+00:00",
+    "version": "20261010_1540"
   },
-  "swissWeatherError": false
+  "swissWeatherError": false,
+  "traffic": {
+    "items": [
+      {
+        "id": "Viasuisser_FAVM/658677_TIC-Viasuisse/1",
+        "text": "A2 - Chiasso direzione S. Gottardo tra Quinto e Area di dosaggio Airolo traffico bloccato per 3 km, traffico congestionato, ritardi fino a 30 minuti - la corsia preferenziale CUPRA è aperta",
+        "location": "A2 - Chiasso direzione S. Gottardo",
+        "road": "A2",
+        "category": 12,
+        "changedAt": "2026-10-10T17:41:59+02:00",
+        "priority": 0
+      },
+      {
+        "id": "Viasuisser_FAVM/658676_TIC-Viasuisse/1",
+        "text": "A2 - Chiasso direzione S. Gottardo a Airolo chiuso raccordo autostradale in entrata",
+        "location": "A2 - Chiasso direzione S. Gottardo",
+        "road": "A2",
+        "category": 11,
+        "changedAt": "2026-10-10T10:04:31+02:00",
+        "priority": 3
+      },
+      {
+        "id": "Viasuisser_FAVM/620496_TIC-Viasuisse/1",
+        "text": "2 - Göschenen - Airolo tra Göschenen e Airolo in entrambe le direzioni problemi di traffico, lavori stradali durante il giorno per 0.1 km, limite temporaneo di larghezza di 3.50 m, fino a 18.12.2026, lun - ven tra 07:00 e 17:00 - ID112048",
+        "location": "2 - Göschenen - Airolo",
+        "road": "2",
+        "category": 31,
+        "changedAt": "2026-10-07T07:31:34+02:00",
+        "priority": 5
+      },
+      {
+        "id": "Viasuisser_Viasuisse/2509766_TIC-Viasuisse/1",
+        "text": "Villa Luganese, Ra Stráda De Marèll - fine della strada in entrambe le direzioni problemi di traffico, lavori stradali, corsie strette, fino a venerdì 16:00",
+        "location": "Villa Luganese, Ra Stráda De Marèll",
+        "road": "TI",
+        "category": 31,
+        "changedAt": "2026-10-03T14:17:33+02:00",
+        "priority": 5
+      },
+      {
+        "id": "Viasuisser_Viasuisse/2509765_TIC-Viasuisse/1",
+        "text": "Pregassona, Via Terzerina - a Pregassona in entrambe le direzioni problemi di traffico, lavori stradali, corsie strette, fino a 23.10.2026 17:00",
+        "location": "Pregassona, Via Terzerina",
+        "road": "TI",
+        "category": 31,
+        "changedAt": "2026-10-03T14:15:28+02:00",
+        "priority": 5
+      },
+      {
+        "id": "Viasuisser_Viasuisse/2509762_TIC-Viasuisse/1",
+        "text": "Piandera Paese, Strada Bassa a Via Cantonale - tra fine della strada e uscita di località in entrambe le direzioni problemi di traffico, lavori stradali, corsie strette, fino a venerdì 17:00",
+        "location": "Piandera Paese, Strada Bassa a Via Cantonale",
+        "road": "TI",
+        "category": 31,
+        "changedAt": "2026-10-03T14:12:08+02:00",
+        "priority": 5
+      },
+      {
+        "id": "Viasuisser_Viasuisse/2509750_TIC-Viasuisse/1",
+        "text": "Lugano, Viale Stefano Franscini a Via Serafino Balestra - a Lugano problemi di traffico, lavori stradali, corsie strette, fino a 31.10.2026 07:15",
+        "location": "Lugano, Viale Stefano Franscini a Via Serafino Balestra",
+        "road": "TI",
+        "category": 31,
+        "changedAt": "2026-10-03T13:25:16+02:00",
+        "priority": 5
+      },
+      {
+        "id": "Viasuisser_FAVM/626453_TIC-Viasuisse/1",
+        "text": "H2 - Göschenen - Airolo tra Ospizio San Gottardo e Motto Bartola in entrambe le direzioni problemi di traffico, lavori stradali, corsie strette, limite temporaneo di larghezza di 3.30 m, fino a 27.11.2026 17:00 - ID112879",
+        "location": "H2 - Göschenen - Airolo",
+        "road": "H2",
+        "category": 31,
+        "changedAt": "2026-09-30T17:01:21+02:00",
+        "priority": 5
+      },
+      {
+        "id": "Viasuisser_Viasuisse/2508715_TIC-Viasuisse/1",
+        "text": "Locarno, Via Rovedo - a Locarno problemi di traffico, nuova gestione del traffico, circolazione a senso unico, seguire deviazione locale, fino a 26.02.2027",
+        "location": "Locarno, Via Rovedo",
+        "road": "TI",
+        "category": 31,
+        "changedAt": "2026-09-29T20:11:47+02:00",
+        "priority": 5
+      },
+      {
+        "id": "Viasuisser_Viasuisse/2508008_TIC-Viasuisse/1",
+        "text": "Via Nodivra - a Carona lavori stradali, corsie strette, fino a 18.12.2026 17:00",
+        "location": "Via Nodivra",
+        "road": "TI",
+        "category": 31,
+        "changedAt": "2026-09-27T10:35:09+02:00",
+        "priority": 5
+      },
+      {
+        "id": "Viasuisser_FAVM/654593_TIC-Viasuisse/1",
+        "text": "A2 - Chiasso direzione S. Gottardo tra  Lugano Nord e Rivera problemi di traffico, lavori stradali durante la notte per 3.1 km, nuova gestione del traffico, carreggiata ridotta a una corsia, limite temporaneo di larghezza di 3.50 m, fino a martedì, tra 21:30 e 04:00 - ID117704",
+        "location": "A2 - Chiasso direzione S. Gottardo",
+        "road": "A2",
+        "category": 32,
+        "changedAt": "2026-09-22T11:58:11+02:00",
+        "priority": 6
+      },
+      {
+        "id": "Viasuisser_FAVM/654420_TIC-Viasuisse/1",
+        "text": "A2 - Chiasso direzione S. Gottardo tra Faido e Quinto problemi di traffico, lavori stradali per 2.7 km, corsie strette, carreggiata ridotta a due corsie, limite temporaneo di larghezza di 7.75 m, fino a 20.11.2026 05:00 - ID117662",
+        "location": "A2 - Chiasso direzione S. Gottardo",
+        "road": "A2",
+        "category": 31,
+        "changedAt": "2026-09-21T17:02:59+02:00",
+        "priority": 5
+      }
+    ],
+    "total": 48,
+    "updatedAt": "2026-10-10T15:47:31.412286+00:00",
+    "source": "Viasuisse"
+  }
 }
