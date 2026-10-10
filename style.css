@@ -326,3 +326,14 @@ main{position:fixed}
  .swiss-map-screen>header{margin-bottom:20px}
  .swiss-map-card{padding-left:18px;padding-right:18px}
 }
+
+/* Current icon shares Manno's column and centers above the grey divider. */
+.weather-now{position:relative}
+.weather-now .weather-icon{position:absolute;right:0;top:-2px;bottom:-34px;width:130px;display:flex;align-items:center;justify-content:center}
+.weather-heading h1{width:130px;text-align:center}
+.weather-note{line-height:24px;margin:0 0 10px;max-width:calc(100% - 144px)}
+@media (pointer:coarse) and (max-width:600px),(pointer:coarse) and (max-height:600px){
+ .weather-heading h1{width:96px}
+ .weather-now .weather-icon{width:96px;bottom:-30px}
+ .weather-note{line-height:20px;max-width:calc(100% - 108px)}
+}
