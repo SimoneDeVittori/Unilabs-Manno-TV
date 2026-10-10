@@ -8,6 +8,23 @@ function renderNightWeather(code,size){
  cloudy?h('path',{d:'M20.9 13.2A9 9 0 1 1 10.8 3.1a7 7 0 0 0 10.1 10.1Z',transform:'translate(7 -1) scale(.65)'}):h('path',{d:'M20.9 13.2A9 9 0 1 1 10.8 3.1a7 7 0 0 0 10.1 10.1Z'}),
  cloudy?h('path',{d:'M13 22H7a5 5 0 1 1 4.9-6H13a3 3 0 0 1 0 6Z'}):null,...[[3,4,1.2,0],[20,3,1.05,-.9],[22,18,1.2,-1.8]].map(([x,y,size,delay],i)=>h('path',{key:'star-'+i,className:'weather-star',d:'M0 -1 .23 -.23 1 0 .23 .23 0 1 -.23 .23 -1 0 -.23 -.23Z',transform:'translate('+x+' '+y+') scale('+size+')',fill:'currentColor',stroke:'none',style:{animationDelay:delay+'s'}})));
 }
+function renderPumpkinRunner(active){
+ const h=rainElement;
+ return h('div',{className:'pumpkin-runner',key:active?'pumpkin-running':'pumpkin-hidden','aria-hidden':true},
+ h('svg',{width:64,height:68,viewBox:'0 0 64 68',fill:'none'},
+ h('g',{className:'pumpkin-leg-left'},h('path',{d:'M26 44 23 56 17 60',stroke:'#65452c',strokeWidth:4,strokeLinecap:'round'}),h('ellipse',{cx:16,cy:61,rx:6,ry:3,fill:'#65452c'})),
+ h('g',{className:'pumpkin-leg-right'},h('path',{d:'M38 44 41 55 47 59',stroke:'#65452c',strokeWidth:4,strokeLinecap:'round'}),h('ellipse',{cx:48,cy:60,rx:6,ry:3,fill:'#65452c'})),
+ h('g',{className:'pumpkin-body'},
+ h('path',{d:'M11 30 5 35 3 30 M53 30 59 24 61 28',stroke:'#65452c',strokeWidth:3,strokeLinecap:'round',strokeLinejoin:'round'}),
+ h('path',{d:'M31 11Q29 4 35 2',stroke:'#538438',strokeWidth:5,strokeLinecap:'round'}),
+ h('path',{d:'M34 8Q40 1 45 7Q41 12 34 8Z',fill:'#72a94d'}),
+ h('ellipse',{cx:32,cy:28,rx:23,ry:20,fill:'#f58a20',stroke:'#dc6415',strokeWidth:2}),
+ h('ellipse',{cx:32,cy:28,rx:13,ry:20,stroke:'#e57416',strokeWidth:2}),
+ h('path',{d:'M21 25Q24 20 27 25 M37 25Q40 20 43 25',stroke:'#653d25',strokeWidth:2.8,strokeLinecap:'round'}),
+ h('path',{d:'M23 32Q32 42 41 32Q32 46 23 32Z',fill:'#653d25'}),
+ h('path',{d:'M29 34H35V38H29Z',fill:'#fff3c6'}),
+ h('ellipse',{cx:19,cy:30,rx:3,ry:1.8,fill:'#f5b063'}),h('ellipse',{cx:45,cy:30,rx:3,ry:1.8,fill:'#f5b063'}))));
+}
 function WeatherIcon({code,size=90,current=false}:{code:number,size?:number,current?:boolean}){const c=Number(code)%100;if(current&&isSwissNight()&&[1,2,3,26].includes(c))return renderNightWeather(c,size);const Icon=c===1?Sun:[2,3,26].includes(c)?CloudSun:[6,9,14,17,20,29,32,33].includes(c)?CloudRain:[12,13,23,24,25,36,37,38,39,40,41,42].includes(c)?CloudLightning:[7,8,10,11,15,16,18,19,21,22,30,31,34].includes(c)?Snowflake:Cloud;return <Icon size={size} strokeWidth={1.4}/>;}
 const fmtTime=(value:any)=>new Date(value).toLocaleTimeString('it-CH',{hour:'2-digit',minute:'2-digit',timeZone:'Europe/Zurich'});
 function isSwissMapTime(date=new Date()){const time=date.toLocaleTimeString("en-GB",{timeZone:"Europe/Zurich",hour:"2-digit",minute:"2-digit",hourCycle:"h23"});return time>="08:00"&&time<"11:30";}
@@ -72,7 +89,7 @@ export default function Home(){
    <footer><small className="creator-copyright">© SimDev3D</small><span>Unilabs · Centro Galleria 3, via cantonale 4, 6928 Manno</span><div className="page-dots"><i className="selected"/><i/><i/><i/></div></footer><div className="progress" key={page===0?'dashboard':'hidden'}/>
   </section>
   <section className={'plan screen '+(page===1?'active':'')} aria-hidden={page!==1}>{renderWorkPlan(now)}<div className="progress" key={page===1?"plan":"plan-hidden"}/></section>
-  <section className={'plan van-screen screen '+(page===2?'active':'')} aria-hidden={page!==2}><img src="./furgone-autunno.png" alt="Servizio Esterno Unilabs in autunno"/><div className="progress" style={{animationDuration:"7s"}} key={page===2?"autumn":"autumn-hidden"}/></section>
+  <section className={'plan van-screen screen '+(page===2?'active':'')} aria-hidden={page!==2}><img src="./furgone-autunno.png" alt="Servizio Esterno Unilabs in autunno"/><div className="progress" style={{animationDuration:"7s"}} key={page===2?"autumn":"autumn-hidden"}/>{renderPumpkinRunner(page===2)}</section>
   <section className={'dashboard swiss-map-screen screen '+(page===3?'active':'')} aria-hidden={page!==3}>
    <header><div><div className="date">{now?now.toLocaleDateString('it-CH',{weekday:'long',day:'numeric',month:'long',year:'numeric',timeZone:'Europe/Zurich'}):'Benvenuti'}</div></div><time className="header-clock">{now?fmtTime(now):'—'}</time><img className="logo" src="./unilabs-logo.png" alt="Unilabs"/></header>
    <article className="swiss-map-card card"><div className="map-heading"><div><div className="section-label">METEO IN SVIZZERA</div><h2>Le previsioni di oggi</h2></div><div className="map-legend">Temperature minime / massime · °C</div></div>
