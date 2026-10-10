@@ -191,3 +191,8 @@ main{position:fixed}
 /* Match the precipitation heading and droplet icon to the blue chart. */
 .rain-column{color:#319bd0}
 
+
+/* Full-width phone navigation button. */
+@media (pointer: coarse) and (max-width: 600px), (pointer: coarse) and (max-height: 600px){
+ .phone-navigation button{width:100%;display:block}
+}
