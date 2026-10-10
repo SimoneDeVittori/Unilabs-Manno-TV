@@ -367,3 +367,18 @@ main{position:fixed}
 .plan-pdf-error{display:none;color:#e86b00}
 .plan-pdf-surface[data-status="ready"] .plan-pdf-loading,.plan-pdf-surface[data-status="error"] .plan-pdf-loading{display:none}
 .plan-pdf-surface[data-status="error"] .plan-pdf-error{display:flex}
+
+/* Keep the complete plan inside a small white frame. The SVG and day bar scale together. */
+.plan.screen:not(.van-screen) .work-plan{
+ width:calc(100% - 32px);
+ height:calc(100% - 56px);
+ margin-right:32px;
+}
+@media (pointer:coarse) and (max-width:600px),(pointer:coarse) and (max-height:600px){
+ .plan.screen:not(.van-screen) .work-plan{
+  width:calc(100% - 12px);
+  height:auto;
+  max-height:calc(100dvh - 89px);
+  margin:12px 12px 12px 0;
+ }
+}
