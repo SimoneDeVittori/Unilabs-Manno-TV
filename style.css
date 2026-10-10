@@ -344,7 +344,7 @@ main{position:fixed}
 
 
 /* Renault Unilabs travels with the tip of the seven-second van timer. */
-.van-screen .travel-van-runner{position:absolute;bottom:-16px;left:0;width:180px;height:120px;z-index:3;pointer-events:none;transform:translateX(-50%);animation:travel-van-timer 7s linear forwards}
+.van-screen .travel-van-runner{position:absolute;bottom:-16px;left:0;width:180px;height:120px;z-index:3;pointer-events:none;transform:translateX(-50%);animation:travel-van-timer 7s linear forwards,travel-van-fade 7s linear forwards}
 .travel-van-body{position:relative;width:180px;height:120px;animation:travel-van-suspension .42s ease-in-out infinite}
 .travel-van-body>img{display:block;width:180px;height:120px;object-fit:contain}
 .travel-van-wheel{position:absolute;top:71.4%;width:10%;height:15%;transform:translate(-50%,-50%)}
@@ -358,3 +358,6 @@ main{position:fixed}
 
 /* The date comma inherits the same logo orange as the weekday. */
 .date{color:#f09600}
+
+/* Fade the entire van evenly before it reaches the screen edge. */
+@keyframes travel-van-fade{0%,75%{opacity:1}95%,100%{opacity:0}}
