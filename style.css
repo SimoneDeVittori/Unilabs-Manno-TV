@@ -344,3 +344,6 @@ main{position:fixed}
 .today-rain-chart{height:28px}
 .today-rain-bar{transform:scaleY(.72);transform-origin:center bottom}
 .today-rain-axis{margin-top:2px}
+
+/* Clean, consistent section labels across home and map. */
+.section-label,.eyebrow{font-family:"SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;font-weight:600;letter-spacing:.065em;line-height:1.25;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
