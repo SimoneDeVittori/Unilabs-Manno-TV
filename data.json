@@ -48,7 +48,7 @@
         "precipitationMax": 0.1
       }
     ],
-    "updatedAt": "2026-10-10T18:37:41.815086+00:00"
+    "updatedAt": "2026-10-10T18:44:18.735117+00:00"
   },
   "weatherError": false,
   "newsError": false,
@@ -1203,7 +1203,7 @@
       }
     ],
     "model": "202610101800",
-    "updatedAt": "2026-10-10T18:37:41.851542+00:00"
+    "updatedAt": "2026-10-10T18:44:18.763592+00:00"
   },
   "weekError": false,
   "news": {
@@ -1233,7 +1233,7 @@
         "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onwe.jpg?v=1"
       }
     ],
-    "updatedAt": "2026-10-10T18:37:41.815086+00:00",
+    "updatedAt": "2026-10-10T18:44:18.735117+00:00",
     "scope": "ticino",
     "provider": "tio"
   },
@@ -1252,7 +1252,7 @@
         "coord_y": "1152444",
         "location_id": "100300",
         "location_type": "city",
-        "timestamp": 1791655812,
+        "timestamp": 1791657608,
         "forecasts": [
           {
             "date": "10 ottobre 2026",
@@ -1341,7 +1341,7 @@
         "coord_y": "1118423",
         "location_id": "120100",
         "location_type": "city",
-        "timestamp": 1791655812,
+        "timestamp": 1791657608,
         "forecasts": [
           {
             "date": "10 ottobre 2026",
@@ -1430,7 +1430,7 @@
         "coord_y": "1119910",
         "location_id": "195000",
         "location_type": "city",
-        "timestamp": 1791655812,
+        "timestamp": 1791657608,
         "forecasts": [
           {
             "date": "10 ottobre 2026",
@@ -1519,7 +1519,7 @@
         "coord_y": "1202399",
         "location_id": "300400",
         "location_type": "city",
-        "timestamp": 1791655812,
+        "timestamp": 1791657608,
         "forecasts": [
           {
             "date": "10 ottobre 2026",
@@ -1608,7 +1608,7 @@
         "coord_y": "1267348",
         "location_id": "400100",
         "location_type": "city",
-        "timestamp": 1791655812,
+        "timestamp": 1791657608,
         "forecasts": [
           {
             "date": "10 ottobre 2026",
@@ -1697,7 +1697,7 @@
         "coord_y": "1211120",
         "location_id": "600300",
         "location_type": "city",
-        "timestamp": 1791655812,
+        "timestamp": 1791657608,
         "forecasts": [
           {
             "date": "10 ottobre 2026",
@@ -1786,7 +1786,7 @@
         "coord_y": "1096327",
         "location_id": "690000",
         "location_type": "city",
-        "timestamp": 1791655812,
+        "timestamp": 1791657608,
         "forecasts": [
           {
             "date": "10 ottobre 2026",
@@ -1875,7 +1875,7 @@
         "coord_y": "1191534",
         "location_id": "700000",
         "location_type": "city",
-        "timestamp": 1791655812,
+        "timestamp": 1791657608,
         "forecasts": [
           {
             "date": "10 ottobre 2026",
@@ -1964,7 +1964,7 @@
         "coord_y": "1247414",
         "location_id": "800100",
         "location_type": "city",
-        "timestamp": 1791655812,
+        "timestamp": 1791657608,
         "forecasts": [
           {
             "date": "10 ottobre 2026",
@@ -1972,7 +1972,7 @@
             "weather_description": "symbol_id_17",
             "temp_high": 15,
             "weekday": "Heute",
-            "temp_low": 11,
+            "temp_low": 12,
             "weather_symbol_id": 17
           },
           {
@@ -2053,7 +2053,7 @@
         "coord_y": "1254370",
         "location_id": "900000",
         "location_type": "city",
-        "timestamp": 1791655812,
+        "timestamp": 1791657608,
         "forecasts": [
           {
             "date": "10 ottobre 2026",
@@ -2130,8 +2130,8 @@
         ]
       }
     ],
-    "updatedAt": "2026-10-10T18:37:41.815086+00:00",
-    "version": "20261010_1810"
+    "updatedAt": "2026-10-10T18:44:18.735117+00:00",
+    "version": "20261010_1840"
   },
   "swissWeatherError": false,
   "traffic": {
@@ -2246,7 +2246,7 @@
       }
     ],
     "total": 49,
-    "updatedAt": "2026-10-10T18:37:41.815086+00:00",
+    "updatedAt": "2026-10-10T18:44:18.735117+00:00",
     "source": "Viasuisse"
   }
 }
