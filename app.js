@@ -10,7 +10,7 @@ Error generating stack: `+l.message+`
 function renderNightWeather(code,size){
  const h=rainElement,cloudy=code!==1;
  return h('svg',{xmlns:'http://www.w3.org/2000/svg',width:size,height:size,viewBox:'0 0 24 24',fill:'none',stroke:'currentColor',strokeWidth:1.4,strokeLinecap:'round',strokeLinejoin:'round',className:cloudy?'lucide lucide-cloud lucide-cloud-moon':'lucide lucide-moon','aria-hidden':true},
- cloudy?h('path',{d:'M16.5 3a5.5 5.5 0 0 0 4.5 8.7A5.5 5.5 0 0 1 12 7.5'}):h('path',{d:'M20.9 13.2A9 9 0 1 1 10.8 3.1a7 7 0 0 0 10.1 10.1Z'}),
+ cloudy?h('path',{d:'M20.9 13.2A9 9 0 1 1 10.8 3.1a7 7 0 0 0 10.1 10.1Z',transform:'translate(7 -1) scale(.65)'}):h('path',{d:'M20.9 13.2A9 9 0 1 1 10.8 3.1a7 7 0 0 0 10.1 10.1Z'}),
  cloudy?h('path',{d:'M13 22H7a5 5 0 1 1 4.9-6H13a3 3 0 0 1 0 6Z'}):null);
 }
 function Qs({code:a,size:e=90,current:n=false}){let t=Number(a)%100;if(n&&isSwissNight()&&[1,2,3,26].includes(t))return renderNightWeather(t,e);let l=t===1?vl:[2,3,26].includes(t)?gl:[6,9,14,17,20,29,32,33].includes(t)?Sl:[12,13,23,24,25,36,37,38,39,40,41,42].includes(t)?xl:[7,8,10,11,15,16,18,19,21,22,30,31,34].includes(t)?yl:Cl;return(0,p.jsx)(l,{size:e,strokeWidth:1.4})}var Me=a=>new Date(a).toLocaleTimeString("it-CH",{hour:"2-digit",minute:"2-digit",timeZone:"Europe/Zurich"});function isSwissMapTime(date=new Date()){const time=date.toLocaleTimeString("en-GB",{timeZone:"Europe/Zurich",hour:"2-digit",minute:"2-digit",hourCycle:"h23"});return time>="08:00"&&time<"11:30";}
