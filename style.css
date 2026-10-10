@@ -202,3 +202,6 @@ main{position:fixed}
 @media (pointer: coarse) and (max-width: 600px), (pointer: coarse) and (max-height: 600px){
  .plan.screen:not(.van-screen) .work-plan{width:100%;height:auto;max-height:calc(100dvh - 65px)}
 }
+
+/* Orange transparent highlight for the current work-plan day. */
+.plan-today-highlight{fill:#f58220;stroke:#dc6512}
