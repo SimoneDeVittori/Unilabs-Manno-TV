@@ -33,12 +33,12 @@ function renderTodayRain(hourly,now){
  const day=(now||new Date()).toLocaleDateString('sv-SE',{timeZone:'Europe/Zurich'});
  const slots=(hourly||[]).filter(h=>new Date(h.start).toLocaleDateString('sv-SE',{timeZone:'Europe/Zurich'})===day).sort((a,b)=>Date.parse(a.start)-Date.parse(b.start));
  const h=rainElement;
- if(!slots.length)return h('div',{className:'today-rain'},h('div',{className:'today-rain-title'},'PIOGGIA OGGI'),h('div',{className:'today-rain-window'},'Dati orari non disponibili'));
+ if(!slots.length)return h('div',{className:'today-rain'},h('div',{className:'today-rain-title'},'PIOGGIA PREVISTA PER OGGI'),h('div',{className:'today-rain-window'},'Dati orari non disponibili'));
  const groups=[];slots.filter(s=>s.amount>=0.1).forEach(s=>{const last=groups[groups.length-1];if(last&&last.end===s.start)last.end=s.end;else groups.push({...s});});
  const clock=v=>new Date(v).toLocaleTimeString('it-CH',{timeZone:'Europe/Zurich',hour:'2-digit',minute:'2-digit'});
  const windowText=groups.length?groups.map(g=>clock(g.start)+'–'+clock(g.end)).join(' · '):'Nessuna precipitazione prevista';
  const peak=Math.max(1,...slots.map(s=>Number(s.amount)||0));
- return h('div',{className:'today-rain'},h('div',{className:'today-rain-heading'},h('span',{className:'today-rain-title'},'PIOGGIA OGGI'),h('span',null,'mm/ora')),h('div',{className:'today-rain-window'},windowText),
+ return h('div',{className:'today-rain'},h('div',{className:'today-rain-heading'},h('span',{className:'today-rain-title'},'PIOGGIA PREVISTA PER OGGI'),h('span',null,'mm/ora')),h('div',{className:'today-rain-window'},windowText),
  h('div',{className:'today-rain-chart',role:'img','aria-label':'Precipitazioni orarie di oggi. '+windowText},...slots.map((s,i)=>h('div',{className:'today-rain-slot',key:s.start,title:clock(s.start)+' · '+s.amount+' mm'},h('span',{className:'today-rain-bar',style:{height:s.amount>0?Math.max(3,Number(s.amount)/peak*35)+'px':'2px',background:s.amount>0?'#48afe0':'#edf0f2'}})))),
  h('div',{className:'today-rain-axis'},...['00','02','04','06','08','10','12','14','16','18','20','22','24'].map(t=>h('span',{key:t},t))));
 }
