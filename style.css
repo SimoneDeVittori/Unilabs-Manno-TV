@@ -98,3 +98,67 @@ footer{position:relative;justify-content:center;min-height:50px}.creator-logo{le
 .weather .week-heading{margin-top:10px;padding-top:10px}
 .weather .temperature{font-size:80px}
 
+
+/* Phone portrait: readable cards in the available viewport. */
+html,body{width:100%;height:100%;overflow:hidden}
+main{position:fixed}
+@media(max-width:600px) and (orientation:portrait){
+ html{height:auto;min-height:100%;overflow-x:hidden;overflow-y:auto}
+ body{height:auto;min-height:100dvh;overflow:visible;background:#efefef}
+ main{position:relative;left:auto;top:auto;width:100%;height:auto;min-height:100dvh;transform:none;overflow:hidden}
+ .screen{display:none;position:relative;inset:auto;width:100%;height:auto;min-height:100dvh;transition:none}
+ .screen.active{display:flex}
+ .dashboard{padding:20px 14px 24px}
+ header,.swiss-map-screen header{grid-template-columns:1fr auto;gap:12px;min-height:0;margin-bottom:20px}
+ .date{font-size:18px;max-width:none}
+ .header-clock{grid-column:1;grid-row:2;justify-self:start;font-size:46px}
+ .logo{grid-column:2;grid-row:1 / 3;width:130px;max-width:100%}
+ .content{display:flex;flex-direction:column;gap:18px}
+ .right-column{display:flex;flex-direction:column;gap:18px}
+ .card,.weather.card,.news.card,.traffic.card,.swiss-map-card{padding:18px;border-radius:16px;flex:none}
+ .section-label{font-size:12px;letter-spacing:.12em}
+ .weather-heading h1{font-size:28px;width:auto}
+ .weather .temperature{font-size:64px}
+ .weather-now .weather-icon{width:auto}
+ .weather-icon svg{width:76px;height:76px}
+ .weather-note{font-size:15px}
+ .today span{font-size:14px}
+ .today strong{font-size:24px}
+ .today small{font-size:14px}
+ .week-columns{grid-template-columns:95px 72px minmax(0,1fr);gap:6px;font-size:11px}
+ .rain-column small{font-size:10px}
+ .week-row{grid-template-columns:57px 32px 72px minmax(0,1fr);gap:6px}
+ .weather .week-row{min-height:48px}
+ .week-day,.week-temperatures{font-size:15px}
+ .week-day{grid-template-columns:1fr 20px}
+ .week-temperatures strong{margin-left:3px}
+ .week-rain strong{font-size:14px}
+ .rain-hours{font-size:11px}
+ .week-row>svg{width:27px;height:27px}
+ .week-heading{font-size:13px}
+ .source,.weather .source,.news .source{font-size:11px;line-height:1.4;flex-wrap:wrap;padding-top:14px}
+ .news-header{height:42px;padding-right:50px;margin-bottom:8px}
+ .tio-logo{right:18px;width:44px;height:48px;padding:7px;border-radius:0 0 10px 10px}
+ .news-item{gap:12px;padding:12px 0;align-items:flex-start}
+ .news-photo{width:64px;height:64px;border-radius:9px}
+ .news-meta{font-size:10px}
+ .news h3{font-size:16px;line-height:1.25;-webkit-line-clamp:4}
+ .news-description{font-size:13px;line-height:1.35;-webkit-line-clamp:3}
+ .traffic-header{height:28px}
+ .traffic-item p,.traffic-empty{font-size:15px;line-height:1.4;display:block}
+ .traffic-list{gap:18px}
+ footer{position:relative;flex-wrap:wrap;gap:10px;padding-top:22px;font-size:11px}
+ footer>span,.creator-copyright,footer .page-dots{position:static;transform:none;white-space:normal;text-align:center}
+ .creator-copyright{font-size:11px}
+ footer>span{flex-basis:100%;order:2}
+ .page-dots i{width:6px;height:6px}
+ .fullscreen{display:none}
+ .plan{min-height:100dvh;justify-content:center;align-items:center}
+ .plan img,.van-screen img{width:100%;height:auto;max-height:100dvh;object-fit:contain}
+ .map-heading{display:block}
+ .map-heading h2{font-size:23px}
+ .map-legend{font-size:13px;margin-top:8px}
+ .national-map{width:100%;height:auto;min-height:230px;flex:none}
+ .progress{position:fixed;height:3px}
+}
+
