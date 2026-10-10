@@ -355,3 +355,6 @@ main{position:fixed}
 @keyframes travel-van-suspension{0%,100%{transform:translateY(0) rotate(-.25deg)}50%{transform:translateY(-1.5px) rotate(.25deg)}}
 .screen:not(.active) .travel-van-runner,.screen:not(.active) .travel-van-body,.screen:not(.active) .travel-van-wheel svg{animation-play-state:paused}
 @media (prefers-reduced-motion:reduce){.travel-van-body,.travel-van-wheel svg{animation:none}}
+
+/* The date comma inherits the same logo orange as the weekday. */
+.date{color:#f09600}
