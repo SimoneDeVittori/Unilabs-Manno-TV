@@ -205,3 +205,6 @@ main{position:fixed}
 
 /* Orange transparent highlight for the current work-plan day. */
 .plan-today-highlight{fill:#f58220;stroke:#dc6512}
+
+/* Keep the Unilabs symbol solid white inside the mobile home icon. */
+.phone-home-icon g{mask:none}
