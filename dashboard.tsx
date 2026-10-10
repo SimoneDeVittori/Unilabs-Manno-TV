@@ -19,7 +19,7 @@ function renderTodayRain(hourly,now){
 }
 
 function isPhoneDisplay(){return window.matchMedia("(pointer: coarse) and (max-width: 600px), (pointer: coarse) and (max-height: 600px)").matches;}
-function renderPhoneNavigation(page,setPage){return rainElement('nav',{className:'phone-navigation','aria-label':'Navigazione mobile'},rainElement('button',{type:'button',onClick:()=>{setPage(page===1?0:1);window.scrollTo(0,0);}},page===1?'← Homepage':'Piano di lavoro →'));}
+function renderPhoneNavigation(page,setPage){return rainElement('nav',{className:'phone-navigation','aria-label':'Navigazione mobile'},rainElement('button',{type:'button',onClick:()=>{setPage(page===1?0:1);window.scrollTo(0,0);}},page===1?'Homepage':'Piano di lavoro'));}
 export default function Home(){
  const [phone,setPhone]=useState(()=>isPhoneDisplay());
  const [now,setNow]=useState<Date|null>(null);const [page,setPage]=useState(0);const [data,setData]=useState<any>({});const [failed,setFailed]=useState(false);const [controls,setControls]=useState(false);
