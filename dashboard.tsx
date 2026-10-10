@@ -8,9 +8,10 @@ function renderNightWeather(code,size){
  cloudy?h('path',{d:'M20.9 13.2A9 9 0 1 1 10.8 3.1a7 7 0 0 0 10.1 10.1Z',transform:'translate(7 -1) scale(.65)'}):h('path',{d:'M20.9 13.2A9 9 0 1 1 10.8 3.1a7 7 0 0 0 10.1 10.1Z'}),
  cloudy?h('path',{d:'M13 22H7a5 5 0 1 1 4.9-6H13a3 3 0 0 1 0 6Z'}):null,...[[3,4,1.2,0],[20,3,1.05,-.9],[22,18,1.2,-1.8]].map(([x,y,size,delay],i)=>h('path',{key:'star-'+i,className:'weather-star',d:'M0 -1 .23 -.23 1 0 .23 .23 0 1 -.23 .23 -1 0 -.23 -.23Z',transform:'translate('+x+' '+y+') scale('+size+')',fill:'currentColor',stroke:'none',style:{animationDelay:delay+'s'}})));
 }
-function renderMascotRunner(active){
+function renderTravelVan(active){
  const h=rainElement;
- return h('div',{className:'mascot-runner',key:active?'mascot-running':'mascot-hidden','aria-hidden':true},h('div',{className:'mascot-running-sprite'}));
+ const wheel=(position)=>h('span',{className:'travel-van-wheel '+position},h('svg',{viewBox:'0 0 24 24',fill:'none'},h('circle',{cx:12,cy:12,r:10,fill:'#46474a',stroke:'#bfc1c3',strokeWidth:2}),...[0,60,120,180,240,300].map(angle=>h('path',{key:angle,d:'M12 4V9',stroke:'#d8dadd',strokeWidth:2,strokeLinecap:'round',transform:'rotate('+angle+' 12 12)'})),h('circle',{cx:12,cy:12,r:3,fill:'#25262a'})));
+ return h('div',{className:'travel-van-runner',key:active?'van-driving':'van-parked','aria-hidden':true},h('div',{className:'travel-van-body'},h('img',{src:'./furgone-animato.png',alt:'',width:150,height:100}),wheel('rear'),wheel('front')));
 }
 function renderBrandDate(now){if(!now)return 'Benvenuti';const h=rainElement;return [h('span',{className:'date-weekday',key:'weekday'},now.toLocaleDateString('it-CH',{weekday:'long',timeZone:'Europe/Zurich'})),', ',h('span',{className:'date-rest',key:'rest'},now.toLocaleDateString('it-CH',{day:'numeric',month:'long',year:'numeric',timeZone:'Europe/Zurich'}))];}
 function WeatherIcon({code,size=90,current=false}:{code:number,size?:number,current?:boolean}){const c=Number(code)%100;if(current&&isSwissNight()&&[1,2,3,26].includes(c))return renderNightWeather(c,size);const Icon=c===1?Sun:[2,3,26].includes(c)?CloudSun:[6,9,14,17,20,29,32,33].includes(c)?CloudRain:[12,13,23,24,25,36,37,38,39,40,41,42].includes(c)?CloudLightning:[7,8,10,11,15,16,18,19,21,22,30,31,34].includes(c)?Snowflake:Cloud;return <Icon size={size} strokeWidth={1.4}/>;}
@@ -77,7 +78,7 @@ export default function Home(){
    <footer><small className="creator-copyright">© SimDev3D</small><span>Unilabs Ticino · Centro Galleria 3, Via Cantonale 4, 6928 Manno</span><div className="page-dots"><i className="selected"/><i/><i/><i/></div></footer><div className="progress" key={page===0?'dashboard':'hidden'}/>
   </section>
   <section className={'plan screen '+(page===1?'active':'')} aria-hidden={page!==1}>{renderWorkPlan(now)}<div className="progress" key={page===1?"plan":"plan-hidden"}/></section>
-  <section className={'plan van-screen screen '+(page===2?'active':'')} aria-hidden={page!==2}><img src="./furgone-autunno.png" alt="Servizio Esterno Unilabs in autunno"/><div className="progress" style={{animationDuration:"7s"}} key={page===2?"autumn":"autumn-hidden"}/>{renderMascotRunner(page===2)}</section>
+  <section className={'plan van-screen screen '+(page===2?'active':'')} aria-hidden={page!==2}><img src="./furgone-autunno.png" alt="Servizio Esterno Unilabs in autunno"/><div className="progress" style={{animationDuration:"7s"}} key={page===2?"autumn":"autumn-hidden"}/>{renderTravelVan(page===2)}</section>
   <section className={'dashboard swiss-map-screen screen '+(page===3?'active':'')} aria-hidden={page!==3}>
    <header><div><div className="date">{renderBrandDate(now)}</div></div><time className="header-clock">{now?fmtTime(now):'—'}</time><img className="logo" src="./unilabs-logo.png" alt="Unilabs"/></header>
    <article className="swiss-map-card card"><div className="map-heading"><div><div className="section-label">METEO IN SVIZZERA</div><h2>Le previsioni di oggi</h2></div><div className="map-legend">Temperature minime / massime · °C</div></div>
