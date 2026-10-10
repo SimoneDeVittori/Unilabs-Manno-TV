@@ -41,16 +41,17 @@ function renderWorkPlan(now){
  const period=String(PLAN_METADATA.year)+'-'+String(PLAN_METADATA.month).padStart(2,'0');
  const current=day.slice(0,7)===period?Number(day.slice(-2)):0;
  const h=rainElement;
- return h('svg',{className:'work-plan',viewBox:'0 0 1672 941',role:'img','aria-label':'Piano dei turni '+PLAN_METADATA.title+'. Aggiornato al '+PLAN_METADATA.updated+(current?'. Giorno '+current+' evidenziato':''),preserveAspectRatio:'xMidYMid meet'},
+ return h('div',{className:'work-plan',role:'img','aria-label':'Piano dei turni '+PLAN_METADATA.title+'. Aggiornato al '+PLAN_METADATA.updated+(current?'. Giorno '+current+' evidenziato':'')},
+ h('div',{className:'work-plan-stage'},
+ h('div',{className:'plan-pdf-surface','data-status':'loading'},
+ h('canvas',{ref:renderWorkPlanPdf,'aria-label':'Tabella del piano '+PLAN_METADATA.title}),
+ h('span',{className:'plan-pdf-loading'},'Caricamento del piano…'),
+ h('a',{className:'plan-pdf-error',href:PLAN_FILE.url,target:'_blank',rel:'noreferrer'},'Apri il piano PDF')),
+ h('svg',{className:'work-plan-overlay',viewBox:'0 0 1672 941','aria-hidden':true,preserveAspectRatio:'none'},
  h('defs',null,h('linearGradient',{id:'plan-title-gradient',x1:'0%',y1:'0%',x2:'100%',y2:'0%'},h('stop',{offset:'0%',stopColor:'#f09600'}),h('stop',{offset:'100%',stopColor:'#de3c20'}))),
  h('text',{transform:'translate(145 751) rotate(-90)',fontSize:88,fontWeight:800,fontFamily:'Arial, sans-serif',textLength:680,lengthAdjust:'spacingAndGlyphs',fill:'url(#plan-title-gradient)'},PLAN_METADATA.title),
  h('text',{transform:'translate(195 460) rotate(-90)',fontSize:34,fontWeight:700,fontFamily:'Arial, sans-serif',fill:'#454545'},'AGGIORNATO AL '+PLAN_METADATA.updated),
- h('foreignObject',{x:263,y:6,width:1400,height:922},
- h('div',{xmlns:'http://www.w3.org/1999/xhtml',className:'plan-pdf-surface','data-status':'loading'},
- h('canvas',{ref:renderWorkPlanPdf,'aria-label':'Tabella del piano '+PLAN_METADATA.title}),
- h('span',{className:'plan-pdf-loading'},'Caricamento del piano…'),
- h('a',{className:'plan-pdf-error',href:PLAN_FILE.url,target:'_blank',rel:'noreferrer'},'Apri il piano PDF'))),
- current?h('rect',{className:'plan-today-highlight',x:263+(156.02-17)/1056*1400+(current-1)*(29.52/1056*1400),y:6+922/695,width:29.52/1056*1400,height:(746.856-54)/695*922,fill:'#f09600',fillOpacity:0.22,stroke:'#e86b00',strokeOpacity:0.7,strokeWidth:1.5,pointerEvents:'none'}):null);
+ current?h('rect',{className:'plan-today-highlight',x:263+(156.02-17)/1056*1400+(current-1)*(29.52/1056*1400),y:6+922/695,width:29.52/1056*1400,height:(746.856-54)/695*922,fill:'#f09600',fillOpacity:0.22,stroke:'#e86b00',strokeOpacity:0.7,strokeWidth:1.5,pointerEvents:'none'}):null)));
 }
 
 function isPhoneDisplay(){return window.matchMedia("(pointer: coarse) and (max-width: 600px), (pointer: coarse) and (max-height: 600px)").matches;}
