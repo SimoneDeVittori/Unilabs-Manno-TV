@@ -1,7 +1,7 @@
 {
   "weather": {
     "current": {
-      "time": 1791643200000,
+      "time": 1791643800000,
       "icon": 1,
       "iconV2": 1,
       "temperature": 19.8
@@ -48,21 +48,12 @@
         "precipitationMax": 0.1
       }
     ],
-    "updatedAt": "2026-10-10T14:54:39.822731+00:00"
+    "updatedAt": "2026-10-10T15:02:46.037694+00:00"
   },
   "weatherError": false,
   "newsError": false,
   "traffic": {
     "items": [
-      {
-        "id": "Viasuisser_FAVM/658747_TIC-Viasuisse/1",
-        "text": "406 - Riazzino direzione Cadenazzo tra A13, rotatoria Aeroporto di Locarno e Cadenazzo traffico fortemente rallentato, traffico congestionato",
-        "location": "406 - Riazzino direzione Cadenazzo",
-        "road": "406",
-        "category": 13,
-        "changedAt": "2026-10-10T16:40:03+02:00",
-        "priority": 1
-      },
       {
         "id": "Viasuisser_FAVM/658692_TIC-Viasuisse/1",
         "text": "406 - Cadenazzo direzione Riazzino tra Cadenazzo e Contone colonna, traffico congestionato",
@@ -128,7 +119,7 @@
       },
       {
         "id": "Viasuisser_Viasuisse/2509762_TIC-Viasuisse/1",
-        "text": "Piandera Paese, Strada Bassa a Via Cantonale - tra fine della strada e uscita di località in entrambe le direzioni problemi di traffico, lavori stradali, corsie strette, fino a 16.10.2026 17:00",
+        "text": "Piandera Paese, Strada Bassa a Via Cantonale - tra fine della strada e uscita di località in entrambe le direzioni problemi di traffico, lavori stradali, corsie strette, fino a venerdì 17:00",
         "location": "Piandera Paese, Strada Bassa a Via Cantonale",
         "road": "TI",
         "category": 31,
@@ -161,10 +152,19 @@
         "category": 31,
         "changedAt": "2026-09-29T20:11:47+02:00",
         "priority": 5
+      },
+      {
+        "id": "Viasuisser_Viasuisse/2508008_TIC-Viasuisse/1",
+        "text": "Via Nodivra - a Carona lavori stradali, corsie strette, fino a 18.12.2026 17:00",
+        "location": "Via Nodivra",
+        "road": "TI",
+        "category": 31,
+        "changedAt": "2026-09-27T10:35:09+02:00",
+        "priority": 5
       }
     ],
-    "total": 51,
-    "updatedAt": "2026-10-10T14:54:39.822731+00:00",
+    "total": 50,
+    "updatedAt": "2026-10-10T15:02:46.037694+00:00",
     "source": "TCS · Viasuisse"
   },
   "trafficError": false,
@@ -1318,14 +1318,14 @@
       }
     ],
     "model": "202610101400",
-    "updatedAt": "2026-10-10T14:54:39.897416+00:00"
+    "updatedAt": "2026-10-10T15:02:46.068688+00:00"
   },
   "weekError": false,
   "news": {
     "items": [
       {
         "title": "«Una tonnellata e mezza di castagne e tremila piatti di gnocchi»: la Sagra dà i numeri",
-        "description": "La Pro Valle di Muggio sulla 47esima edizione a Castel San Pietro: «Ci aspettiamo oltre 7mila visitatori». E più di 100 sono i volontari mobilitati per la festa della tradizione.",
+        "description": "La Pro Valle di Muggio sulla 47esima edizione a Castel San Pietro: «Ci aspettiamo oltre 7mila visitatori». E più di 100 sono i volontari mobilitati per la tradizionale festa.",
         "link": "https://www.tio.ch/ticino/cronaca/1955612/una-tonnellata-e-mezza-di-castagne-e-tremila-piatti-di-gnocchi-la-sagra-da-i-numeri",
         "date": "Sat, 10 Oct 2026 16:33:10 +0200",
         "category": "MENDRISIOTTO",
@@ -1348,7 +1348,7 @@
         "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onwe.jpg?v=1"
       }
     ],
-    "updatedAt": "2026-10-10T14:54:39.822731+00:00",
+    "updatedAt": "2026-10-10T15:02:46.037694+00:00",
     "scope": "ticino",
     "provider": "tio"
   },
@@ -2245,7 +2245,7 @@
         ]
       }
     ],
-    "updatedAt": "2026-10-10T14:54:39.822731+00:00",
+    "updatedAt": "2026-10-10T15:02:46.037694+00:00",
     "version": "20261010_1440"
   },
   "swissWeatherError": false
