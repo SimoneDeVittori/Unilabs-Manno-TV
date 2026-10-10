@@ -48,7 +48,7 @@
         "precipitationMax": 0.1
       }
     ],
-    "updatedAt": "2026-10-10T21:02:25.829417+00:00"
+    "updatedAt": "2026-10-10T21:05:39.372457+00:00"
   },
   "weatherError": false,
   "newsError": false,
@@ -64,7 +64,7 @@
       },
       {
         "dayDate": "2026-10-11",
-        "temperatureMin": 11,
+        "temperatureMin": 12,
         "temperatureMax": 20,
         "iconDay": 2,
         "precipitation": 0.0
@@ -80,7 +80,7 @@
         "dayDate": "2026-10-13",
         "temperatureMin": 11,
         "temperatureMax": 19,
-        "iconDay": 3,
+        "iconDay": 2,
         "precipitation": 0.0
       },
       {
@@ -1202,8 +1202,8 @@
         "amount": 0.0
       }
     ],
-    "model": "202610102000",
-    "updatedAt": "2026-10-10T21:02:25.870822+00:00"
+    "model": "202610102100",
+    "updatedAt": "2026-10-10T21:05:39.402088+00:00"
   },
   "weekError": false,
   "news": {
@@ -1233,7 +1233,7 @@
         "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onwp.jpg?v=1"
       }
     ],
-    "updatedAt": "2026-10-10T21:02:25.829417+00:00",
+    "updatedAt": "2026-10-10T21:05:39.372457+00:00",
     "scope": "ticino",
     "provider": "tio"
   },
@@ -2130,7 +2130,7 @@
         ]
       }
     ],
-    "updatedAt": "2026-10-10T21:02:25.829417+00:00",
+    "updatedAt": "2026-10-10T21:05:39.372457+00:00",
     "version": "20261010_2040"
   },
   "swissWeatherError": false,
@@ -2246,7 +2246,7 @@
       }
     ],
     "total": 46,
-    "updatedAt": "2026-10-10T21:02:25.829417+00:00",
+    "updatedAt": "2026-10-10T21:05:39.372457+00:00",
     "source": "Viasuisse"
   }
 }
