@@ -248,3 +248,9 @@ main{position:fixed}
 @keyframes weather-sun-ray-out{0%,100%{transform:translate(0,0);opacity:1}55%{transform:translate(var(--ray-x),var(--ray-y));opacity:.7}}
 
 .dashboard:not(.active) .weather-now .weather-icon svg,.dashboard:not(.active) .weather-now .weather-icon svg *{animation-play-state:paused}
+
+/* Night-sky star dots: softly blink at staggered intervals. */
+.weather-now .weather-icon .weather-star{animation:weather-star-twinkle 2.8s ease-in-out infinite}
+@keyframes weather-star-twinkle{0%,100%{opacity:.15}45%,55%{opacity:1}}
+.dashboard:not(.active) .weather-now .weather-icon .weather-star{animation-play-state:paused}
+@media (prefers-reduced-motion:reduce){.weather-now .weather-icon .weather-star{animation:none!important;opacity:.8}}
