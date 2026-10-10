@@ -343,18 +343,19 @@ main{position:fixed}
 }
 
 
-/* Desktop home mascot, centered between clock and logo, masked by the news card. */
+/* Desktop home: independently rigged arm gives a continuous wave. */
 @media (pointer:fine){
  .dashboard:not(.swiss-map-screen) .right-column{position:relative;isolation:isolate}
  .dashboard:not(.swiss-map-screen) .right-column>.card{z-index:1}
- .dashboard:not(.swiss-map-screen) .right-column::before,.dashboard:not(.swiss-map-screen) .right-column::after{content:"";position:absolute;left:calc(50% - 17px);top:-128px;width:180px;height:180px;background:url('./mascotte-saluto.png') 0 0/360px 360px no-repeat;pointer-events:none;z-index:0;transform:translateY(200px);will-change:transform}
- .dashboard:not(.swiss-map-screen) .right-column::after{background-position:100% 0;opacity:0}
- .dashboard.active:not(.swiss-map-screen) .right-column::before{animation:mascot-peek 25s cubic-bezier(.35,0,.2,1) both,mascot-wink 25s steps(1,end) both}
- .dashboard.active:not(.swiss-map-screen) .right-column::after{animation:mascot-peek 25s cubic-bezier(.35,0,.2,1) both,mascot-wave 25s ease-in-out both}
+ .dashboard:not(.swiss-map-screen) .right-column::before,.dashboard:not(.swiss-map-screen) .right-column::after{content:"";position:absolute;left:calc(50% - 28px);top:-145px;width:180px;height:180px;background:url('./mascotte-saluto-rig.png') 0 0/360px 360px no-repeat;pointer-events:none;z-index:0;transform:none;translate:0 200px;will-change:translate,rotate}
+ .dashboard:not(.swiss-map-screen) .right-column::after{left:calc(50% - 59px);top:-141px;background-position:0 100%;clip-path:inset(60px 60px 35px 25px);transform-origin:106px 132px;rotate:0deg}
+ .dashboard.active:not(.swiss-map-screen) .right-column::before{animation:mascot-peek 25s cubic-bezier(.35,0,.2,1) both,mascot-wink 25s steps(1,end) both,mascot-greet-bob 2s ease-in-out infinite}
+ .dashboard.active:not(.swiss-map-screen) .right-column::after{animation:mascot-peek 25s cubic-bezier(.35,0,.2,1) both,mascot-hand-wave 1.1s ease-in-out infinite,mascot-greet-bob 2s ease-in-out infinite}
 }
-@keyframes mascot-peek{0%,8%,42%,100%{transform:translateY(200px)}12%{transform:translateY(-6px)}14%,32%{transform:translateY(0)}34%{transform:translateY(18px) scale(.98,.9)}37%{transform:translateY(-48px) rotate(-7deg) scale(1.02,1.04)}41%{transform:translateY(200px) rotate(7deg)}}
-@keyframes mascot-wink{0%,32%,100%{background-position:0 0}29%{background-position:0 100%}}
-@keyframes mascot-wave{0%,14%,18%,22%,26%,28%,100%{opacity:0}16%,20%,24%{opacity:1}}
+@keyframes mascot-peek{0%,8%,42%,100%{translate:0 200px;scale:1}12%{translate:0 -6px;scale:1}14%,32%{translate:0 0;scale:1}34%{translate:0 18px;scale:.98 .9}37%{translate:0 -48px;scale:1.02 1.04}41%{translate:0 200px;scale:1}}
+@keyframes mascot-wink{0%,32%,100%{background-position:0 0}29%{background-position:100% 0}}
+@keyframes mascot-hand-wave{0%,100%{rotate:-18deg}50%{rotate:18deg}}
+@keyframes mascot-greet-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(2px)}}
 /* The mascot runs exactly with the seven-second van progress tip. */
 .van-screen .mascot-runner{position:absolute;bottom:4px;left:0;width:90px;height:90px;z-index:3;pointer-events:none;transform:translateX(-50%);animation:mascot-timer-run 7s linear forwards}
 .mascot-running-sprite{width:90px;height:90px;background:url('./mascotte-corsa.png') 0 0/180px 180px no-repeat;animation:mascot-run-frames .48s steps(1,end) infinite,mascot-run-bounce .24s ease-in-out infinite}
