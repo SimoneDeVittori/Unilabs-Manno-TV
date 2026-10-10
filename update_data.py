@@ -83,8 +83,11 @@ def traffic_time(value):
     except (ValueError, TypeError):
         return None
 
+if result.get('traffic', {}).get('source') != 'Viasuisse':
+    result.pop('traffic', None)
+
 try:
-    events = json.loads(fetch('https://trafficmaptcs.trafficintelligence.ch/api/event/GetEventsTrafficApi/45.8,8.35,46.65,9.25/11,12,13,14,21,31,32,90/3/10/2'))
+    events = json.loads(fetch('https://trafficmapsrgssr.trafficintelligence.ch/api/event/GetEventsTrafficApi/45.8,8.35,46.65,9.25/11,12,13,14,21,31,32,90/3/10/2'))
     assert isinstance(events.get('Entity'),list) and not events.get('Errors')
     geometry = json.loads((OUTPUT.parent/'ticino.geojson').read_text())['geometry']
     filtered=[]
@@ -108,7 +111,7 @@ try:
         event_key=e['id'].split('_TIC-')[0]
         if event_key in seen: continue
         seen.add(event_key);items.append(e)
-    result['traffic']={'items':items[:12],'total':len(items),'updatedAt':now,'source':'TCS · Viasuisse'}
+    result['traffic']={'items':items[:12],'total':len(items),'updatedAt':now,'source':'Viasuisse'}
     result['trafficError']=False
 except Exception as exc:
     print('Viasuisse source unavailable:',type(exc).__name__)
