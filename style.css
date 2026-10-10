@@ -260,3 +260,16 @@ main{position:fixed}
 @keyframes plan-today-pulse{0%,100%{fill-opacity:.14;stroke-opacity:.45}50%{fill-opacity:.28;stroke-opacity:.8}}
 .plan:not(.active) .plan-today-highlight{animation-play-state:paused}
 @media (prefers-reduced-motion:reduce){.plan-today-highlight{animation:none;fill-opacity:.22;stroke-opacity:.7}}
+
+/* Pumpkin runs with the tip of the autumn page's seven-second timer. */
+.van-screen .pumpkin-runner{position:absolute;bottom:4px;left:0;width:64px;height:68px;z-index:3;pointer-events:none;transform:translateX(-50%);animation:pumpkin-timer-run 7s linear forwards}
+.pumpkin-runner svg{display:block;overflow:visible}
+.pumpkin-body{animation:pumpkin-bounce .42s ease-in-out infinite}
+.pumpkin-leg-left,.pumpkin-leg-right{transform-box:view-box;animation:pumpkin-stride .42s ease-in-out infinite}
+.pumpkin-leg-left{transform-origin:26px 44px}
+.pumpkin-leg-right{transform-origin:38px 44px;animation-delay:-.21s}
+@keyframes pumpkin-timer-run{from{left:0}to{left:100%}}
+@keyframes pumpkin-bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+@keyframes pumpkin-stride{0%,100%{transform:rotate(-18deg)}50%{transform:rotate(18deg)}}
+.screen:not(.active) .pumpkin-runner,.screen:not(.active) .pumpkin-runner *{animation-play-state:paused}
+@media (prefers-reduced-motion:reduce){.pumpkin-body,.pumpkin-leg-left,.pumpkin-leg-right{animation:none!important}}
