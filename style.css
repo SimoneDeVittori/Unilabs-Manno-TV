@@ -273,3 +273,11 @@ main{position:fixed}
 @keyframes pumpkin-stride{0%,100%{transform:rotate(-18deg)}50%{transform:rotate(18deg)}}
 .screen:not(.active) .pumpkin-runner,.screen:not(.active) .pumpkin-runner *{animation-play-state:paused}
 @media (prefers-reduced-motion:reduce){.pumpkin-body,.pumpkin-leg-left,.pumpkin-leg-right{animation:none!important}}
+
+/* Equal upper and lower space centers the home header in its grey band. */
+.dashboard:not(.swiss-map-screen){padding-top:36.68px}
+.dashboard:not(.swiss-map-screen)>header{margin-bottom:36.68px;align-items:center}
+@media (pointer:coarse) and (max-width:600px),(pointer:coarse) and (max-height:600px){
+ .dashboard:not(.swiss-map-screen){padding-top:20px}
+ .dashboard:not(.swiss-map-screen)>header{margin-bottom:20px}
+}
