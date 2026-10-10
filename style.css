@@ -216,19 +216,35 @@ main{position:fixed}
 
 /* Animate only the current-weather icon, never the weekly or map icons. */
 .weather-now .weather-icon svg{overflow:visible;transform-box:view-box;transform-origin:50% 50%}
-.weather-now .weather-icon .lucide-sun{animation:weather-sun-turn 28s linear infinite}
+
 .weather-now .weather-icon .lucide-cloud,.weather-now .weather-icon .lucide-cloud-sun,.weather-now .weather-icon .lucide-cloud-rain,.weather-now .weather-icon .lucide-cloud-lightning{animation:weather-cloud-float 6s ease-in-out infinite}
-.weather-now .weather-icon .lucide-cloud-sun path:not(:last-child){animation:weather-sun-glow 4.8s ease-in-out infinite}
+
 .weather-now .weather-icon .lucide-cloud-rain path:nth-child(n+2){animation:weather-rain-fall 1.6s ease-in infinite;transform-box:view-box}
 .weather-now .weather-icon .lucide-cloud-rain path:nth-child(3){animation-delay:-.55s}
 .weather-now .weather-icon .lucide-cloud-rain path:nth-child(4){animation-delay:-1.1s}
 .weather-now .weather-icon .lucide-cloud-lightning path:last-child{animation:weather-lightning-glow 5s ease-in-out infinite}
 .weather-now .weather-icon .lucide-snowflake{animation:weather-snow-sway 8s ease-in-out infinite}
-@keyframes weather-sun-turn{to{transform:rotate(360deg)}}
+
 @keyframes weather-cloud-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
-@keyframes weather-sun-glow{0%,100%{opacity:1}50%{opacity:.65}}
+
 @keyframes weather-rain-fall{0%{transform:translateY(-1.5px);opacity:0}20%{opacity:1}70%{opacity:1}100%{transform:translateY(1.8px);opacity:0}}
 @keyframes weather-lightning-glow{0%,100%{opacity:1}50%{opacity:.55}}
 @keyframes weather-snow-sway{0%,100%{transform:rotate(-7deg) translateY(0)}50%{transform:rotate(7deg) translateY(2px)}}
 .dashboard:not(.active) .weather-now .weather-icon svg,.dashboard:not(.active) .weather-now .weather-icon svg *{animation-play-state:paused}
 @media (prefers-reduced-motion:reduce){.weather-now .weather-icon svg,.weather-now .weather-icon svg *{animation:none!important}}
+
+/* Sun rays expand outward; the solar disc remains still. */
+.weather-now .weather-icon .lucide-sun{animation:none}
+.weather-now .weather-icon .lucide-sun path,.weather-now .weather-icon .lucide-cloud-sun path:nth-child(-n+4){animation:weather-sun-ray-out 3.2s ease-in-out infinite;transform-box:view-box;--ray-x:0px;--ray-y:0px}
+.weather-now .weather-icon .lucide-cloud-sun path:nth-child(5){animation:none}
+.weather-now .weather-icon .lucide-sun path:nth-child(2),.weather-now .weather-icon .lucide-cloud-sun path:nth-child(1){--ray-y:-1.3px}
+.weather-now .weather-icon .lucide-sun path:nth-child(3){--ray-y:1.3px}
+.weather-now .weather-icon .lucide-sun path:nth-child(4),.weather-now .weather-icon .lucide-cloud-sun path:nth-child(2){--ray-x:-.95px;--ray-y:-.95px}
+.weather-now .weather-icon .lucide-sun path:nth-child(5){--ray-x:.95px;--ray-y:.95px}
+.weather-now .weather-icon .lucide-sun path:nth-child(6){--ray-x:-1.3px}
+.weather-now .weather-icon .lucide-sun path:nth-child(7),.weather-now .weather-icon .lucide-cloud-sun path:nth-child(3){--ray-x:1.3px}
+.weather-now .weather-icon .lucide-sun path:nth-child(8){--ray-x:-.95px;--ray-y:.95px}
+.weather-now .weather-icon .lucide-sun path:nth-child(9),.weather-now .weather-icon .lucide-cloud-sun path:nth-child(4){--ray-x:.95px;--ray-y:-.95px}
+@keyframes weather-sun-ray-out{0%,100%{transform:translate(0,0);opacity:1}55%{transform:translate(var(--ray-x),var(--ray-y));opacity:.7}}
+
+.dashboard:not(.active) .weather-now .weather-icon svg,.dashboard:not(.active) .weather-now .weather-icon svg *{animation-play-state:paused}
