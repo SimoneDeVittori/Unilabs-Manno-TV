@@ -1,10 +1,10 @@
 {
   "weather": {
     "current": {
-      "time": 1791639600000,
+      "time": 1791640200000,
       "icon": 1,
       "iconV2": 1,
-      "temperature": 19.4
+      "temperature": 19.5
     },
     "forecast": [
       {
@@ -48,7 +48,7 @@
         "precipitationMax": 0.1
       }
     ],
-    "updatedAt": "2026-10-10T14:02:08.017818+00:00"
+    "updatedAt": "2026-10-10T14:04:17.427129+00:00"
   },
   "weatherError": false,
   "newsError": false,
@@ -62,15 +62,6 @@
         "category": 13,
         "changedAt": "2026-10-10T15:44:34+02:00",
         "priority": 1
-      },
-      {
-        "id": "Viasuisser_FAVM/658746_TIC-Viasuisse/1",
-        "text": "H2 - In Busciurina direzione Chiasso tra Sant'Antonino  in Comelina e Cadenazzo colonna, traffico congestionato",
-        "location": "H2 - In Busciurina direzione Chiasso",
-        "road": "H2",
-        "category": 12,
-        "changedAt": "2026-10-10T15:25:55+02:00",
-        "priority": 0
       },
       {
         "id": "Viasuisser_FAVM/658692_TIC-Viasuisse/1",
@@ -161,10 +152,19 @@
         "category": 31,
         "changedAt": "2026-09-30T17:01:21+02:00",
         "priority": 5
+      },
+      {
+        "id": "Viasuisser_Viasuisse/2508715_TIC-Viasuisse/1",
+        "text": "Locarno, Via Rovedo - a Locarno problemi di traffico, nuova gestione del traffico, circolazione a senso unico, seguire deviazione locale, fino a 26.02.2027",
+        "location": "Locarno, Via Rovedo",
+        "road": "TI",
+        "category": 31,
+        "changedAt": "2026-09-29T20:11:47+02:00",
+        "priority": 5
       }
     ],
-    "total": 52,
-    "updatedAt": "2026-10-10T14:02:08.017818+00:00",
+    "total": 51,
+    "updatedAt": "2026-10-10T14:04:17.427129+00:00",
     "source": "TCS · Viasuisse"
   },
   "trafficError": false,
@@ -172,7 +172,7 @@
     "days": [
       {
         "dayDate": "2026-10-10",
-        "temperatureMin": 13,
+        "temperatureMin": 12,
         "temperatureMax": 20,
         "iconDay": 29,
         "precipitation": 0.3
@@ -181,7 +181,7 @@
         "dayDate": "2026-10-11",
         "temperatureMin": 11,
         "temperatureMax": 20,
-        "iconDay": 3,
+        "iconDay": 2,
         "precipitation": 0.0
       },
       {
@@ -319,7 +319,7 @@
       {
         "start": "2026-10-10T16:00:00+00:00",
         "end": "2026-10-10T17:00:00+00:00",
-        "amount": 0.4
+        "amount": 0.0
       },
       {
         "start": "2026-10-10T17:00:00+00:00",
@@ -1317,8 +1317,8 @@
         "amount": 0.0
       }
     ],
-    "model": "202610101300",
-    "updatedAt": "2026-10-10T14:02:08.049766+00:00"
+    "model": "202610101400",
+    "updatedAt": "2026-10-10T14:04:17.452181+00:00"
   },
   "weekError": false,
   "news": {
@@ -1348,7 +1348,7 @@
         "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onw8.jpg?v=2"
       }
     ],
-    "updatedAt": "2026-10-10T14:02:08.017818+00:00",
+    "updatedAt": "2026-10-10T14:04:17.427129+00:00",
     "scope": "ticino",
     "provider": "tio"
   },
@@ -2245,7 +2245,7 @@
         ]
       }
     ],
-    "updatedAt": "2026-10-10T14:02:08.017818+00:00",
+    "updatedAt": "2026-10-10T14:04:17.427129+00:00",
     "version": "20261010_1340"
   },
   "swissWeatherError": false
