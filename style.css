@@ -254,3 +254,9 @@ main{position:fixed}
 @keyframes weather-star-twinkle{0%,100%{opacity:.15}45%,55%{opacity:1}}
 .dashboard:not(.active) .weather-now .weather-icon .weather-star{animation-play-state:paused}
 @media (prefers-reduced-motion:reduce){.weather-now .weather-icon .weather-star{animation:none!important;opacity:.8}}
+
+/* Gentle pulse keeps today's orange column readable at all times. */
+.plan-today-highlight{animation:plan-today-pulse 4.5s ease-in-out infinite}
+@keyframes plan-today-pulse{0%,100%{fill-opacity:.14;stroke-opacity:.45}50%{fill-opacity:.28;stroke-opacity:.8}}
+.plan:not(.active) .plan-today-highlight{animation-play-state:paused}
+@media (prefers-reduced-motion:reduce){.plan-today-highlight{animation:none;fill-opacity:.22;stroke-opacity:.7}}
