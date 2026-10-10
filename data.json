@@ -48,7 +48,7 @@
         "precipitationMax": 0.0
       }
     ],
-    "updatedAt": "2026-10-10T22:01:23.033559+00:00"
+    "updatedAt": "2026-10-10T22:02:42.337364+00:00"
   },
   "weatherError": false,
   "newsError": false,
@@ -1203,7 +1203,7 @@
       }
     ],
     "model": "202610102100",
-    "updatedAt": "2026-10-10T22:01:23.067022+00:00"
+    "updatedAt": "2026-10-10T22:02:42.369256+00:00"
   },
   "weekError": false,
   "news": {
@@ -1233,7 +1233,7 @@
         "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onwp.jpg?v=1"
       }
     ],
-    "updatedAt": "2026-10-10T22:01:23.033559+00:00",
+    "updatedAt": "2026-10-10T22:02:42.337364+00:00",
     "scope": "ticino",
     "provider": "tio"
   },
@@ -2130,7 +2130,7 @@
         ]
       }
     ],
-    "updatedAt": "2026-10-10T22:01:23.033559+00:00",
+    "updatedAt": "2026-10-10T22:02:42.337364+00:00",
     "version": "20261010_2140"
   },
   "swissWeatherError": false,
@@ -2246,7 +2246,7 @@
       }
     ],
     "total": 46,
-    "updatedAt": "2026-10-10T22:01:23.033559+00:00",
+    "updatedAt": "2026-10-10T22:02:42.337364+00:00",
     "source": "Viasuisse"
   }
 }
