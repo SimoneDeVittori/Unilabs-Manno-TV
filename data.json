@@ -1,10 +1,10 @@
 {
   "weather": {
     "current": {
-      "time": 1791664200000,
+      "time": 1791664800000,
       "icon": 101,
       "iconV2": 101,
-      "temperature": 13.5
+      "temperature": 13.3
     },
     "forecast": [
       {
@@ -48,7 +48,7 @@
         "precipitationMax": 0.1
       }
     ],
-    "updatedAt": "2026-10-10T20:43:58.669282+00:00"
+    "updatedAt": "2026-10-10T20:49:56.724238+00:00"
   },
   "weatherError": false,
   "newsError": false,
@@ -1203,11 +1203,19 @@
       }
     ],
     "model": "202610102000",
-    "updatedAt": "2026-10-10T20:43:58.692168+00:00"
+    "updatedAt": "2026-10-10T20:49:56.764214+00:00"
   },
   "weekError": false,
   "news": {
     "items": [
+      {
+        "title": "Festival dell’Incontro, quattro giornate dedicate all’inclusione e alla diversità",
+        "description": "Coinvolte scuole, associazioni e cittadini in attività tra teatro, cinema e volontariato nel Mendrisiotto.",
+        "link": "https://www.tio.ch/ticino/attualita/1955972/festival-dell-incontro-quattro-giornate-dedicate-all-inclusione-e-alla-diversita",
+        "date": "Sat, 10 Oct 2026 22:42:45 +0200",
+        "category": "MENDRISIOTTO",
+        "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onyf.jpg?v=1"
+      },
       {
         "title": "«Una tonnellata e mezza di castagne e tremila piatti di gnocchi»: la Sagra dà i numeri",
         "description": "La Pro Valle di Muggio sulla 47esima edizione a Castel San Pietro: «Ci aspettiamo oltre 7mila visitatori». E più di 100 sono i volontari mobilitati per la tradizionale festa.",
@@ -1223,17 +1231,9 @@
         "date": "Sat, 10 Oct 2026 14:03:34 +0200",
         "category": "LOCARNESE",
         "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onwp.jpg?v=1"
-      },
-      {
-        "title": "AMSA inaugura i primi bus elettrici, Marchesi al debutto ufficiale",
-        "description": "Il trasporto pubblico del Mendrisiotto compie un passo verso la mobilità elettrica. E intanto il primo discorso del nuovo Consigliere di Stato: «Un traguardo importante per l'intero territorio».",
-        "link": "https://www.tio.ch/ticino/cronaca/1955939/amsa-inaugura-i-primi-bus-elettrici-marchesi-al-debutto-ufficiale",
-        "date": "Sat, 10 Oct 2026 13:49:18 +0200",
-        "category": "MENDRISIOTTO",
-        "image": "https://media.tio.ch/files/domains/tio.ch/images/4cc2/1onwe.jpg?v=1"
       }
     ],
-    "updatedAt": "2026-10-10T20:43:58.669282+00:00",
+    "updatedAt": "2026-10-10T20:49:56.724238+00:00",
     "scope": "ticino",
     "provider": "tio"
   },
@@ -2130,7 +2130,7 @@
         ]
       }
     ],
-    "updatedAt": "2026-10-10T20:43:58.669282+00:00",
+    "updatedAt": "2026-10-10T20:49:56.724238+00:00",
     "version": "20261010_2040"
   },
   "swissWeatherError": false,
@@ -2246,7 +2246,7 @@
       }
     ],
     "total": 46,
-    "updatedAt": "2026-10-10T20:43:58.669282+00:00",
+    "updatedAt": "2026-10-10T20:49:56.724238+00:00",
     "source": "Viasuisse"
   }
 }
