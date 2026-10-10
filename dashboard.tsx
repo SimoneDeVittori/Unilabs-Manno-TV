@@ -28,7 +28,15 @@ function renderWorkPlan(now){
 }
 
 function isPhoneDisplay(){return window.matchMedia("(pointer: coarse) and (max-width: 600px), (pointer: coarse) and (max-height: 600px)").matches;}
-function renderPhoneNavigation(page,setPage){return rainElement('nav',{className:'phone-navigation','aria-label':'Navigazione mobile'},rainElement('button',{type:'button',onClick:()=>{setPage(page===1?0:1);window.scrollTo(0,0);}},page===1?'Homepage':'Piano di lavoro'));}
+function renderPhoneHomeIcon(){
+ const h=rainElement;
+ return h('svg',{className:'phone-home-icon',width:36,height:36,viewBox:'0 0 64 64','aria-hidden':true,focusable:'false',style:{display:'block',margin:'0 auto'}},
+ h('defs',null,h('linearGradient',{id:'home-logo-gradient',x1:'0%',y1:'0%',x2:'0%',y2:'100%'},h('stop',{offset:'0%',stopColor:'white',stopOpacity:1}),h('stop',{offset:'100%',stopColor:'white',stopOpacity:0.45})),h('mask',{id:'home-logo-fade',maskUnits:'userSpaceOnUse',x:0,y:0,width:120,height:121},h('rect',{width:120,height:121,fill:'url(#home-logo-gradient)'}))),
+ h('path',{d:'M8 29 32 9 56 29V54a3 3 0 0 1-3 3H11a3 3 0 0 1-3-3Z',fill:'none',stroke:'white',strokeWidth:3,strokeLinecap:'round',strokeLinejoin:'round'}),
+ h('svg',{x:20,y:28,width:24,height:24,viewBox:'0 0 120 121',overflow:'hidden'},h('g',{mask:'url(#home-logo-fade)'},h('image',{href:'./unilabs-logo.png',width:371,height:121,style:{filter:'brightness(0) invert(1)'}}))));
+}
+function renderPhoneNavigation(page,setPage){return rainElement('nav',{className:'phone-navigation','aria-label':'Navigazione mobile'},rainElement('button',{type:'button','aria-label':page===1?'Homepage':'Piano di lavoro',onClick:()=>{setPage(page===1?0:1);window.scrollTo(0,0);}},page===1?renderPhoneHomeIcon():'Piano di lavoro'));}
+
 export default function Home(){
  const [phone,setPhone]=useState(()=>isPhoneDisplay());
  const [now,setNow]=useState<Date|null>(null);const [page,setPage]=useState(0);const [data,setData]=useState<any>({});const [failed,setFailed]=useState(false);const [controls,setControls]=useState(false);
