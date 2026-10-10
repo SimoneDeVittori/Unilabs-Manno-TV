@@ -354,3 +354,14 @@ main{position:fixed}
  .weather-heading{height:52px;min-height:52px;align-items:center}
  .weather-now .weather-icon{top:-6px}
 }
+
+/* Desktop home: the news card masks the mascot as it peeks, waves and jumps. */
+@media (pointer:fine){
+.dashboard:not(.swiss-map-screen) .right-column{position:relative;isolation:isolate}
+.dashboard:not(.swiss-map-screen) .right-column>.card{z-index:1}
+.dashboard:not(.swiss-map-screen) .right-column::before{content:"";position:absolute;left:10px;top:-128px;width:180px;height:180px;background:url('./mascotte-saluto.png') 0 0/360px 360px no-repeat;pointer-events:none;z-index:0;transform:translateY(190px);will-change:transform}
+.dashboard.active:not(.swiss-map-screen) .right-column::before{animation:mascot-peek 25s ease-in-out both,mascot-greeting 25s steps(1,end) both}
+}
+@keyframes mascot-peek{0%,8%,42%,100%{transform:translateY(190px)}12%{transform:translateY(-5px)}14%,32%{transform:translateY(0)}34%{transform:translateY(10px) scaleY(.95)}36%{transform:translateY(-14px) rotate(-4deg)}40%{transform:translateY(190px) rotate(5deg)}}
+@keyframes mascot-greeting{0%,14%,18%,22%,26%,34%,100%{background-position:0 0}16%,20%,24%,28%,32%{background-position:100% 0}30%{background-position:0 100%}}
+@media (prefers-reduced-motion:reduce){.dashboard:not(.swiss-map-screen) .right-column::before{content:none;animation:none}}
