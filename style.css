@@ -85,3 +85,16 @@ footer{position:relative;justify-content:center;min-height:50px}.creator-logo{le
 /* Hide the thin frame embedded in the map image. */
 .national-map>svg{clip-path:inset(4px)}
 
+
+.today-rain{margin-top:12px;padding-top:10px;border-top:1px solid #edf0f2;flex-shrink:0}
+.today-rain-heading{display:flex;justify-content:space-between;align-items:center;color:#737f88;font-size:14px}
+.today-rain-title{font-size:15px;font-weight:700;letter-spacing:.08em;color:#de4d18}
+.today-rain-window{font-size:16px;line-height:1.25;font-weight:600;color:#65717c;margin:5px 0 3px}
+.today-rain-chart{height:38px;display:flex;gap:3px;align-items:flex-end;border-bottom:1px solid #edf0f2}
+.today-rain-slot{height:100%;flex:1;display:flex;align-items:flex-end}
+.today-rain-bar{display:block;width:100%;border-radius:2px 2px 0 0}
+.today-rain-axis{display:flex;justify-content:space-between;font-size:13px;color:#737f88;margin-top:3px;font-variant-numeric:tabular-nums}
+.weather .week-row{min-height:46px;padding:4px 0}
+.weather .week-heading{margin-top:10px;padding-top:10px}
+.weather .temperature{font-size:80px}
+

@@ -1,9 +1,23 @@
 'use client';
-import {useEffect,useState} from 'react';
+import {useEffect,useState,createElement as rainElement} from 'react';
 import {Cloud,Sun,CloudSun,CloudRain,CloudLightning,Snowflake,Droplets} from 'lucide-react';
 function WeatherIcon({code,size=90}:{code:number,size?:number}){const c=Number(code)%100;const Icon=c===1?Sun:[2,3,26].includes(c)?CloudSun:[6,9,14,17,20,29,32,33].includes(c)?CloudRain:[12,13,23,24,25,36,37,38,39,40,41,42].includes(c)?CloudLightning:[7,8,10,11,15,16,18,19,21,22,30,31,34].includes(c)?Snowflake:Cloud;return <Icon size={size} strokeWidth={1.4}/>;}
 const fmtTime=(value:any)=>new Date(value).toLocaleTimeString('it-CH',{hour:'2-digit',minute:'2-digit',timeZone:'Europe/Zurich'});
 function isSwissMapTime(date=new Date()){const time=date.toLocaleTimeString("en-GB",{timeZone:"Europe/Zurich",hour:"2-digit",minute:"2-digit",hourCycle:"h23"});return time>="08:00"&&time<"11:30";}
+function renderTodayRain(hourly,now){
+ const day=(now||new Date()).toLocaleDateString('sv-SE',{timeZone:'Europe/Zurich'});
+ const slots=(hourly||[]).filter(h=>new Date(h.start).toLocaleDateString('sv-SE',{timeZone:'Europe/Zurich'})===day).sort((a,b)=>Date.parse(a.start)-Date.parse(b.start));
+ const h=rainElement;
+ if(!slots.length)return h('div',{className:'today-rain'},h('div',{className:'today-rain-title'},'PIOGGIA OGGI'),h('div',{className:'today-rain-window'},'Dati orari non disponibili'));
+ const groups=[];slots.filter(s=>s.amount>=0.1).forEach(s=>{const last=groups[groups.length-1];if(last&&last.end===s.start)last.end=s.end;else groups.push({...s});});
+ const clock=v=>new Date(v).toLocaleTimeString('it-CH',{timeZone:'Europe/Zurich',hour:'2-digit',minute:'2-digit'});
+ const windowText=groups.length?groups.map(g=>clock(g.start)+'–'+clock(g.end)).join(' · '):'Nessuna precipitazione prevista';
+ const peak=Math.max(1,...slots.map(s=>Number(s.amount)||0));
+ return h('div',{className:'today-rain'},h('div',{className:'today-rain-heading'},h('span',{className:'today-rain-title'},'PIOGGIA OGGI'),h('span',null,'mm/ora')),h('div',{className:'today-rain-window'},windowText),
+ h('div',{className:'today-rain-chart',role:'img','aria-label':'Precipitazioni orarie di oggi. '+windowText},...slots.map((s,i)=>h('div',{className:'today-rain-slot',key:s.start,title:clock(s.start)+' · '+s.amount+' mm'},h('span',{className:'today-rain-bar',style:{height:s.amount>0?Math.max(3,Number(s.amount)/peak*35)+'px':'2px',background:s.amount>0?'#de4d18':'#edf0f2'}})))),
+ h('div',{className:'today-rain-axis'},...['00','06','12','18','24'].map(t=>h('span',{key:t},t))));
+}
+
 export default function Home(){
  const [now,setNow]=useState<Date|null>(null);const [page,setPage]=useState(0);const [data,setData]=useState<any>({});const [failed,setFailed]=useState(false);const [controls,setControls]=useState(false);
  useEffect(()=>{const resize=()=>document.documentElement.style.setProperty('--tv-scale',String(Math.min(window.innerWidth/1920,window.innerHeight/1080)));resize();window.addEventListener('resize',resize);setNow(new Date());const clock=setInterval(()=>{setNow(new Date());if(!isSwissMapTime())setPage(p=>p===3?0:p);},1000);let alive=true;async function refresh(){try{const r=await fetch('./data.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error();const d=await r.json();if(alive){setData((old:any)=>({...d,weather:d.weather??old.weather,news:d.news??old.news}));setFailed(false);}}catch{if(alive)setFailed(true);}}refresh();const poll=setInterval(refresh,180000);const visibility=()=>{if(!document.hidden)refresh();};document.addEventListener('visibilitychange',visibility);return()=>{window.removeEventListener('resize',resize);alive=false;clearInterval(clock);clearInterval(poll);document.removeEventListener('visibilitychange',visibility);};},[]);
@@ -23,6 +37,7 @@ export default function Home(){
    <header><div><div className="date">{now?now.toLocaleDateString('it-CH',{weekday:'long',day:'numeric',month:'long',year:'numeric',timeZone:'Europe/Zurich'}):'Benvenuti'}</div></div><time className="header-clock">{now?fmtTime(now):'—'}</time><img className="logo" src="./unilabs-logo.png" alt="Unilabs"/></header>
    <div className="content"><article className="weather card"><div className="weather-heading"><div className="section-label">METEO LOCALE</div><h1>Manno</h1></div><div className="weather-now"><span className="temperature">{w?Math.round(w.current.temperature)+'°':'—'}</span><span className="weather-icon">{w&&<WeatherIcon code={w.current.iconV2??w.current.icon} size={120}/>}</span></div><p className="weather-note">{w?'Temperatura attuale':staleWeather?'Meteo temporaneamente non disponibile':'Caricamento del meteo…'}</p>
     {w&&<><div className="today"><div><span>Minima</span><strong>{w.forecast[0].temperatureMin}°</strong></div><div><span>Massima</span><strong>{w.forecast[0].temperatureMax}°</strong></div><div><span>Pioggia</span><strong>{w.forecast[0].precipitation} <small>mm</small></strong></div></div></>}
+    {renderTodayRain(week?.hourly,now)}
     <div className="week-heading">PROSSIMI 5 GIORNI</div><div className="week-columns"><span>Giorno</span><span>Min / max °C</span><span className="rain-column"><Droplets size={19}/> Precipitazioni (mm)<small>Fascia oraria</small></span></div><div className="week-list">{week?week.days.filter((d:any)=>d.dayDate>(now||new Date()).toLocaleDateString('sv-SE',{timeZone:'Europe/Zurich'})).slice(0,5).map((d:any)=><div className="week-row" key={d.dayDate}><div className="week-day"><span>{new Date(d.dayDate+'T12:00:00').toLocaleDateString('it-CH',{weekday:'short'})}</span><span className="week-day-number">{Number(d.dayDate.slice(-2))}</span></div><WeatherIcon code={d.iconDay} size={30}/><div className="week-temperatures">{d.temperatureMin}° <strong>{d.temperatureMax}°</strong></div><div className={"week-rain "+(d.precipitation===0?"dry":"")}><strong>{Number.isFinite(d.precipitation)?d.precipitation.toLocaleString("it-CH",{maximumFractionDigits:1})+" mm":"—"}</strong>{d.precipitation>0&&<span className="rain-hours">{rainWindow(d.dayDate)==="Nessuna prevista"?"Orario non disponibile":rainWindow(d.dayDate)}</span>}</div></div>):<p className="empty">{data.weekError?'Previsioni non disponibili':'Caricamento…'}</p>}</div>
     
     <div className="source"><a href="https://www.meteosvizzera.admin.ch/previsioni-locali/manno/6928.html" target="_blank" rel="noreferrer">Fonte: MeteoSvizzera</a>{staleWeather&&<span className="warning">{w?'Ultimi dati ricevuti · aggiornamento in attesa':'Connessione alla fonte in attesa'}</span>}</div>
@@ -48,6 +63,7 @@ export default function Home(){
 
 import {createRoot} from "react-dom/client";
 createRoot(document.getElementById("root")!).render(<Home/>);
+
 
 
 
