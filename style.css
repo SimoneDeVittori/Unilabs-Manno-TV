@@ -337,3 +337,10 @@ main{position:fixed}
  .weather-now .weather-icon{width:96px;bottom:-30px}
  .weather-note{line-height:20px;max-width:calc(100% - 108px)}
 }
+
+/* Compact precipitation chart while retaining proportional blue bars. */
+.today-rain{margin-top:8px;padding-top:8px}
+.today-rain-window{margin:3px 0 2px}
+.today-rain-chart{height:28px}
+.today-rain-bar{transform:scaleY(.72);transform-origin:center bottom}
+.today-rain-axis{margin-top:2px}
